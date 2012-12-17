@@ -40,6 +40,17 @@ module JB
   end #Path
 end #JB
 
+# Deploy
+task :default => :build
+ 
+desc 'Build site with Jekyll.'
+task :build do
+	print "Compiling website...\n"
+  
+  sh "rsync -az --delete _site/ ayanami:~/app-root/repo/php"
+	print "Done...\n"
+end
+
 # Usage: rake post title="A Title" [date="2012-02-09"]
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
