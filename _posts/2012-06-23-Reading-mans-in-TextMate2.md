@@ -7,7 +7,9 @@ tags: [textmate]
 ---
 {% include JB/setup %}
 
-*мануал о том как использовать textmate для просмотра мануалов*
+![](http://31808.selcdn.ru/it-prm/pics/man.jpg)
+
+<h5 style="text-align:center !important;font-style:italic;">мануал о том как использовать textmate для просмотра мануалов</h5>
 
 ## man
 

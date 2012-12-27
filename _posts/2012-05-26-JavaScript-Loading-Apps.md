@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Загрузка и инициализация JavaScript-приложения"
+title: "Загрузка JavaScript-приложения (Yandex)"
 description: ""
 category: 
 tags: [javascript]
 ---
 {% include JB/setup %}
 
+
+<img src="http://31808.selcdn.ru/it-prm/pics/dump.png" class="img-center">
 [ссылка на презентацию](http://www.slideshare.net/azproduction/dumpit-javascript) 
 
 *Проблема*: Слишком большое время загрузки страницы в условиях плохого ( мобильного ) интернета.

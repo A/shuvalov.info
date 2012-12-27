@@ -7,6 +7,8 @@ tags: [textmate]
 ---
 {% include JB/setup %}
 
+<img src="http://31808.selcdn.ru/it-prm/pics/TextMate2.png" width="183px" class="img-center" /> 
+ 
 ## Введение
 Я полностью согласен с авторами [“The Pragmatic Programmer”](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X) [Andrew Hunt](http://andy.pragprog.com/) и [David Thomas](http://pragdave.pragprog.com/) в том, что иметь один-единственный редактор текста для всего - это прекрасно. Таким редактором для меня является [textmate 2](http://blog.macromates.com/2011/textmate-2-0-alpha/ "TextMate Blog &raquo; TextMate 2.0 Alpha"). Я стараюсь использовать его везде, где это возможно. В основном я работаю с [JS](http://en.wikipedia.org/wiki/JS "Wikipedia Entry: JS")`, `[HTML](http://en.wikipedia.org/wiki/HTML "Wikipedia Entry: HTML"), [CSS](http://en.wikipedia.org/wiki/CSS "Wikipedia Entry: Cascading Style Sheets") и [markdown](http://daringfireball.net/projects/markdown/ "Daring Fireball: Markdown") для статей и заметок. Бывает пишу [PHP](http://en.wikipedia.org/wiki/PHP "Wikipedia Entry: PHP")-код и [SHELL](http://en.wikipedia.org/wiki/Shell "Wikipedia Entry: Shell")-скрипты. Изредка судьба, улыбаясь, заставляет меня писать на [pascal](http://en.wikipedia.org/wiki/Pascal "Wikipedia Entry: Pascal"). С помощью различных дополнений, область применения textmate можно расширять практически бесконечно.
 

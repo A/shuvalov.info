@@ -10,15 +10,17 @@
 	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 	<link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link href="{{ ASSET_PATH }}/bootstrap/css/responsive.css" rel="stylesheet">
-	<link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-	<link rel="shortcut icon"  href="/assets/themes/twitter/img/favicon.png">
-	<link rel="apple-touch-icon" href="/assets/themes/twitter/img/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/themes/twitter/img/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/themes/twitter/img/apple-touch-icon-114x114.png">
+	<link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">	
+	<link rel="shortcut icon"  href="{{ ASSET_PATH }}/img/favicon.png">
+	<!-- Icon for iOS -->
+	<link rel="apple-touch-icon" href="{{ ASSET_PATH }}/img/touch-icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ ASSET_PATH }}/img/touch-icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ ASSET_PATH }}/img/touch-icons/apple-touch-icon-114x114.png">
+	<!-- Icon for Chrome -->
+	<link rel="image_src" href="{{ ASSET_PATH }}/img/touch-icons/apple-touch-icon-114x114.png">
+	
   </head>
   <body>
-	  
-	  
 	<header class="container site-header">
 		<h2 class="site-title"><a href="index.html">{{ site.title }}</a></h2>
 		<p class="site-tagline">{{ site.tagline }}</p>
@@ -26,20 +28,19 @@
 		<hr>
 	</header>
 	<div class="container">
-	  <div class="content">
-		{{ content }}
-	  </div>
-
-	  <hr>
-	  
-	  <footer>
-			  <p>
-				  <span>&copy; {{ site.author.name }} 2012.</span>
-				  <span><a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a></span> | 
-			<span><a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></span>
-	  </footer>
-
-	</div> <!-- /container -->
+		<section class="content">
+			{{ content }}
+		</section>
+		<hr>
+		<footer>
+			<p>
+				<span>&copy; {{ site.author.name }} 2012.</span> <br />
+				<span><a href="https://github.com/mojombo/jekyll">Jekyll</a></span> |
+				<span><a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a></span> | 
+				<span><a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></span>
+			</p>
+		</footer>
+	</div>
 	{% include JB/analytics %}
   </body>
 </html>

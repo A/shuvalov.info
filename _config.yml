@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Антон Шувалов
-tagline: "WEB-демиург"
+tagline: "Ношу шлем. Тяжело дышу."
 author :
   name : Антон Шувалов
   email : anton_shuvalov@me.com
@@ -99,7 +99,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-26825614-1'
     getclicky :
       site_id : 
     mixpanel :

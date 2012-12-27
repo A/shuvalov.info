@@ -7,6 +7,9 @@ tags: [bash]
 ---
 {% include JB/setup %}
 
+
+<img class="img-center" src="http://31808.selcdn.ru/it-prm/pics/bash.png" alt="Чем отличается which от whereis">
+
 В bash есть две утилиты для определения пути к программе, и я решил выяснить подробности использования обеих утилит. Как оказалось — не зря.
 
 ## Which

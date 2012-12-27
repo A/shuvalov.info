@@ -7,7 +7,7 @@ tags: [перевод, javascript, nodejs]
 ---
 {% include JB/setup %}
 
-<img src="http://31808.selcdn.ru/it-prm/pics/jsninja.jpg.scaled696.png"  style="margin:0 auto;"/>
+<img src="http://31808.selcdn.ru/it-prm/pics/jsninja.jpg.scaled696.png" width="271px" class="img-center"  />
 <p>Как многие (если не все), знают, я пишу на python. Пишу каждый день, и мне это нравится. Ради веселья и  опыта я начал писать на django, и перенес на него множество строк нативного питона.</p>
 
 <p>Я был погружен в свой эпохальный back-end код, и редко получал шанс попрактиковаться в моем фронтэнд кон-фу. В результате подобной практики, я был полным нубом во фрондэнде.</p>

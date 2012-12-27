@@ -1,5 +1,6 @@
 body {
-	background:url(/assets/themes/twitter/img/bg20.jpg);
+/*	background:url(/assets/themes/twitter/img/bg20.jpg);*/
+	background:#f7f7f7;
 }
 
 .container > footer p {
@@ -111,7 +112,8 @@ body {
 
 .img-center {
 	display:block;
-	margin:0 auto;
+	margin:0 auto 1em;
+	
 }
 h1 {
 	font-weight:normal;
@@ -120,12 +122,12 @@ h1 {
 	margin:20px 0 60px;
 	padding:0;
 	border:0;
-	text-align:center;
+/*	text-align:center;*/
 	line-height:30px;
 }
 
 .post-content p {
-	line-height:1.7;
+	line-height:1.4;
 }
 .post-date {
 	margin-bottom:33px;
