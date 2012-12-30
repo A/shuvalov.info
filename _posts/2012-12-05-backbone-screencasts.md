@@ -1,28 +1,34 @@
 ---
 layout: post
 title: "backbone screencasts"
-description: ""
+description: "Скринкасты о популярном MVC фреймворке backbone.js. Полезны начинающим разработчика веб-приложений на JavaScript"
 category: 
 tags: []
 ---
 {% include JB/setup %}
 
 Начал смотреть видео о том, как использовать backbone.js. Скринкаст на русском языке от украинского разработчика [Александра Хоменко][Александр Хоменко].
+<br>
+<br>
 
 ## Основы Backbone
 
 {% vimeo 44066608 %} 
 
 [Backbone Basics (russian)][] from [Oleksandr Khomenko][vimeo_okhomenko] on [Vimeo][].
- 
-## Backbone Routers
+<br>
+<br>
 
+## Backbone Routers
+ 
 {% vimeo 45460580 %}
 
 [Backbone Routers (Russian, Русский)][] from [Oleksandr Khomenko][vimeo_okhomenko] on [Vimeo][].
+<br>
+<br>
 
-# Организация Backbone приложения в AMD-модули с помощью RequireJS
-
+## Организация Backbone приложения в AMD-модули с помощью RequireJS
+ 
 {% vimeo 44236020 %}
 [Организация Backbone приложения в AMD-модули с помощью RequireJS][] from [Oleksandr Khomenko][vimeo_okhomenko] on [Vimeo][].
 

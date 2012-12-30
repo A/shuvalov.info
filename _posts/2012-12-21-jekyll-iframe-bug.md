@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll REXML could not parse this XML/HTML"
-description: ""
+description: "Что делать с ошибкой REXML could not parse this XML/HTML в Jekyll?"
 category: 
 tags: []
 ---
@@ -20,8 +20,10 @@ tags: []
 
 `<iframe width="620px" height="400px" src="http://player.vimeo.com/video/55084406" frameborder="0"></iframe>`
  
-## PS 
-Честно говоря, у меня весьма скверное представление о Jakyll и Ruby. Я уверен, что есть более адекватное решение. Но у меня получилось и так. Да и для того, что бы работать с видео было проще — я использую [плагин][форк] и вместо html-кода я вставляю `{ % vimeo 123 % }`, а исправления, о которых я написал выше, я внес в код плагина.
+## Плагин для vimeo в jekyll
+
+Я немного поправил плагин для вимео
+Честно говоря, у меня весьма скверное представление о Jekyll и Ruby. Я уверен, что есть более адекватное решение. Но у меня получилось и так. Да и для того, что бы работать с видео было проще — я использую [плагин][форк] и вместо html-кода я вставляю `{ % vimeo 123 % }`, а исправления, о которых я написал выше, я внес в код плагина.
 
 [плагин]: https://github.com/gummesson/jekyll-vimeo-plugin
-[форк]: https://github.com/shuvalov-anton/jekyll-vimeo-plugin/blob/master/vimeo.rb
+[форк]: https://gist.github.com/4414183

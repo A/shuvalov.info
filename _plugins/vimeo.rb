@@ -3,8 +3,6 @@
 
 module Jekyll
   class Vimeo < Liquid::Tag
-    @@width = 620
-    @@height = 348
 
     def initialize(name, id, tokens)
       super
@@ -12,7 +10,7 @@ module Jekyll
     end
 
     def render(context)
-      %(<iframe width="#{@@width}" height="#{@@height}" src="http://player.vimeo.com/video/#{@id}" frameborder="0">   </iframe>)
+      %(<div class="video-container"><iframe class="vimeo-iframe" src="http://player.vimeo.com/video/#{@id}" frameborder="0">   </iframe></div>)
     end
   end
 end

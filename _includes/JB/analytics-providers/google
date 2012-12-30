@@ -1,4 +1,7 @@
 <script type="text/javascript">
+
+	console.log("testtesttest", "{{ site.JB.analytics.google.tracking_id }}");
+	
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', '{{ site.JB.analytics.google.tracking_id }}']);
   _gaq.push(['_trackPageview']);

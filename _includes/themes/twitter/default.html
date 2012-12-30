@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+	<meta name="google-site-verification" content="ymvEUIQUSh8G3bf-H26Z6iSAE8Acxa-5qSWb5MSZtvY" />
+	  
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 	<title>{{ site.title }} :: {{ page.title }}</title>
-	{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 	<meta name="author" content="{{ site.author.name }}">
+	{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]--> 
-	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-	<link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.css" rel="stylesheet">
-	<link href="{{ ASSET_PATH }}/bootstrap/css/responsive.css" rel="stylesheet">
-	<link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">	
 	<link rel="shortcut icon"  href="{{ ASSET_PATH }}/img/favicon.png">
-	<!-- Icon for iOS -->
+	<link rel="image_src" href="{{ ASSET_PATH }}/img/touch-icons/apple-touch-icon-114x114.png">
 	<link rel="apple-touch-icon" href="{{ ASSET_PATH }}/img/touch-icons/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="{{ ASSET_PATH }}/img/touch-icons/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="{{ ASSET_PATH }}/img/touch-icons/apple-touch-icon-114x114.png">
-	<!-- Icon for Chrome -->
-	<link rel="image_src" href="{{ ASSET_PATH }}/img/touch-icons/apple-touch-icon-114x114.png">
+	<link href="http://feeds.feedburner.com/anton-shuvalov/JHar" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />
+	<link rel="stylesheet" href="/assets/themes/twitter/bootstrap/css/style.css" media="all">
 	
   </head>
   <body>
+	  
 	<header class="container site-header">
-		<h2 class="site-title"><a href="index.html">{{ site.title }}</a></h2>
+		<a class="rss-link" href="http://feeds.feedburner.com/anton-shuvalov/JHar">RSS</a>
+		<h2 class="site-title"><a href="/">{{ site.title }}</a></h2>
 		<p class="site-tagline">{{ site.tagline }}</p>
-		<a class="rss-link" href="{{ HOME_PATH }}atom.xml">RSS</a>
 		<hr>
 	</header>
+	
 	<div class="container">
 		<section class="content">
 			{{ content }}
@@ -41,6 +41,26 @@
 			</p>
 		</footer>
 	</div>
-	{% include JB/analytics %}
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', '{{ site.JB.analytics.google.tracking_id }}']);
+	  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+	  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+		var trackingByInterval = (function trackingByInterval () {
+			var timerCallback = function timerCallback () {
+				_gaq.push(['_trackEvent', 'Reading', 'every 10 sec']);
+			}
+			setInterval(timerCallback, 5000);
+		})();
+	</script>
   </body>
 </html>

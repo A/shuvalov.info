@@ -57,7 +57,7 @@ Usage:
 					</ul>
 					<hr>
 					<header class="row post-list-header">
-						<div class="span1 arial post-list-year hidden-phone">{{next_year}}</div>
+						<div class="span1 arial post-list-year ">{{next_year}}</div>
 						<div class="span2 arial">{{next_month}}</div>
 					</header>
 					<ul	 class="post-list">

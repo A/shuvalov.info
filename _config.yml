@@ -16,7 +16,7 @@ author :
   email : anton_shuvalov@me.com
   github : shuvalov-anton
   twitter : shuvalov_anton
-  # feedburner : feedname
+  # feedburner : 'anton-shuvalov/JHar'
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -26,7 +26,21 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.com
+production_url : http://anton-shuvalov.info
+
+
+asset_bundler:
+  compress:
+    js: yui
+    css: yui
+  base_path: /assets/themes/twitter/bootstrap/css/
+  server_url: 
+  remove_bundled: false
+  dev: false
+  markup_templates:
+    js: "<script src='{{url}}'></script>\n"
+    css: "<link rel='stylesheet' href='{{url}}' />\n"
+
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -99,7 +113,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-26825614-1'
+        tracking_id : 'UA-26825614-2'
     getclicky :
       site_id : 
     mixpanel :

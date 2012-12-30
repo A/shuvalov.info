@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "TextMate2 line HATE HATE HATE!!111"
-description: ""
+title: "Интерлиньяж в TextMate2"
+description: "Инструкция о том, как увеличить интерлиньяж в популярном текстовом редакторе textmate 2"
 category: 
 tags: []
 ---
