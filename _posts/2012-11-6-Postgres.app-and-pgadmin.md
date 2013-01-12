@@ -3,13 +3,13 @@ layout: post
 title: 'pgadmin column "datconfig" does not exist'
 description: ""
 category: 
-tags: []
+tags: [wtf, PostgreSQL]
 ---
 {% include JB/setup %}
 
 Пару дней назад установил [Postgres.app][] и [pgadmin v1.8.4][]. Но при попытке подключения из pgadmin  к БД получал ошибку 
 
-`ERROR: Column "datconfig" does not exist`
+<pre><code>ERROR: Column "datconfig" does not exist</code></pre>
 
 ## Решение
 

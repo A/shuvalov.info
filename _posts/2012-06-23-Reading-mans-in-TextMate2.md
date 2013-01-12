@@ -17,20 +17,21 @@ tags: [textmate]
 
 ## Использование textmate2 для чтения man'ов
 
-> *«Использовать один редактор - это хорошо».*  
+> *«Использовать один редактор — это хорошо».*  
 > Pragmatic Programmer
   
 Для меня, бесспорно, главным и единственным редактором кода является textmate2. Я попробую научить этот редактор читать маны. В этой статье речь пойдет именно о второй версии TextMate. У меня сейчас установлен TextMate Version 2.0 (9090).
 
 ## Установка бандла
 
-Для начала я установил в TextMate [бандл для чтения man-страниц][textmate-man-bundle]. Скачал, проверил, что название папки заканчивается на `.tmbundle`. Скопировал бандл в `~/Library/Application\ Support/TextMate/Managed/Bundles`. Перезапустил TextMate. 
+Для начала я установил в TextMate [бандл для чтения man-страниц][textmate-man-bundle]. Скачал, проверил, что название папки заканчивается на `.tmbundle`. Скопировал бандл в папку.<pre>~/Library/Application Support/TextMate/Managed/Bundles
+</pre> Перезапустил TextMate.
 
 ## Использование бандла
 Выбираю в меню `Bundles->Man Pages->View Man Page`. В появившемся окне набираю название shell-команды, например `man`, и умиляюсь открывшейся TextMate man-страницей. Для того, что бы воспользоваться второй командой бандла - `Visit man Page` - нужно выделить какую-нибудь shell-команду в тексте. По нажатию на хоткей, либо выбрав в меню `Bundles->Man Pages->Visit man Page`, откроется новая вкладка со справкой по выделенной команде. 
 
 ### Для гиков и перфекционистов:  настройка бандла
-Для меня совершенно неудобно тянуться к тэчпаду или мыши, и выделять руками команду. Это лечится настройкой входных данных. Выбираю в меню `Bundles->Edit Bundles...->Man Pages->Menu Actions->Visit Man Page`. Слева в настройках нужно установить значение поля `input` равным `word`. 
+Для меня совершенно неудобно тянуться к тэчпаду или мыши, и выделять руками команду. Это лечится настройкой входных данных. Выбираю в меню <pre>Bundles->Edit Bundles...->Man Pages->Menu Actions->Visit Man Page</pre> Слева в настройках нужно установить значение поля `input` равным `word`. 
 Здесь же, в редакторе бандлов, можно настроить удобные хоткеи. Они задаются в поле `Key Equivalent`. Не стоит обделять гуманным сочетанием клавиш и `View Man Page`. Да, что бы заставить хоткеи работать - мне пришлось удалить значение поля `Scope Selector`.
 
 ## Учим textmate читать маны из консоли.
@@ -42,20 +43,27 @@ tags: [textmate]
 Скорее всего это `/usr/bin/man`. Думаю, что бывают исключения.
 
 Для всех скриптов, к которым я лично приложил руку - у меня есть специальный каталог `~/.scripts`. Каталог прописан в переменной окружения `$PATH`. Я нахожу это удобным. Краткая инструкция о создании такого каталога:  
-`mkdir ~/.scripts # Создаем директорию`
-`mate ~/.profile  # Добавляем ее в $PATH`  
-В открывшемся окне TextMate нужно дописать строчку `export PATH=$HOME/.scripts:$PATH`. Либо, если `export PATH` уже есть, то дописать в нем, сразу после `=` `$HOME/.scripts:`. Создадим в `~/.scripts` ссылку на наш скрипт:  
-`ln -s /Users/shuvalov/Library/Application\ Support/TextMate/Managed/Bundles/textmate-man-pages.tmbundle/Support/mman ~/.scripts/man`  
-В этот момент, так как я определил директорию с нашим скриптом раньше всего, стандартный `man` перестанет работать. Вместо него будет выполняться наш скрипт. Теперь осталось изменить в скрипте вызов `man` на `/usr/bin/man` (либо путь до оригинальной команды man). Отрываю файл `~/Library/Application\ Support/TextMate/Managed/Bundles/textmate-man-pages.tmbundle/Support/mman` и отредактируем его. ([мой пример][good-man]).  
+<pre>
+<code>mkdir ~/.scripts # Создаем директорию
+mate ~/.profile  # Добавляем ее в $PATH</code>
+</pre>В открывшемся окне TextMate нужно дописать строчку <pre>export PATH=$HOME/.scripts:$PATH
+</pre> Либо, если `export PATH` уже есть, то дописать в нем, сразу после `=` `$HOME/.scripts:`. Создадим в `~/.scripts` ссылку на наш скрипт:  
+<pre>
+<code class="bash">ln -s /Users/shuvalov/Library/Application\ Support/TextMate/Managed/Bundles/textmate-man-pages.tmbundle/Support/mman ~/.scripts/man</code>
+</pre>
+В этот момент, так как я определил директорию с нашим скриптом раньше всего, стандартный `man` перестанет работать. Вместо него будет выполняться наш скрипт. Теперь осталось изменить в скрипте вызов `man` на `/usr/bin/man` (либо путь до оригинальной команды man). Отрываю файл <pre><code class="bash">~/Library/Application\ Support/TextMate/Managed/Bundles/textmate-man-pages.tmbundle/Support/mman</code>
+</pre> и отредактируем его. ([мой пример][good-man]).  
 Набираем `man man` и видим результат труда - man-страница открывается в новом окне textmate, переливаясь чинной подсветкой синтаксиса.
 
 Напоследок. Если, просматривая man в textmate, нажать `shift+cmd+t`, то откроется меню навигации по ману. Только вот, что бы заставить его работать, нужно в последней строчке скрипта изменить значение sleep на 180, продлив время жизни временной страницы:   
-`(sleep 180; rm -f $tmp) > /dev/null 2>&1 </dev/null &`
+<pre>
+<code>(sleep 180; rm -f $tmp) &gt; /dev/null 2&gt;&amp;1 &lt;/dev/null &amp;</code>
+</pre>
+
 
 ## Заключение.
-Читать маны в textmate2 эпически удобно. Так же, удобно уметь использовать один редактор для всех своих задач. Не распыляйтесь. 
+Читать маны в textmate2 эпически удобно. Так же, удобно уметь использовать один редактор для всех своих задач и не распыляйться. 
 
-Спасибо что прочитали эту статью.
 
 [textmate-man-bundle]: https://github.com/textmate/man-pages.tmbundle "TextMate Man Pages Bundle"
 [JasonRudolphMan]: http://jasonrudolph.com/blog/2008/03/14/manning-up-textmate-meets-man-pages/

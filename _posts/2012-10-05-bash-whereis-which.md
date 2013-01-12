@@ -15,8 +15,8 @@ tags: [bash]
 ## Which
 
 <p>Команда <code>which</code> ищет приложение в пользовательской директории. Например: <br />
-<code>$ which git</code>
-<code>/usr/local/bin/git</code>
+<pre><code>which git
+/usr/local/bin/git</code></pre>
 </p>
 
 
@@ -28,5 +28,5 @@ tags: [bash]
 ## Whereis
 
 Команда whereis ищет программы среди стандартных директорий и флагов не имеет. Пример:  
-`$ whereis git`  
-`/usr/bin/git`
+<pre><code>whereis git
+/usr/bin/git</code></pre>

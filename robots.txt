@@ -1,0 +1,7 @@
+---
+# Remember to set production_url in your _config.yml file!
+title : robots.txt
+---
+
+User-Agent: *
+Host: anton-shuvalov.info

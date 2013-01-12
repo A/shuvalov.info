@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Как объеденить две медиатеки в iTunes"
-description: ""
+description: "Инструкция о том, как объединенить две медиатеки, не потеряв статистику прослушиваний"
 category: 
 tags: [iTunes, Apple]
 ---

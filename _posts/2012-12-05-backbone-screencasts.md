@@ -3,7 +3,7 @@ layout: post
 title: "backbone screencasts"
 description: "Скринкасты о популярном MVC фреймворке backbone.js. Полезны начинающим разработчика веб-приложений на JavaScript"
 category: 
-tags: []
+tags: [javascript, скринкасты]
 ---
 {% include JB/setup %}
 
