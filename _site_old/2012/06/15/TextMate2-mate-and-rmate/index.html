@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta name="google-site-verification" content="ymvEUIQUSh8G3bf-H26Z6iSAE8Acxa-5qSWb5MSZtvY" />
+	  
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<title>Антон Шувалов :: mate и rmate в TextMate&nbsp;2</title>
+	<meta name="author" content="Антон Шувалов">
+	<meta name="description" content="">
+	<meta name="keywords" content="" />
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<link rel="shortcut icon"  href="/assets/themes/twitter/img/favicon.png">
+	<link rel="image_src" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-114x114.png">
+	<link href="http://feeds.feedburner.com/anton-shuvalov/JHar" rel="alternate" title="Антон Шувалов" type="application/atom+xml" />
+	<link rel="stylesheet" href="/assets/themes/twitter/bootstrap/css/style.css" media="all">
+	<link rel="stylesheet" href="/assets/libs/highlight/highlight.css" media="all">
+  </head>
+  <body>
+	  
+	<header class="container site-header">
+		<a class="rss-link" href="http://feeds.feedburner.com/anton-shuvalov/JHar">RSS</a>
+		<h2 class="site-title"><a href="/">Антон Шувалов</a></h2>
+		<p class="site-tagline">Ношу шлем. Тяжело дышу.</p>
+		<hr>
+	</header>
+	
+	<div class="container">
+		<section class="content">
+			
+<div class="page-header">
+  <h1>mate и rmate в TextMate&nbsp;2</h1>
+</div>
+
+<div class="row">
+  <div class="span8 post-content">
+    <img class='img-center' src='http://31808.selcdn.ru/it-prm/pics/TextMate2.png' width='183px' />
+<h2 id='id4'>Введение</h2>
+
+<p>Я полностью согласен с авторами <a href='http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X'>“The Pragmatic Programmer”</a> <a href='http://andy.pragprog.com/'>Andrew Hunt</a> и <a href='http://pragdave.pragprog.com/'>David Thomas</a> в том, что иметь один-единственный редактор текста для всего - это прекрасно. Таким редактором для меня является <a title='TextMate Blog &amp;raquo; TextMate 2.0 Alpha' href='http://blog.macromates.com/2011/textmate-2-0-alpha/'>textmate 2</a>. Я стараюсь использовать его везде, где это возможно. В основном я работаю с <a title='Wikipedia Entry: JS' href='http://en.wikipedia.org/wiki/JS'>JS</a><code>, </code><a title='Wikipedia Entry: HTML' href='http://en.wikipedia.org/wiki/HTML'>HTML</a>, <a title='Wikipedia Entry: Cascading Style Sheets' href='http://en.wikipedia.org/wiki/CSS'>CSS</a> и <a title='Daring Fireball: Markdown' href='http://daringfireball.net/projects/markdown/'>markdown</a> для статей и заметок. Бывает пишу <a title='Wikipedia Entry: PHP' href='http://en.wikipedia.org/wiki/PHP'>PHP</a>-код и <a title='Wikipedia Entry: Shell' href='http://en.wikipedia.org/wiki/Shell'>SHELL</a>-скрипты. Изредка судьба, улыбаясь, заставляет меня писать на <a title='Wikipedia Entry: Pascal' href='http://en.wikipedia.org/wiki/Pascal'>pascal</a>. С помощью различных дополнений, область применения textmate можно расширять практически бесконечно.</p>
+
+<p>Textmate поставляется с двумя консольными скриптами <em>mate</em> и <em>rmate</em>. <code>mate</code> позволяет из терминала открыть файл в textmate. Выглядит это, к примеру, так - <code>sudo mate /etc/hosts/</code>. С помощью <code>rmate</code> можно провернуть то-же самое, но на удаленнам сервере. Раньше я ежедневно пользовался <code>ssh</code> или даже <code>sshfs</code> для редактирования файлов на сервере. С одной стороны перспектива редактирования кода в <em>vim</em>-подобных редакторах, с другой медленная скорость работы <code>sshfs</code> как файловой системы. В целом, удаленное редактирование файлов мне не импонировало ни тем, ни другим&#8230;</p>
+
+<h2 id='mate'>Mate</h2>
+
+<p>В консоли Mac OS X существует команда <a title='open(1) Mac OS X Manual Page' href='https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/open.1.html'>open</a>, заменяющая в терминале двойной клик по файлу. <code>open -a</code> в терминале заменяет команду &#8220;открыть с помощью&#8221;. Например, что бы открыть из терминала в textmate файл, <code>/etc/hosts</code>, вполне можно обойтись командой <code>open /etc/hosts/ -a TextMate</code>. Несколько файлов открываются командой <pre><code>open ~/.bashrc ~/.profile -a TextMate</code></pre></p>
+
+<p>Но команда <code>open</code> имеет несколько ограничений. Невозможно открыть файл на определенной строке. Так же невозможно придержать консоль до закрытия файла. Последнее ограничение не позволяет использовать textmate как внешний редактор, например, для git или svn.</p>
+
+<p>По этому у textmate есть замена неповоротливому <code>open</code> - <code>mate</code>. Скрипт устанавливатется из textmate-preferences-terminal. <code>mate</code> позволяет использовать textmate из терминала, так как-будто это действительно консольное приложение. Например, для того, что бы использовать его как внешний редактор для всех консольных приложений просто добавим это в <code>./profile</code>:<br /><pre><code>export EDITOR='mate -w'</code></pre></p>
+
+<p>Ключ <code>-w</code> - заставляет терминал дождаться закрытия файла, перед продолжением.</p>
+
+<h2 id='rmate'>Rmate</h2>
+
+<h3 id='ssh'>SSH-туннель</h3>
+
+<p>Если говорить кратко - <code>ssh</code>-туннель перенаправляет траффик с определенного порта на любой порт локальной машины посредством <code>ssh</code>-соединения. Создадим туннель для того, что бы получить возможность редактировать файлы на сервере с помощью textmate:<br /><pre><code>ssh -R 52698:localhost:52698 &lt;user&gt;@&lt;server&gt;</code></pre></p>
+
+<p>Возможно, будет проще обновить настройки <code>ssh</code> подключения, для того, что бы туннель всегда создавался автоматически, без ключа <code>-R</code> и объявления пробрасываемых портов.<br />Для единственного сервера добавим следующие строки в <code>~/.ssh/config</code>:<br /><pre><code>Host &lt;адрес сервера&gt;
+RemoteForward 52698 127.0.0.1:52698</code></pre></p>
+
+<p>Либо можно использовать тоннель как настройку по-умолчанию, для любого сервера:<br /><pre><code>Host *
+RemoteForward 52698 127.0.0.1:52698</code></pre></p>
+
+<h3 id='id5'>Установка</h3>
+
+<p>Создаем новый файл на сервере, скопируем в него содержимое rmate (<code>preferences &gt; terminal: ссылка rmate </code>) и дадим права на исполнение: <pre><code class='bash'># rmate доступен всем пользователям
+sudo vi /usr/local/bin/rmate
+chmod +x /usr/local/bin/rmate
+</code></pre> <pre><code class='bash'># rmate доступен только текущему пользователю (проверь, есть ли этот каталог в $PATH)
+vi ~/bin/rmate
+chmod +x ~/bin/rmate
+</code></pre></p>
+
+<p>Альтернативный вариант - использовать команду scp для того, что бы залить скрипт с локальной машины на сервер. Выглядит это примерно так: <pre><code>scp /Applications/TextMate.app/Contents/Frameworks/Preferences.framework/Versions/A/Resources/rmate &lt;пользователь&gt;@&lt;сервер.com&gt;:/usr/local/bin/</code></pre></p>
+
+<p>Вот и все. Больше нам не придется к этому возвращаться.</p>
+
+<p>Теперь можно использовать <code>rmate</code> на сервере. Проверим, как он работает:<br /><pre><code class='bash'>rmate ~/test.txt</code></pre></p>
+
+<p>Мы должны увидеть новое окно textmate с пустым файлом. Напишем что-нибудь в этом файле. После сохранения файл появится на сервере.</p>
+
+<h3 id='_'>Известные проблемы</h3>
+
+<h4 id='usrbinenv_ruby_no_such_file_or_directory'>/usr/bin/env: ruby: No such file or directory</h4>
+
+<p>На сервере не установлен ruby-интерпретатор. <a href='http://mike.eire.ca/'>Michael Newton</a> переписал <a href='http://pastebin.com/GcSXtTW2'>rmate на php</a>.</p>
+
+<h4 id='warning_remote_port_forwarding_failed_for_listen_port_52698'>Warning: remote port forwarding failed for listen port 52698</h4>
+
+<p>На сервере 52698 порт уже чем-то занят. Нужно отключиться от сервера, и создать ssh-туннель используя другой порт:<br /><pre><code>ssh -R &lt;мой-порт&gt;:localhost:52698 &lt;user&gt;@&lt;server&gt;</code></pre></p>
+
+<p>Теперь, запуская rmate нужно так же указывать номер порта:<br /><pre><code>rmate -p &lt;мой-порт&gt; rmate_rocks.txt</code></pre></p>
+
+<p>В результате ssh-туннель будет пересылать данные с вашего порта на сервере к порту 52698 на локальной машине. В настройках textmate ничего менять не нужно.</p>
+
+<h3 id='id6'>Заключение</h3>
+
+<p><code>rmate</code> и <code>mate</code> расширяют возможности использования textmate до удаленных серверов и консольных приложений. Здесь можно найти миллион замечательных способов применения этого уютного редактора. Например, можно использовать textmate для того, что бы писать комментарии к коммиту изменений на github:<br /><pre><code>export GIT_EDITOR="mate --name 'Git Commit Message' -w -l 1"</code></pre></p>
+
+<p>Много всего можно придумать, и я очень рад, что погружаться в дебри консоли я буду с комфортным мне редактором кода.</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2012/06/03/Textmate2-rmate" title="Использование rmate в TextMate2">&larr; Назад</a></li>
+      
+      
+        <li class="next"><a href="/2012/06/19/Planetary-Claustrophobia" title="Планетарная клаустрофобия">Вперед &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+  </div>
+  
+  <div class="span4">
+    <h4>Опубликовано</h4>
+    <div class="date post-date"><span>15 June 2012</span></div>
+
+  
+    <h4>Теги</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#textmate-ref">textmate <sup>5</sup></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+  <hr>
+  <div class="span8 comments">
+      
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'a3heee'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+
+
+
+  </div>
+</div>
+
+
+		</section>
+		<hr>
+		<footer>
+			<p>
+				<span>&copy; Антон Шувалов 2012.</span> <br />
+				<span><a href="https://github.com/mojombo/jekyll">Jekyll</a></span> |
+				<span><a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a></span> | 
+				<span><a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></span>
+			</p>
+		</footer>
+	</div>
+	
+	<h1>ANALITYCS</h1>
+
+
+
+	
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-26825614-2']);
+	  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+	  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+		var trackingByInterval = (function trackingByInterval () {
+			var timerCallback = function timerCallback () {
+				_gaq.push(['_trackEvent', 'Reading', 'every 10 sec']);
+			}
+			setInterval(timerCallback, 5000);
+		})();
+		(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter19212163 = new Ya.Metrika({id:19212163, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="//mc.yandex.ru/watch/19212163" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	
+	<script type="text/javascript" src="/assets/libs/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+</html>

@@ -2,6 +2,7 @@
 layout: post
 title: "Какими должны быть макеты"
 description: ""
+keywords: "some, keys, words"
 category: 
 tags: [design]
 ---

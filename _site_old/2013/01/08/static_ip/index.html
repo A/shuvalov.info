@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta name="google-site-verification" content="ymvEUIQUSh8G3bf-H26Z6iSAE8Acxa-5qSWb5MSZtvY" />
+	  
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<title>Антон Шувалов :: Как я ипользую статический IP</title>
+	<meta name="author" content="Антон Шувалов">
+	<meta name="description" content="Статья о том, что можно сделать со статическим IP чтобы значительно упростить себе жизнь. Цикл статей о том, как сделать домашний сервер.">
+	<meta name="keywords" content="" />
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<link rel="shortcut icon"  href="/assets/themes/twitter/img/favicon.png">
+	<link rel="image_src" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-114x114.png">
+	<link href="http://feeds.feedburner.com/anton-shuvalov/JHar" rel="alternate" title="Антон Шувалов" type="application/atom+xml" />
+	<link rel="stylesheet" href="/assets/themes/twitter/bootstrap/css/style.css" media="all">
+	<link rel="stylesheet" href="/assets/libs/highlight/highlight.css" media="all">
+  </head>
+  <body>
+	  
+	<header class="container site-header">
+		<a class="rss-link" href="http://feeds.feedburner.com/anton-shuvalov/JHar">RSS</a>
+		<h2 class="site-title"><a href="/">Антон Шувалов</a></h2>
+		<p class="site-tagline">Ношу шлем. Тяжело дышу.</p>
+		<hr>
+	</header>
+	
+	<div class="container">
+		<section class="content">
+			
+<div class="page-header">
+  <h1>Как я ипользую статический IP</h1>
+</div>
+
+<div class="row">
+  <div class="span8 post-content">
+    <p><img alt='' src='http://31808.selcdn.ru/it-prm/pics/ip-address-with-mouse.png' /></p>
+
+<p>Я решил купить статический IP. Решил купить давно. Больше года назад. Но купил только сейчас. В принципе, цена, вполне меня устраивает — 450 рублей за подключение и 20 рублей в месяц за аренду IP. Статический IP адрес мне понадобится для того, что бы привязать к домену сайт или сервис, который я буду размещать на своем сервере. Кроме этого я решил осуществить давнишнюю мечту — иметь доступ к своим домашним устройствам и сервисам из любого места.</p>
+
+<p>Устройств и сервисов, которые я бы хотел видеть снаружи, у меня немного есть. А есть у меня роутер NetGear 3500L с DD-WRT на борту. В нем жесткий диск на 320Gb и торрент-клиент. И есть у меня домашний сервер, за состоянием которого я хочу иногда присматривать. Есть немного интересных штук, но я пока не добрался до них.</p>
+
+<p>Подытожу. Я хочу привязать к своему домену такие штуки, как:</p>
+<ul>
+	<li>SSH сервера</li>
+	<li>Состояние сервера (webmin)</li>
+	<li>Веб-сервер (его пока не трогаю)</li>
+	<li>SSH роутера</li>
+	<li>Веб-интерфайс роутера</li>
+	<li>Торрент клиент</li>
+	<li>FTP-сервер (его тоже не трогаю)</li>
+</ul>
+<h2 id='id16'>План</h2>
+
+<p>Во-первых, нужно привязать субдомены (например, torrents.anton-shuvalov.info, webmin.anton-shuvalov.info) к своему статическому IP адресу, потом подвинуть с 80 порта веб-интерфейс DD-WRT, а на 80-ом поднять nginx. На nginx пробросить прокси ко всем сервисам, вроде: <pre><code>torrents.anton-shuvalov.info > 192.168.0.1:9091</code></pre> <em>Кстати, предупреждаю. Естественно все IP, субдомены и другая приватная информация дальше по тексту не настоящие</em>.</p>
+
+<h2 id='____ip'>Как привязать домен к IP</h2>
+
+<p>Привязка домена к IP делается с помощью <code>A записи</code> на NS-сервере к которому привязан домен. Мой домен привязан к NS-серверам <a href='http://selectel.ru'>selectel</a>. Создать там <code>A запись</code> очень просто, хотя я не думаю, что где-то это будет сложнее. В панели управления нужно перейти на вкладку <code>домены</code>, дальше выбрать домен, ну и нажать на кнопку &#8220;добавить запись&#8221;. В значении &#8220;хост&#8221; пишу <code>webmin.anton-shuvalov.info</code>, &#8220;тип&#8221; — <code>A</code>, &#8220;Значение&#8221; — указываю свой IP.</p>
+<a href='http://31808.selcdn.ru/it-prm/pics/selectel-domains.jpg'><img alt='' src='http://31808.selcdn.ru/it-prm/pics/selectel-domains.jpg' /></a>
+<h2 id='ssh'>SSH</h2>
+
+<p>На MacBook я создал пару профилей SSH — до консоли роутера, и до консоли домашнего сервера. Создаются такие профили в файле <code>~/.ssh/config</code>. Два моих профиля выглядят примерно так:</p>
+<pre><code>Host ayanami
+	# My home server
+	HostName myip
+	RemoteForward 52698 127.0.0.1:52698 # для rmate
+	User user
+	Port 11132 # В DD-WRT нужно пробросить этот порт на локальный IP сервера на 22-ой порт
+	
+Host router
+	# My home router
+	HostName myip
+	User root
+	Port 22</code></pre>
+<p>В файле <code>/etc/hosts</code> я сделал запись такого вида: <pre><code>44.144.244.233 myip # home</code></pre> Это нужно для того, что бы в конфиге SSH зарезолвить myip в корректный IP-адрес.</p>
+
+<h2 id='_ddwrt'>Настройка DD-WRT</h2>
+
+<p>В DD-WRT нужно сделать две вещи для того, чтобы запрос к субдомену доходил до моего еще не установленного проксирующего сервера на nginx, который, собственно, и будет разбираться с тем, что и куда перенаправить.</p>
+
+<ul>
+<li>Во-первых нужно подвинуть веб-интерфейс с 80-ого порта на, например, 81-ый порт (есть альтернативный вариант — перевести веб-интерфейс с <code>http</code> на <code>https</code>, но я его не пробовал).</li>
+
+<li>Во-вторых нужно пробросить 80-ый порт до сервера, на котором будет работать nginx.</li>
+</ul>
+
+<h4 id='__'>Меняем порт веб-интерфейса</h4>
+
+<p>Что бы сменить порт интерфейса нужно выполнить в консоли роутера следующие строки <pre><code>nvram set http_lanport=81
+nvram commit
+reboot</code></pre> После перезагрузки интерфейс откроется по адресу <code>http://192.168.0.1:81</code>.</p>
+
+<h4 id='_80_'>Пробрасываем 80-ый порт</h4>
+
+<p>Здесь нет ничего сложного. Нужная форма находится в <code>NAT/QoS &gt; Port Forwarding</code>. Слева направо название, входящий порт, протокол (TCP, UDP или оба), внутренний IP и его порт. Внутренний IP сервера у меня 192.16810.101, порт 80-ый.</p>
+<a href='http://31808.selcdn.ru/it-prm/pics/dd-wrt_port-forwerding.jpg'><img alt='проброс портов dd-wrt' src='http://31808.selcdn.ru/it-prm/pics/dd-wrt_port-forwerding.jpg' /></a>
+<h2 id='_nginx__debian'>Установа nginx в debian</h2>
+
+<p>Установка nginx была не особенно гладкой. Ну как, не особенно. Я решил поставить из <code>aptitude</code>, после этого часа два пытался настроить <code>nginx proxy_pass</code>, и, в итоге, измученного и злого, меня озорило: <pre><code>rei@ayanami:~/$ /usr/sbin/nginx  -v
+nginx version: nginx/0.7.67</code></pre> Уже вышел <code>nginx/1.2.6</code>. Версия в сорцах жутко смердила. Для того, что бы поставить актуальную версию, нужно добавить в <code>/etc/apt/sources.list</code> следующие строчки: <pre><code>deb http://nginx.org/packages/debian/ squeeze nginx
+deb-src http://nginx.org/packages/debian/ squeeze nginx</code></pre> Так как я ставлю ngixn исключительно для проксирования запросов внутрь моей локальной сети, то ни <code>php-fpm</code>, ни <code>mysql</code> я не устанавливаю. Следовательно я удалил старую версию с помощью <code>aptitude remove --purge nginx</code>, а дальше все просто: <pre><code>sudo aptitude install nginx</code></pre></p>
+
+<h2 id='nginx_proxy_pass'>nginx proxy pass</h2>
+
+<p>После того, как установка nginx на мой debian сервер успешно завершилась, нужно настроить проксирование запросов в мой маленький интранет. Для каждого субдомена нужно писать отдельный конфиг. Возможно в чем-то эти конфиги могут отличаться. У меня же они одинаковые. Конфигурация сервера помещается в директиву <code>http</code>.</p>
+<pre><code>server {
+  server_name router.anton-shuvalov.info; # субдомен
+  listen 80;
+  location / {
+    proxy_pass http://192.168.1.1:81; # локальный адрес
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+  }
+}</code></pre>
+<p>Я добавил такие конфиги для веб-интерфейса роутера и торрент-клиента.</p>
+
+<h2 id='_webmin___cookies'>В Webmin не работают cookies</h2>
+
+<p>С webmin не заладилось. После того, как я настроил проксирование по адресу <code>webmin.anton-shuvalov.info</code> меня встретила форма логина, но, введя имя пользователя и пароль, я увидел такую ошибку:</p>
+<pre><code>Error - No cookies
+	
+Your browser does not support cookies, which are required for this web server to work in session authentication mode</code></pre>
+<p>Надо отметить, что <code>proxy_pass</code> у меня вел на <code>https://192.168.1.101:10000</code>. Но на самом деле, SSL webmin&#8217;а нужно выключить. Для этого в файле <code>sudo rmate /etc/webmin/miniserv.conf</code> нужно поменять <code>ssl=1</code> на <code>ssl=0</code>. Ну и ниже конфиг сервера в <code>/etc/nginx/nginx.conf</code>:</p>
+<pre><code>server {
+  server_name webmin.anton-shuvalov.info; 
+  listen 80;
+  location / {
+    proxy_pass http://192.168.1.1:10000;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+  }
+}</code></pre>
+<p>После этого все должно было заработать. Хотя нет. Webmin очень расстроился из-за подозрительного домена, с которого я до него добрался. Во всех своих фреймах он только об этом и говорил мне. Что бы порадовать старика нужно зайти в webmin через локальный адрес, у меня это <code>192.168.1.101:10000</code> перейти в <code>Webmin &gt; Настройка Webmin &gt; Проверка ссылок</code> и вписать, куда влезает, название своего домена. Что-то типа <code>webmin.anton-shuvalov.info</code>. Теперь-то все.</p>
+
+<p><img alt='' src='http://31808.selcdn.ru/it-prm/pics/webmin.jpg' /></p>
+
+<h2 id='id17'>Реприза</h2>
+
+<p>Сейчас я очень доволен — я могу добраться до консоли роутера или сервера, который я спрятал в чулане, до интерфейса роутера, до торрент-клиента, до состояния сервера из любой точки мира. Это очень здорово. Позднее я планирую поднять доступ до ftp (хотя, это должно решится с помощью установки нужного optware пакета на роутер). Ну и попробую перенести свой блог на домашний сервер, что бы посмотреть, что из этого выйдет. А на сегодня, вроде как все.</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2013/01/06/server_day1" title="Домашний сервер. Первые шаги">&larr; Назад</a></li>
+      
+      
+        <li class="next"><a href="/2013/01/11/jquery-and-js" title="JavaScript и jQuery">Вперед &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+  </div>
+  
+  <div class="span4">
+    <h4>Опубликовано</h4>
+    <div class="date post-date"><span>08 January 2013</span></div>
+
+  
+    <h4>Теги</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#debian-ref">debian <sup>3</sup></a></li>
+     
+    	<li><a href="/tags.html#homeserver-ref">homeserver <sup>3</sup></a></li>
+     
+    	<li><a href="/tags.html#dd-wrt-ref">dd-wrt <sup>1</sup></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+  <hr>
+  <div class="span8 comments">
+      
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'a3heee'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+
+
+
+  </div>
+</div>
+
+
+		</section>
+		<hr>
+		<footer>
+			<p>
+				<span>&copy; Антон Шувалов 2012.</span> <br />
+				<span><a href="https://github.com/mojombo/jekyll">Jekyll</a></span> |
+				<span><a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a></span> | 
+				<span><a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></span>
+			</p>
+		</footer>
+	</div>
+	
+	<h1>ANALITYCS</h1>
+
+
+
+	
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-26825614-2']);
+	  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+	  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+		var trackingByInterval = (function trackingByInterval () {
+			var timerCallback = function timerCallback () {
+				_gaq.push(['_trackEvent', 'Reading', 'every 10 sec']);
+			}
+			setInterval(timerCallback, 5000);
+		})();
+		(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter19212163 = new Ya.Metrika({id:19212163, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="//mc.yandex.ru/watch/19212163" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	
+	<script type="text/javascript" src="/assets/libs/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+</html>

@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta name="google-site-verification" content="ymvEUIQUSh8G3bf-H26Z6iSAE8Acxa-5qSWb5MSZtvY" />
+	  
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<title>Антон Шувалов :: Как писался PostgreSQL</title>
+	<meta name="author" content="Антон Шувалов">
+	<meta name="description" content="">
+	<meta name="keywords" content="" />
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<link rel="shortcut icon"  href="/assets/themes/twitter/img/favicon.png">
+	<link rel="image_src" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-114x114.png">
+	<link href="http://feeds.feedburner.com/anton-shuvalov/JHar" rel="alternate" title="Антон Шувалов" type="application/atom+xml" />
+	<link rel="stylesheet" href="/assets/themes/twitter/bootstrap/css/style.css" media="all">
+	<link rel="stylesheet" href="/assets/libs/highlight/highlight.css" media="all">
+  </head>
+  <body>
+	  
+	<header class="container site-header">
+		<a class="rss-link" href="http://feeds.feedburner.com/anton-shuvalov/JHar">RSS</a>
+		<h2 class="site-title"><a href="/">Антон Шувалов</a></h2>
+		<p class="site-tagline">Ношу шлем. Тяжело дышу.</p>
+		<hr>
+	</header>
+	
+	<div class="container">
+		<section class="content">
+			
+<div class="page-header">
+  <h1>Как писался PostgreSQL</h1>
+</div>
+
+<div class="row">
+  <div class="span8 post-content">
+    <img class='img-center' src='http://31808.selcdn.ru/it-prm/pics/postgresql.png' />
+<p>Разработка СУБД POSTRGES началась в 1986 году под руководством профессора Майкла Стоунбрейкера (Michael Stonebraker). Концепции системы и архитектурные решения представлены в <a href='http://db.cs.berkeley.edu/papers/ERL-M85-95.pdf'>THE DESIGN OF POSTGRES</a>, <a href='http://db.cs.berkeley.edu/papers/ERL-M87-13.pdf'>The POSTGRES data model</a>, <a href='http://postgresql.ru.net/manual/biblio.html#STON87A'>The design of the POSTGRES rules system</a>, <a href='http://db.cs.berkeley.edu/papers/ERL-M87-06.pdf'>The design of the POSTGRES storage system</a>.</p>
+
+<h2 id='id10'>Прототипы</h2>
+
+<p>В первых версиях POSTGRES было большое количество архитектурных решений. Только после Версии 3 разработчики сконцентрировали свое внимание на переносимости и стабильности СУБД.</p>
+
+<ul>
+<li>Первый прототип заработал в 1987 и был продемонстрирован на Конференции ACM-SIGMOD в 1988 году.</li>
+
+<li>Второй прототип (Версия 1), описанный в <a href='http://db.cs.berkeley.edu/papers/ERL-M90-34.pdf'>The implementation of POSTGRES</a> был выпущен в июне 1989 года.</li>
+
+<li>Третий прототип (Версия 2), выпущен в Июне 1990 года.</li>
+
+<li>Четвертый прототип (Версия 3) выпущен в 1991.</li>
+</ul>
+
+<h2 id='id11'>Поддержка</h2>
+
+<p>В 1993 году стало очевидно, что обслуживание прототипа кода и его поддержка занимают гораздо больше времени, чем сами исследования в области баз данных. Пытаясь снизить нагрузку, связанную с поддержкой, проект Беркли POSTGRES официально прекратил своё существование с выходом версии 4.2.</p>
+
+<h2 id='id12'>Переписывание</h2>
+
+<p>В 1994, Эндрю Ю (Andrew Yu) и Джолли Чен (Jolly Chen) добавили в POSTGRES интерпретатор языка SQL. СУБД была полностью приведена к стандарту ANSI C и сократив свой размер на 25%. Были внесены многие внутренние изменения, которые увеличили производительность и обслуживаемость кода. Postgres95 был быстрее на 30-50% согласно Wisconsin Benchmark по сравнению с POSTGRES, Version 4.2. При разработке Postgres95 акцент ставился на обнаружение и понимание существующих проблем в коде сервера.</p>
+
+<h2 id='postgresql'>PostgreSQL</h2>
+
+<p>В 1996 году было решено, что имя &#8220;Postgres95&#8221; не соответствует настоящему времени. Для проекта было выбрано название PostgreSQL. Если при разработке Postgres95 внимание разработчиков было сконцентирировано на обнаружении и понимании существующих проблем в коде сервера, то в PostgreSQL внимание сместилось на расширение возможностей и совместимости при продолжении работы во всех других областях.</p>
+
+<h2 id='id13'>Вывод</h2>
+
+<p>PostgreSQL — это весьма объемный проект. Путь между прототипом, и версией, имеющей четкую концепцию и всесторонне продуманные архитектурные решения у ребят из Беркли занял 10 лет.</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2012/10/11/cache-and-hate-ibooks" title="Кэш и ненависть в iBooks">&larr; Назад</a></li>
+      
+      
+        <li class="next"><a href="/2012/11/06/Postgres.app-and-pgadmin" title="pgadmin column "datconfig" does not exist">Вперед &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+  </div>
+  
+  <div class="span4">
+    <h4>Опубликовано</h4>
+    <div class="date post-date"><span>19 October 2012</span></div>
+
+  
+    <h4>Теги</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#design-ref">design <sup>5</sup></a></li>
+     
+    	<li><a href="/tags.html#PostgreSQL-ref">PostgreSQL <sup>2</sup></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+  <hr>
+  <div class="span8 comments">
+      
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'a3heee'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+
+
+
+  </div>
+</div>
+
+
+		</section>
+		<hr>
+		<footer>
+			<p>
+				<span>&copy; Антон Шувалов 2012.</span> <br />
+				<span><a href="https://github.com/mojombo/jekyll">Jekyll</a></span> |
+				<span><a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a></span> | 
+				<span><a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></span>
+			</p>
+		</footer>
+	</div>
+	
+	<h1>ANALITYCS</h1>
+
+
+
+	
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-26825614-2']);
+	  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+	  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+		var trackingByInterval = (function trackingByInterval () {
+			var timerCallback = function timerCallback () {
+				_gaq.push(['_trackEvent', 'Reading', 'every 10 sec']);
+			}
+			setInterval(timerCallback, 5000);
+		})();
+		(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter19212163 = new Ya.Metrika({id:19212163, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="//mc.yandex.ru/watch/19212163" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	
+	<script type="text/javascript" src="/assets/libs/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+</html>

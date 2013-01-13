@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta name="google-site-verification" content="ymvEUIQUSh8G3bf-H26Z6iSAE8Acxa-5qSWb5MSZtvY" />
+	  
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<title>Антон Шувалов :: Домашний сервер. Интро</title>
+	<meta name="author" content="Антон Шувалов">
+	<meta name="description" content="Цикл статей о том, как сделать домашний сервер">
+	<meta name="keywords" content="" />
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<link rel="shortcut icon"  href="/assets/themes/twitter/img/favicon.png">
+	<link rel="image_src" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-114x114.png">
+	<link href="http://feeds.feedburner.com/anton-shuvalov/JHar" rel="alternate" title="Антон Шувалов" type="application/atom+xml" />
+	<link rel="stylesheet" href="/assets/themes/twitter/bootstrap/css/style.css" media="all">
+	<link rel="stylesheet" href="/assets/libs/highlight/highlight.css" media="all">
+  </head>
+  <body>
+	  
+	<header class="container site-header">
+		<a class="rss-link" href="http://feeds.feedburner.com/anton-shuvalov/JHar">RSS</a>
+		<h2 class="site-title"><a href="/">Антон Шувалов</a></h2>
+		<p class="site-tagline">Ношу шлем. Тяжело дышу.</p>
+		<hr>
+	</header>
+	
+	<div class="container">
+		<section class="content">
+			
+<div class="page-header">
+  <h1>Домашний сервер. Интро</h1>
+</div>
+
+<div class="row">
+  <div class="span8 post-content">
+    <p>&#32;<img class='img-center' src='http://31808.selcdn.ru/it-prm/pics/Debian_logo.png' /> <br /></p>
+
+<p>В планах зреет переход на <a href='http://aws.amazon.com/s3/pricing/'>AWS Free Usage Tier</a>. Сейчас мои сайты хостятся на <a href='http://selectel.ru/'>selectel.ru</a> и эксперементирую я там же.<br />После <a href='/2012/12/31/wp2jekyll'>перехода на Jekyll</a> необходимость в таком облачном сервере отпала. Точнее, необходимость разложилась на хостинг для статичных сайтов, плюс сервер для эксперементов. Первую необходимость как раз решает <a href='http://aws.amazon.com/s3/pricing/'>AWS Free Usage Tier</a>, а для второй я решил использовать старый PC, который уже пару месяцев пылился в углу. А точнее:</p>
+
+<ul>
+<li><strong>CPU</strong>: AMD Phenom II X2 555 BE ( 2 cores 3.2GHz )</li>
+
+<li><strong>RAM</strong>: 4GB ( 2GB x 2GB )</li>
+
+<li><strong>HDD</strong>: 500GB</li>
+</ul>
+
+<h2 id='___'>Для чего все это?</h2>
+
+<p>Итак, для чего мне понадобился домашний сервер? В первую очередь я хочу проверить достаточно ли оправданно хостить дома статичные сайты и небольшие веб-сервисы. Во-вторых, я люблю экспериментировать с технологиями — мне хочется поближе разобраться с ruby, nodejs. В-третьих, мне интересен опыт работы с linux.</p>
+
+<p>В блоге я постараюсь вести заметки о том, как я сделал домашний сервер. Описывать что, зачем и как делаю. Заметки можно просмотреть по тегу <a href='/tags.html#homeserver-ref'>homeserver</a></p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2012/12/31/wp2jekyll" title="Переезд с WordPress на Jekyll">&larr; Назад</a></li>
+      
+      
+        <li class="next"><a href="/2013/01/06/server_day1" title="Домашний сервер. Первые шаги">Вперед &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+  </div>
+  
+  <div class="span4">
+    <h4>Опубликовано</h4>
+    <div class="date post-date"><span>05 January 2013</span></div>
+
+  
+    <h4>Теги</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#debian-ref">debian <sup>3</sup></a></li>
+     
+    	<li><a href="/tags.html#homeserver-ref">homeserver <sup>3</sup></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+  <hr>
+  <div class="span8 comments">
+      
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'a3heee'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+
+
+
+  </div>
+</div>
+
+
+		</section>
+		<hr>
+		<footer>
+			<p>
+				<span>&copy; Антон Шувалов 2012.</span> <br />
+				<span><a href="https://github.com/mojombo/jekyll">Jekyll</a></span> |
+				<span><a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a></span> | 
+				<span><a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></span>
+			</p>
+		</footer>
+	</div>
+	
+	<h1>ANALITYCS</h1>
+
+
+
+	
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-26825614-2']);
+	  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+	  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+		var trackingByInterval = (function trackingByInterval () {
+			var timerCallback = function timerCallback () {
+				_gaq.push(['_trackEvent', 'Reading', 'every 10 sec']);
+			}
+			setInterval(timerCallback, 5000);
+		})();
+		(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter19212163 = new Ya.Metrika({id:19212163, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="//mc.yandex.ru/watch/19212163" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	
+	<script type="text/javascript" src="/assets/libs/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+</html>

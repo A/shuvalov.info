@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta name="google-site-verification" content="ymvEUIQUSh8G3bf-H26Z6iSAE8Acxa-5qSWb5MSZtvY" />
+	  
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<title>Антон Шувалов :: Странные ссылки в iBooks</title>
+	<meta name="author" content="Антон Шувалов">
+	<meta name="description" content="">
+	<meta name="keywords" content="" />
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<link rel="shortcut icon"  href="/assets/themes/twitter/img/favicon.png">
+	<link rel="image_src" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/themes/twitter/img/touch-icons/apple-touch-icon-114x114.png">
+	<link href="http://feeds.feedburner.com/anton-shuvalov/JHar" rel="alternate" title="Антон Шувалов" type="application/atom+xml" />
+	<link rel="stylesheet" href="/assets/themes/twitter/bootstrap/css/style.css" media="all">
+	<link rel="stylesheet" href="/assets/libs/highlight/highlight.css" media="all">
+  </head>
+  <body>
+	  
+	<header class="container site-header">
+		<a class="rss-link" href="http://feeds.feedburner.com/anton-shuvalov/JHar">RSS</a>
+		<h2 class="site-title"><a href="/">Антон Шувалов</a></h2>
+		<p class="site-tagline">Ношу шлем. Тяжело дышу.</p>
+		<hr>
+	</header>
+	
+	<div class="container">
+		<section class="content">
+			
+<div class="page-header">
+  <h1>Странные ссылки в iBooks</h1>
+</div>
+
+<div class="row">
+  <div class="span8 post-content">
+    <img class='img-center' alt='iBooks Author' src='http://31808.selcdn.ru/it-prm/pics/hero_ibooks_author.png' />
+<p>Я занимаюсь разработкой книг для iBooks. Одна из задач с которыми я столкнулся в процессе разработки - раелизация таймлайна. Таймлайн должен находиться на каждой странице содержать ссылки на разделы учебника. Сначала у меня были мысли сделать таймлайн с помощью виджета. При подобной реализации у меня были бы развязаны руки для любых извращений в плане дизайна и UX, но я не нашел никакой информаци о существовании какого-бы то ни было API в iBooks, следовательно, я не представлял никакой возможности дотянуться до страниц книги из виджета.</p>
+
+<p>Я решил воспользоваться стандартным механизмом iBooks - гиперссылками. Прочитав справку к приложению, я решил использовать закладки. План был следующим:</p>
+
+<p>* Выделяем текст в начале главы. * Создаем из него закладку * Создаем ссылку на этот текст в таймлайне. * Применяем шаблон с таймлайном ко всем страницам * Профит</p>
+
+<p>Но когда я реализовал все это - я уведел совсем не тот результат, на который я расчитывал: при переходе, текст, который являлся закладкой выделялся желтым цветом, как бы намекая на то, что ссылка была именно на него, а не на страницу. Это, конечно, логично, но это было совсем не то, чего я добивался. Мне нужен обычный переход, что бы открылась нужная страница книги, и не происходило никаких лишних вещей. Посмотрим ман ibooks&#8217;а внимательней:</p>
+
+<blockquote>
+<p>Выберите требуемый вариант во всплывающем меню «Ссылка на».</p>
+
+<ol>
+<li>Веб-страницу Введите URL-адрес.</li>
+
+<li>Сообщение e-mail Введите адрес электронной почты и строку темы.<br />3. Закладка Выберите закладку во всплывающем меню «Имя». При отсутствии закладок во всплывающем меню «Имя» добавьте их согласно приведенной ниже инструкции.<br />4. Рисунок Выберите рисунок в списке «Имя». Для просмотра объектов определенного типа (например, всех фильмов или галерей) выберите требуемый вариант во всплывающем меню «Показать».</li>
+</ol>
+</blockquote>
+
+<p>Остановимся подробней на пункте 4 со странным названием &#8220;рисунок&#8221;. Под таким названием переводчики подразумевали все интерактивные элементы книги. Когда я попытался использовать его впервые, то я увидел в списке объектов для ссылок только тесты. Я решил почитать об этой странности, и наткнулся на книгу издательства &#8221;O&#8217;Reily&#8221; <a href='http://shop.oreilly.com/product/0636920025597.do'>Publishing with iBooks Author</a>. Как это ни странно, книга бесплатна. Скачав книгу, я нашел в ней параграф, касающийся ссылок:</p>
+
+<blockquote>
+<p>Author does make it easier to add links to labeled objects, like Galleries (see “Gallery” (page 59)), Media boxes (see “Media” (page 60)), and Figures (see “Figures” (page 55)). Select the text that you want to turn into a link, and choose Insert → Hyperlink → Figure Reference. The Link Inspector opens, giving you a list of all the labeled objects in your book to choose from. Click the one you want to link to, and your clickable link is all set.</p>
+</blockquote>
+
+<p>Ключевое слово - &#8221;<em>labeled</em>&#8221;, то есть объект, должен обязательно иметь метку, а все мои картинки, видео и презентации в книге этих меток не имели. Опять обратимся к документации:</p>
+
+<blockquote>
+<p>К любому объекту можно добавить заголовок или подпись (или заголовок и подпись одновременно). Заголовок может содержать метку (например, Рисунок или Галерея). Можно создавать пользовательские метки. Если создать для объекта заголовок или подпись, объект будет отображаться в готовой книге и в горизонтальной, и в вертикальной ориентации. В вертикальной ориентации объекты, имеющие заголовок или подпись, располагаются вдоль левого края страницы.</p>
+</blockquote>
+
+<p>Вот она и разгадка страннейшего поведения ссылок в iBooks. Так как вертикальную ориентацию книги я не использую, то у меня не возникало необходимости в использовании меток. Добавив к видео-вступлению, которое идет в начале каждой главы метку, прозрачного цвета (что бы ее не было видно), я получил возможность ссылаться на него, что, в принципе, вполне решает мою задачу.</p>
+
+<p>Кстати, это удивительно, но ссылки в iBooks author и keynote реализуются совершенно по разному, беспардонно нарушая эвристики Нильсена. Назову пару самых странных отличий:</p>
+
+<ol>
+<li>В KeyNote любой объект может являться ссылкой. В iBooks только текст.</li>
+
+<li>В KeyNote можно ссылаться на слайды(страницы), в iBooks только на определенные объекты (закладки, интерактивные оъекты с метками).</li>
+</ol>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2012/05/05/iBooks-Broken-placeholders" title="Сломаные заполнители в iBooks">&larr; Назад</a></li>
+      
+      
+        <li class="next"><a href="/2012/05/26/JavaScript-Loading-Apps" title="Загрузка JavaScript-приложения (Yandex)">Вперед &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+  </div>
+  
+  <div class="span4">
+    <h4>Опубликовано</h4>
+    <div class="date post-date"><span>24 May 2012</span></div>
+
+  
+    <h4>Теги</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#ibooks-ref">ibooks <sup>3</sup></a></li>
+     
+    	<li><a href="/tags.html#wtf-ref">wtf <sup>10</sup></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+  <hr>
+  <div class="span8 comments">
+      
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'a3heee'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+
+
+
+  </div>
+</div>
+
+
+		</section>
+		<hr>
+		<footer>
+			<p>
+				<span>&copy; Антон Шувалов 2012.</span> <br />
+				<span><a href="https://github.com/mojombo/jekyll">Jekyll</a></span> |
+				<span><a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a></span> | 
+				<span><a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></span>
+			</p>
+		</footer>
+	</div>
+	
+	<h1>ANALITYCS</h1>
+
+
+
+	
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-26825614-2']);
+	  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+	  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+		var trackingByInterval = (function trackingByInterval () {
+			var timerCallback = function timerCallback () {
+				_gaq.push(['_trackEvent', 'Reading', 'every 10 sec']);
+			}
+			setInterval(timerCallback, 5000);
+		})();
+		(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter19212163 = new Ya.Metrika({id:19212163, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="//mc.yandex.ru/watch/19212163" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	
+	<script type="text/javascript" src="/assets/libs/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+</html>
