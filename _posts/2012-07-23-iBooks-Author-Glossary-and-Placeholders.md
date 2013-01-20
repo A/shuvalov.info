@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Ссылка на глоссарий в iBooks Author"
-description: ""
-category: 
+description: "Что делать если не получается добавить слово в глоссарий iBooks Author"
+keywords: "глоссарий, iBooks, Author, apple" 
 tags: [iBooks, wtf]
 ---
 {% include JB/setup %}

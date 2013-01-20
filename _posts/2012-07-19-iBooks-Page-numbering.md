@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Нумерация страниц в iBooks Author"
-description: ""
-category: 
-tags: [iBooks, wtf]
+description: "Как исправить нумерацию страниц с римских чисел на арабские в Apple iBooks Author"
+keywords: "numbering, нумерация, страницы, ibooks, author, apple" 
+tags: [apple, ibooks, wtf]
 ---
 {% include JB/setup %}
 

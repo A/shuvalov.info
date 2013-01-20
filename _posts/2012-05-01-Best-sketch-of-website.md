@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Какими должны быть макеты"
-description: ""
-keywords: "some, keys, words"
-category: 
+description: "Забавный макет сайта от fiftyfootshadows"
+keywords: "Прототип сайта, макет, скетч, набросок сайта"
 tags: [design]
 ---
 {% include JB/setup %}

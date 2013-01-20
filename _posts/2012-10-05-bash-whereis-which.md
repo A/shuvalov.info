@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "BASH. Чем отличается which от whereis"
-description: ""
-category: 
+description: "Отличие похожих приложений bash — which и whereis"
+keywords: "bash, which, whereis" 
 tags: [bash]
 ---
 {% include JB/setup %}

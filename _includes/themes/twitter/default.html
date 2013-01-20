@@ -5,7 +5,7 @@
 	  
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
-	<title>{{ site.title }} :: {{ page.title }}</title>
+	<title>{{ page.title }}</title>
 	<meta name="author" content="{{ site.author.name }}">
 	<meta name="description" content="{{ page.description }}">
 	<meta name="keywords" content="{{page.keywords}}" />
@@ -22,14 +22,12 @@
 	<script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
-	  
 	<header class="container site-header">
 		<a class="rss-link" href="http://feeds.feedburner.com/anton-shuvalov/JHar">RSS</a>
 		<h2 class="site-title"><a href="/">{{ site.title }}</a></h2>
 		<p class="site-tagline">{{ site.tagline }}</p>
 		<hr>
 	</header>
-	
 	<div class="container">
 		<section class="content">
 			{{ content }}
@@ -38,9 +36,9 @@
 		<footer>
 			<p>
 				<span>&copy; {{ site.author.name }} 2012.</span> <br />
-				<span><a href="https://github.com/mojombo/jekyll">Jekyll</a></span> |
-				<span><a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a></span> | 
-				<span><a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></span>
+				<span><a rel="nofollow" href="https://github.com/mojombo/jekyll">Jekyll</a></span> |
+				<span><a rel="nofollow" href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a></span> | 
+				<span><a rel="nofollow" href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></span>
 			</p>
 		</footer>
 	</div>

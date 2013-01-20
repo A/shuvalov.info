@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Кэш и ненависть в iBooks"
-description: ""
-category: 
+description: "Как устроен механизм кэширования медиафайлов в iBooks Author"
+keywords: "apple, ibooks, author, кэш, cache" 
 tags: [ibooks, wtf]
 ---
 {% include JB/setup %}

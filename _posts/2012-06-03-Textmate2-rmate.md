@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Использование rmate в TextMate2"
-description: ""
-category: 
+title: "Установка rmate для TextMate2"
+description: "Инструкция по установке и использованию скрипта rmate для TextMate"
+keywords: "textmate, textmate2, rmate, инструкция, установка" 
 tags: [textmate]
 ---
 {% include JB/setup %}

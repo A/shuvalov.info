@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "TextMate2 стал бесплатным и опенсорсным"
-description: ""
-category: 
+description: "Исходники проекта TextMate2 открыты автором на GitHub'е"
+keywords: "textmate, textmate2, opensource" 
 tags: [textmate, события]
 ---
 {% include JB/setup %}

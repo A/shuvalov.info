@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Архитектура кода"
-description: ""
-category: 
+description: "Мысли по поводу архитектуры"
+keywords: "История, программисты, архитектура" 
 tags: [design, wtf]
 ---
 {% include JB/setup %}

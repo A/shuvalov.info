@@ -5,6 +5,8 @@ require 'aws/s3'
 task :default => :run
 
 
+# TODO: Перевести парсер jekyll --rdiscount
+
 
 
 # Deploy 
@@ -35,7 +37,7 @@ end
 
 
 # Just generate site
-desc 'Build site'
+desc 'Build site for pushing to server'
 task :build do
   print "> generate site\n"
   sh "jekyll --no-server --no-auto --url http://anton-shuvalov.info"
@@ -49,7 +51,7 @@ end
 desc 'Run server'
 task :run do
 	print "> Starting jekyll...\n"
-  sh "jekyll --server"
+  sh "jekyll --server --kramdown"
 end
 
 

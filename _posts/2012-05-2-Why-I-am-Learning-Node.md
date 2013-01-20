@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Почему я учу NODE.JS"
-description: ""
-category: 
+description: "История о том, как PERL-разработчик пришел к изучению NODEJS"
+keywords: "nodejs, node, javascript" 
 tags: [перевод, javascript, nodejs]
 ---
 {% include JB/setup %}
@@ -48,6 +48,4 @@ tags: [перевод, javascript, nodejs]
 
 <p>Заметка: в эти выходные я начал читать книгу "<a href="http://www.nodebeginner.org/">Node Beginner Book</a>".</p>
 
-<hr />
-Перевод: <a href="http://anton-shuvalov.info/">Антон Шувалов</a>  
 Автор: <a href="http://rdegges.com/">Randall Degges</a>

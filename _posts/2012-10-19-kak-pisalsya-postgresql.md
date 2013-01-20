@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Как писался PostgreSQL"
-description: ""
-category: 
+description: "История создания одной из самых популярных баз данных"
+keywords: "postgres, postgresql, история, архитектура" 
 tags: [ design, PostgreSQL]
 ---
 {% include JB/setup %}

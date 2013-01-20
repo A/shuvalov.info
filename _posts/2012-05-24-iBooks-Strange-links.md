@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Странные ссылки в iBooks"
-description: ""
-category: 
-tags: [ibooks, wtf]
+description: "Способ сделать ссылку на страницу в Apple iBooks Author"
+keywords: "apple, ibooks, author, ссылки, инструкция"
+tags: [apple, ibooks, wtf]
 ---
 {% include JB/setup %}
 

@@ -2,16 +2,16 @@
 layout: post
 title: "Как объеденить две медиатеки в iTunes"
 description: "Инструкция о том, как объединенить две медиатеки, не потеряв статистику прослушиваний"
-category: 
+keywords: "itunes, apple, медиатека, объеденить" 
 tags: [iTunes, Apple]
 ---
 {% include JB/setup %}
 
-<img class="img-center" src="http://31808.selcdn.ru/it-prm/pics/itunes.jpg" alt="Как объединить две медиатеки iTunes">
+<img class="img-center" src="http://31808.selcdn.ru/it-prm/pics/itunes.jpg" alt="iTunes">
 
 Наконец я получил [optibay](http://www.mcetech.com/optibay/), и установил к SSD в своем MacBook Pro еще и HDD. 120Gb памяти в SSD уже не сдерживали меня, и я решил вернуть свою музыкальную коллекцию с внешнего диска обратно на MacBook. Большая и старая медиатека лежала на внешнем диске, а на SSD скопилась совсем небольшая медиатека, в которой я уже успел проставить рейтинги, да и статистику прослушиваний терять не хотелось.
 
-#### Lets merge
+## Объединение медиатек
 
 1.	Запускаю iTunes с той медиатекой, которую я хочу экспортировать. Для этого нужно запустить iTunes зажав `option`, в появившемся окне выбрать `Choose Library..` и указать папку с медиатекой.
 2.	Экспорт медиатеки.`File > Library >  Export`.

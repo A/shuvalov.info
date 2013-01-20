@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Сломаные заполнители в iBooks"
-description: ""
-category: 
-tags: [ibooks, wtf]
+description: "Проблема с редактированием текста шаблонов в iBooks Author"
+keywords: "apple, ibooks, author, проблема, шаблоны"
+tags: [apple, ibooks, wtf]
 ---
 {% include JB/setup %}
 

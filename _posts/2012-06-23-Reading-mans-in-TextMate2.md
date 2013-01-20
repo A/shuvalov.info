@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Просмотр man-страниц в textmate"
-description: ""
-category: 
+description: "Инструкция по настройке textmate для просмотра man-страниц"
+keywords: "textmate, textmate2, man, мануал, инструкция"
 tags: [textmate]
 ---
 {% include JB/setup %}

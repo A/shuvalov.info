@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Планетарная клаустрофобия"
-description: ""
-category: 
+description: "Цитата о дизайне"
+keywords: "дизайн, цитата, Раппапорт" 
 tags: [design]
 ---
 {% include JB/setup %}

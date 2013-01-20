@@ -2,7 +2,7 @@
 layout: post
 title: "backbone screencasts"
 description: "Скринкасты о популярном MVC фреймворке backbone.js. Полезны начинающим разработчика веб-приложений на JavaScript"
-category: 
+keywords: "скринкаст, screencast, backbone, javascript, video"
 tags: [javascript, скринкасты]
 ---
 {% include JB/setup %}

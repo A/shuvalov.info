@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Иерархия методов в классе"
-description: ""
-category: 
+description: "Способ упорядочивания методов в классе"
+keywords: "класс, class, методы, порядок"
 tags: [design]
 ---
 {% include JB/setup %}
