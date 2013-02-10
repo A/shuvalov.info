@@ -13,7 +13,8 @@ task :default => :run
 desc 'Push site to server'
 task :push => :build do
 	print "> Push _site to server..\n"
-  sh "rsync -az --delete _site/ eva:/home/web/www/anton-shuvalov.info"
+  # sh "rsync -az --delete _site/ eva:/home/web/www/anton-shuvalov.info"
+  sh "rsync -az --delete _site/ ayanami:/home/toji/domains/anton-shuvalov.info"
 	print "Done...\n"
 end
 

@@ -19,6 +19,6 @@ defaults write com.macromates.TextMate.preview fontLeadingDelta -float 0</code><
 <pre><code>defaults write com.macromates.TextMate.preview fontAscentDelta -float 1
 defaults write com.macromates.TextMate.preview fontLeadingDelta -float 1</code></pre>
 
-[Источник][]
+[Источник][]{: rel="nofollow"}
 
 [Источник]: https://github.com/textmate/textmate/issues/373

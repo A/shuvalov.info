@@ -24,7 +24,7 @@ tags: [textmate]
 
 ## Установка бандла
 
-Для начала я установил в TextMate [бандл для чтения man-страниц][textmate-man-bundle]. Скачал, проверил, что название папки заканчивается на `.tmbundle`. Скопировал бандл в папку.<pre>~/Library/Application Support/TextMate/Managed/Bundles
+Для начала я установил в TextMate [бандл для чтения man-страниц][textmate-man-bundle]{: rel="nofollow"}. Скачал, проверил, что название папки заканчивается на `.tmbundle`. Скопировал бандл в папку.<pre>~/Library/Application Support/TextMate/Managed/Bundles
 </pre> Перезапустил TextMate.
 
 ## Использование бандла
@@ -36,7 +36,7 @@ tags: [textmate]
 
 ## Учим textmate читать маны из консоли.
 
-И вроде бы, когда я пишу код в TextMate, все круто: если мне нужна справка - жму хоткей - читаю, просвещаюсь, жгу дальше дальше. Но что мне делать, если я тщетно пытаюсь заставить что-то работать прямо в консоли? Получается, что мне и man там же читать? Нет, это никуда не годится. Я решил использовать [bash-скрипт][middle-mman], на котором базируется бандл "Man Pages" как обертку к стандартной команде man.
+И вроде бы, когда я пишу код в TextMate, все круто: если мне нужна справка - жму хоткей - читаю, просвещаюсь, жгу дальше дальше. Но что мне делать, если я тщетно пытаюсь заставить что-то работать прямо в консоли? Получается, что мне и man там же читать? Нет, это никуда не годится. Я решил использовать [bash-скрипт][middle-mman]{: rel="nofollow"}, на котором базируется бандл "Man Pages" как обертку к стандартной команде man.
 
 Для начала узнаем, где лежит оригинальный ман.  
 `which man`  
@@ -52,7 +52,7 @@ mate ~/.profile  # Добавляем ее в $PATH</code>
 <code class="bash">ln -s /Users/shuvalov/Library/Application\ Support/TextMate/Managed/Bundles/textmate-man-pages.tmbundle/Support/mman ~/.scripts/man</code>
 </pre>
 В этот момент, так как я определил директорию с нашим скриптом раньше всего, стандартный `man` перестанет работать. Вместо него будет выполняться наш скрипт. Теперь осталось изменить в скрипте вызов `man` на `/usr/bin/man` (либо путь до оригинальной команды man). Отрываю файл <pre><code class="bash">~/Library/Application\ Support/TextMate/Managed/Bundles/textmate-man-pages.tmbundle/Support/mman</code>
-</pre> и отредактируем его. ([мой пример][good-man]).  
+</pre> и отредактируем его. ([мой пример][good-man]{: rel="nofollow"}).  
 Набираем `man man` и видим результат труда - man-страница открывается в новом окне textmate, переливаясь чинной подсветкой синтаксиса.
 
 Напоследок. Если, просматривая man в textmate, нажать `shift+cmd+t`, то откроется меню навигации по ману. Только вот, что бы заставить его работать, нужно в последней строчке скрипта изменить значение sleep на 180, продлив время жизни временной страницы:   
@@ -66,6 +66,5 @@ mate ~/.profile  # Добавляем ее в $PATH</code>
 
 
 [textmate-man-bundle]: https://github.com/textmate/man-pages.tmbundle "TextMate Man Pages Bundle"
-[JasonRudolphMan]: http://jasonrudolph.com/blog/2008/03/14/manning-up-textmate-meets-man-pages/
 [middle-mman]: https://github.com/textmate/man-pages.tmbundle/blob/master/Support/mman
 [good-man]: https://github.com/shuvalov-anton/dot-scripts/blob/a6e615ca211674b57a13a855e297dac3d7fa4c1f/man

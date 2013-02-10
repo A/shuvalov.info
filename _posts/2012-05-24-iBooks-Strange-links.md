@@ -3,7 +3,7 @@ layout: post
 title: "Странные ссылки в iBooks"
 description: "Способ сделать ссылку на страницу в Apple iBooks Author"
 keywords: "apple, ibooks, author, ссылки, инструкция"
-tags: [apple, ibooks, wtf]
+tags: [Apple, ibooks, wtf]
 ---
 {% include JB/setup %}
 
@@ -27,7 +27,7 @@ tags: [apple, ibooks, wtf]
 > 3. Закладка Выберите закладку во всплывающем меню «Имя».  При отсутствии закладок во всплывающем меню «Имя» добавьте их согласно приведенной ниже инструкции.  
 > 4. Рисунок Выберите рисунок в списке «Имя». Для просмотра объектов определенного типа (например, всех фильмов или галерей) выберите требуемый вариант во всплывающем меню «Показать».  
 
-Остановимся подробней на пункте 4 со странным названием "рисунок". Под таким названием переводчики подразумевали все интерактивные элементы книги. Когда я попытался использовать его впервые, то я увидел в списке объектов для ссылок только тесты. Я решил почитать об этой странности, и наткнулся на книгу издательства "O'Reily" [Publishing with iBooks Author](http://shop.oreilly.com/product/0636920025597.do). Как это ни странно, книга бесплатна. Скачав книгу, я нашел в ней параграф, касающийся ссылок:
+Остановимся подробней на пункте 4 со странным названием "рисунок". Под таким названием переводчики подразумевали все интерактивные элементы книги. Когда я попытался использовать его впервые, то я увидел в списке объектов для ссылок только тесты. Я решил почитать об этой странности, и наткнулся на книгу издательства "O'Reily" [Publishing with iBooks Author](http://shop.oreilly.com/product/0636920025597.do){: rel="nofollow" }. Как это ни странно, книга бесплатна. Скачав книгу, я нашел в ней параграф, касающийся ссылок:
 > Author does make it easier to add links to labeled objects, like Galleries (see “Gallery” (page 59)), Media boxes
 > (see “Media” (page 60)), and Figures (see “Figures” (page 55)). Select the text that you want to turn into a link, and 
 > choose Insert → Hyperlink → Figure Reference. The Link Inspector opens, giving you a list of all the labeled objects 

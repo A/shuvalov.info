@@ -10,13 +10,13 @@ tags: [ design, PostgreSQL]
 
 <img class="img-center" src="http://31808.selcdn.ru/it-prm/pics/postgresql.png"  />
 
-Разработка СУБД POSTRGES началась в 1986 году под руководством профессора Майкла Стоунбрейкера (Michael Stonebraker). Концепции системы и архитектурные решения представлены в [THE DESIGN OF POSTGRES][], [The POSTGRES data model][], [The design of the POSTGRES rules system][], [The design of the POSTGRES storage system][].
+Разработка СУБД POSTRGES началась в 1986 году под руководством профессора Майкла Стоунбрейкера (Michael Stonebraker). Концепции системы и архитектурные решения представлены в [THE DESIGN OF POSTGRES][]{: rel="nofollow"}, [The POSTGRES data model][]{: rel="nofollow"}, [The design of the POSTGRES rules system][]{: rel="nofollow"}, [The design of the POSTGRES storage system][]{: rel="nofollow"}.
 
 ## Прототипы 
 В первых версиях POSTGRES было большое количество архитектурных решений. Только после Версии 3 разработчики сконцентрировали свое внимание на переносимости и стабильности СУБД.
 
 *	Первый прототип заработал в 1987 и был продемонстрирован на Конференции ACM-SIGMOD  в 1988 году. 
-*	Второй прототип (Версия 1), описанный в [The implementation of POSTGRES][] был выпущен в июне 1989 года.
+*	Второй прототип (Версия 1), описанный в [The implementation of POSTGRES][]{: rel="nofollow"} был выпущен в июне 1989 года.
 *	Третий прототип (Версия 2), выпущен в Июне 1990 года.
 *	Четвертый прототип (Версия 3) выпущен в 1991.
 

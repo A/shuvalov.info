@@ -10,13 +10,13 @@ tags: [textmate]
 <img src="http://31808.selcdn.ru/it-prm/pics/TextMate2.png" width="183px" class="img-center" /> 
  
 ## Введение
-Я полностью согласен с авторами [“The Pragmatic Programmer”](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X) [Andrew Hunt](http://andy.pragprog.com/) и [David Thomas](http://pragdave.pragprog.com/) в том, что иметь один-единственный редактор текста для всего - это прекрасно. Таким редактором для меня является [textmate 2](http://blog.macromates.com/2011/textmate-2-0-alpha/ "TextMate Blog &raquo; TextMate 2.0 Alpha"). Я стараюсь использовать его везде, где это возможно. В основном я работаю с [JS](http://en.wikipedia.org/wiki/JS "Wikipedia Entry: JS")`, `[HTML](http://en.wikipedia.org/wiki/HTML "Wikipedia Entry: HTML"), [CSS](http://en.wikipedia.org/wiki/CSS "Wikipedia Entry: Cascading Style Sheets") и [markdown](http://daringfireball.net/projects/markdown/ "Daring Fireball: Markdown") для статей и заметок. Бывает пишу [PHP](http://en.wikipedia.org/wiki/PHP "Wikipedia Entry: PHP")-код и [SHELL](http://en.wikipedia.org/wiki/Shell "Wikipedia Entry: Shell")-скрипты. Изредка судьба, улыбаясь, заставляет меня писать на [pascal](http://en.wikipedia.org/wiki/Pascal "Wikipedia Entry: Pascal"). С помощью различных дополнений, область применения textmate можно расширять практически бесконечно.
+Я полностью согласен с авторами [“The Pragmatic Programmer”](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X){: rel="nofollow" } [Andrew Hunt](http://andy.pragprog.com/){: rel="nofollow" } и [David Thomas](http://pragdave.pragprog.com/){: rel="nofollow" } в том, что иметь один-единственный редактор текста для всего - это прекрасно. Таким редактором для меня является [textmate 2](http://blog.macromates.com/2011/textmate-2-0-alpha/ "TextMate Blog &raquo; TextMate 2.0 Alpha"){: rel="nofollow" }. Я стараюсь использовать его везде, где это возможно. В основном я работаю с JS, HTML, CSS и Markdown для статей и заметок. Бывает пишу PHP-код и shell-скрипты. Изредка судьба, ухмыляясь, заставляет меня писать на pascal. С помощью различных дополнений, область применения Textmate можно расширять практически бесконечно.
 
-Textmate поставляется с двумя консольными скриптами *mate* и *rmate*. `mate` позволяет из терминала открыть файл в textmate. Выглядит это, к примеру, так - `sudo mate /etc/hosts/`. С помощью `rmate` можно провернуть то-же самое, но на удаленнам сервере. Раньше я ежедневно пользовался `ssh` или даже `sshfs` для редактирования файлов на сервере. С одной стороны перспектива редактирования кода в *vim*-подобных редакторах, с другой медленная скорость работы `sshfs` как файловой системы. В целом, удаленное редактирование файлов мне не импонировало ни тем, ни другим...
+Textmate поставляется с двумя консольными скриптами `mate` и `rmate`. `mate` позволяет из терминала открыть файл в textmate. Выглядит это, к примеру, так - `sudo mate /etc/hosts/`. С помощью `rmate` можно провернуть то-же самое, но на удаленнам сервере. Раньше я ежедневно пользовался `ssh` или даже `sshfs` для редактирования файлов на сервере. С одной стороны перспектива редактирования кода в *vim*-подобных редакторах, с другой медленная скорость работы `sshfs` как файловой системы. В целом, удаленное редактирование файлов мне не импонировало ни тем, ни другим...
 
 ## Mate
 
-В консоли Mac OS X существует команда [open](https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/open.1.html "open(1) Mac OS X Manual Page"), заменяющая в терминале двойной клик по файлу. `open -a` в терминале заменяет команду "открыть с помощью". Например, что бы открыть из терминала в textmate файл, 
+В консоли Mac OS X существует команда [open](https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/open.1.html "open(1) Mac OS X Manual Page"){: rel="nofollow" }, заменяющая в терминале двойной клик по файлу. `open -a` в терминале заменяет команду "открыть с помощью". Например, что бы открыть из терминала в textmate файл, 
 `/etc/hosts`, вполне можно обойтись командой `open /etc/hosts/ -a TextMate`. Несколько файлов открываются командой  <pre><code>open ~/.bashrc ~/.profile -a TextMate</code></pre>
 
 Но команда `open` имеет несколько ограничений. Невозможно открыть файл на определенной строке. Так же невозможно придержать консоль до закрытия файла. Последнее ограничение не позволяет использовать textmate как внешний редактор, например, для git или svn. 
@@ -65,7 +65,7 @@ chmod +x ~/bin/rmate
 ### Известные проблемы ###
 
 #### /usr/bin/env: ruby: No such file or directory ####
-На сервере не установлен ruby-интерпретатор. [Michael Newton](http://mike.eire.ca/) переписал [rmate на php](http://pastebin.com/GcSXtTW2). 
+На сервере не установлен ruby-интерпретатор. [Michael Newton](http://mike.eire.ca/){: rel="nofollow" } переписал [rmate на php](http://pastebin.com/GcSXtTW2){: rel="nofollow" }. 
 
 #### Warning: remote port forwarding failed for listen port 52698 ####
 На сервере 52698 порт уже чем-то занят. Нужно отключиться от сервера, и создать ssh-туннель используя другой порт:  

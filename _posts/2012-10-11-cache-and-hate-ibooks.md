@@ -3,7 +3,7 @@ layout: post
 title: "Кэш и ненависть в iBooks"
 description: "Как устроен механизм кэширования медиафайлов в iBooks Author"
 keywords: "apple, ibooks, author, кэш, cache" 
-tags: [ibooks, wtf]
+tags: [Apple, ibooks, wtf]
 ---
 {% include JB/setup %}
 

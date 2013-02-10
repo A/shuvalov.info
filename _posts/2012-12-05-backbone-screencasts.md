@@ -7,7 +7,7 @@ tags: [javascript, скринкасты]
 ---
 {% include JB/setup %}
 
-Начал смотреть видео о том, как использовать backbone.js. Скринкаст на русском языке от украинского разработчика [Александра Хоменко][Александр Хоменко].
+Начал смотреть видео о том, как использовать backbone.js. Скринкаст на русском языке от украинского разработчика [Александра Хоменко][Александр Хоменко]{: rel="nofollow"}.
 <br>
 <br>
 
@@ -15,7 +15,7 @@ tags: [javascript, скринкасты]
 
 {% vimeo 44066608 %} 
 
-[Backbone Basics (russian)][] from [Oleksandr Khomenko][vimeo_okhomenko] on [Vimeo][].
+[Backbone Basics (russian)][]{: rel="nofollow"} from [Oleksandr Khomenko][vimeo_okhomenko]{: rel="nofollow"} on [Vimeo][]{: rel="nofollow"}.
 <br>
 <br>
 
@@ -23,14 +23,14 @@ tags: [javascript, скринкасты]
  
 {% vimeo 45460580 %}
 
-[Backbone Routers (Russian, Русский)][] from [Oleksandr Khomenko][vimeo_okhomenko] on [Vimeo][].
+[Backbone Routers (Russian, Русский)][]{: rel="nofollow"} from [Oleksandr Khomenko][vimeo_okhomenko]{: rel="nofollow"} on [Vimeo][]{: rel="nofollow"}.
 <br>
 <br>
 
 ## Организация Backbone приложения в AMD-модули с помощью RequireJS
  
 {% vimeo 44236020 %}
-[Организация Backbone приложения в AMD-модули с помощью RequireJS][] from [Oleksandr Khomenko][vimeo_okhomenko] on [Vimeo][].
+[Организация Backbone приложения в AMD-модули с помощью RequireJS][]{: rel="nofollow"} from [Oleksandr Khomenko][vimeo_okhomenko]{: rel="nofollow"} on [Vimeo][]{: rel="nofollow"}.
 
 [Александр Хоменко]: https://www.facebook.com/okhomenko
 [vimeo]: http://vimeo.com
