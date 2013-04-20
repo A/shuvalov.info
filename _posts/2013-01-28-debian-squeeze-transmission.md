@@ -53,7 +53,8 @@ tags: [homeserver]
 	  "rpc-port": 9091, 
 	  "rpc-whitelist-enabled": false, 
 	  "rpc-username": "User", 
-	  "rpc-password": "Password" 
+	  "rpc-password": "Password",
+	  "umask": "002"
 	}
 
 После того, как изменения в файле сохранены&nbsp;— transmission нужно запустить 
