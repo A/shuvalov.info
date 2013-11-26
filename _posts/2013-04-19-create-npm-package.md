@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Как создать npm package"
-description: "JavaScript массивы как стеки и очереди"
-keywords: "JavaScript, стек, очередь"
+description: "Создание модульной структуры приложения на node с помощью модулей npm"
+keywords: "JavaScript, node, nodejs, npm"
 tags: [javascript, nodejs]
 ---
 {% include JB/setup %}

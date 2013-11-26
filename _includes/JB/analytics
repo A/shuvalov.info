@@ -1,8 +1,7 @@
-{% if site.url == site.production_url %}
+
 	{% if site.JB.analytics.google.tracking_id %}
 		{% include JB/analytics-providers/google %}
 	{% endif %}
 	{% if site.JB.analytics.yandex.id %}
 		{% include JB/analytics-providers/yandex %}
 	{% endif %}
-{% endif %}

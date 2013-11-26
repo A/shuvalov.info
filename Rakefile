@@ -41,7 +41,7 @@ end
 desc 'Build site for pushing to server'
 task :build do
   print "> generate site\n"
-  sh "jekyll build"
+  sh "jekyll build "
   print "> Done...\n"
 end
 
