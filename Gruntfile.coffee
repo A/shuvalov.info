@@ -19,6 +19,7 @@ module.exports = (grunt) ->
       compile:
         files:
           'index.html': '_src/jade/index.jade'
+          'post.html': '_src/jade/post.jade'
     watch:
       stylus:
         files: '_src/stylus/**'
