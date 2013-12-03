@@ -1,1 +1,70 @@
-// Hi!
+/**
+ * Dependencies.
+ */
+
+@import 'nib'
+
+
+/**
+ * Variables.
+ */
+
+noise = url('/assets/img/noise_2.png')
+
+
+global-reset()
+
+
+body
+  background noise #F0EFE8
+  font-family Georgia, Serif
+  text-shadow 0 1px 0 #FFF
+  color #261F00
+
+a
+  color inherit
+  &:hover
+    color #2288CC
+
+
+.hr
+  size 100% 1px
+  background-color #99968A
+  box-shadow 0 1px 0 #FFF
+
+.wrapper
+  width 640px
+  margin 0 auto
+
+.header 
+  margin-top 48px
+
+.header__title
+    font-size 40px
+    text-indent -3px
+
+.about 
+  margin 48px 0
+  clearfix()
+
+.about__avatar
+  size 64px
+  float left
+  margin-right 16px
+
+.about__text
+  padding-top 6px
+  line-height 16px
+  font-size 14px
+  color #99968A
+
+.articles-list
+  margin-top 48px
+
+.articles-list__title
+  font-size 28px
+
+.articles-list__year
+  font-size 24px
+  margin-top 32px
+  color #99968A

@@ -5,6 +5,8 @@
     "grunt-contrib-stylus": "*",
     "grunt-contrib-watch": "*",
     "grunt-contrib-jade": "*",
-    "load-grunt-tasks": "*"
+    "load-grunt-tasks": "*",
+    "nib": "~1.0.1",
+    "marked": "~0.2.10"
   }
 }

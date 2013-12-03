@@ -13,6 +13,8 @@ module.exports = (grunt) ->
         options:
           paths: ['_src/stylus']
           'include css': true
+          use: 
+            [require('nib')]
     jade:
       compile:
         files:
