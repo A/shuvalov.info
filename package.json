@@ -4,7 +4,7 @@
     "grunt": "*",
     "grunt-contrib-stylus": "*",
     "grunt-contrib-watch": "*",
-    "grunt-contrib-jade": "*"
-    "load-grunt-tasks": "*",
+    "grunt-contrib-jade": "*",
+    "load-grunt-tasks": "*"
   }
 }
