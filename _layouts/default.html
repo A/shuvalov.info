@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <title>Your New Jekyll Site</title>
+    <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/syntax.css">
     <link rel="stylesheet" href="/assets/css/main.css">
   </head>
@@ -22,36 +22,7 @@
       </div>
       <div class="hr"></div>
       <div class="content">
-        <ul class="articles-list__list">
-  
-    
-
-    
-    <div class="articles-list__title">2013</div>
-
-
-    <li class="articles-list__item"><a href="/2013/12/04/welcome-to-jekyll" class="articles-list__link">Welcome to Jekyll!</a></li>
-    
-  
-    
-
-    
-    
-
-
-    <li class="articles-list__item"><a href="/2013/12/04/welcome-to-jekyll" class="articles-list__link">Welcome to Jekyll!</a></li>
-    
-  
-    
-
-    
-    <div class="articles-list__title">2012</div>
-
-
-    <li class="articles-list__item"><a href="/2012/12/04/welcome-to-jekyll" class="articles-list__link">Welcome to Jekyll!</a></li>
-    
-  
-</ul>
+        {{ content }}
       </div>
     </div>
   </body>

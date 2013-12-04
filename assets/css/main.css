@@ -17,20 +17,21 @@ a:hover{color:#2996cc}
 .about{margin:16px 0 36px;padding-top:6px;line-height:20px;font-size:14px;color:#99968a;zoom:1}
 .about:before,.about:after{content:"";display:table}
 .about:after{clear:both}
-.avatar{width:64px;height:64px;position:absolute;right:0;top:-10px}
+.avatar{width:64px;height:64px;position:absolute;left:-112px;top:-10px}
 .content{margin:48px 0 96px;line-height:30px;}
 .content > h2{font-size:28px;margin-bottom:24px}
 .content > h3{font-size:24px;margin-bottom:16px}
 .content > h4{font-size:20px;font-weight:bold;margin-bottom:16px}
-.content p,.content ul,.content pre{padding-bottom:24px}
-.content pre{font-family:Consolas;font-size:16px;line-height:24px}
+.content > p,.content > ul,.content > pre{padding-bottom:24px}
+.content > pre{font-family:Consolas;font-size:16px;line-height:24px}
 .content-header{padding-bottom:24px}
-.content-header__title{font-size:28px}
-.content-header__subtitle{font-size:14px;color:#d6d4cc}
+.content-header__title{font-size:32px}
+.content-header__subtitle{font-size:14px;color:#d6d4cc;text-shadow:0 1px 0 #faf9f7}
 .content-header__link{text-decoration:none;}
 .content-header__link:hover{color:#2996cc;text-decoration:underline}
 .articles-list{line-height:34px}
-.articles-list__title{font-size:24px;margin:32px 0 16px;color:#99968a}
+.articles-list__title{position:absolute;left:-112px;display:block;width:64px;text-align:center;color:#99968a}
+.articles-list__list{position:relative}
 .articles-list__item{position:relative;}
 .articles-list__item::before{content:'—';display:inline-block;position:absolute;left:-32px;width:32px;color:#d6d4cc;text-shadow:0 1px 0 #fff}
 .articles-list__link{text-decoration:none;}

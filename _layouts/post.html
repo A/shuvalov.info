@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<h2></h2>
+<div class="content">
+  <div class="content-header">
+    <h2 class="content-header__title">{{ page.title }}</h2>
+    {% if page.subtitle %}<h5 class="content-header__subtitle"> <a href="#" class="content-header__link">{{ page.subtitle }}</a></h5>{% endif %}
+  </div>
+  {{ content }}
+</div>

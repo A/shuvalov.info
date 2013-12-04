@@ -1,0 +1,15 @@
+name: 'Ношу шлем, тяжело дышу'
+markdown: kramdown
+pygments: true
+exclude: ['Gemfile', 'Gemfile.lock']
+
+# production_url : http://anton-shuvalov.info
+# baseurl: http://anton-shuvalov.info # ???
+permalink: /:year/:month/:day/:title
+
+author:
+  name: Антон Шувалов
+  email: anton_shuvalov@me.com
+  github: shuvalov-anton
+  twitter: shuvalov_anton
+  facebook: a8h333

@@ -1,2 +1,17 @@
-<!DOCTYPE html><html lang="ru"><head><title>Hi</title></head><body><h1>Jade - node template engine</h1><div id="container" class="col"><p>Get on it!</p><p>Jade is a terse and simple templating language with a
-strong focus on performance and powerful features.</p></div></body></html>
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<ul class="articles-list__list">
+  {% for post in site.posts %}
+    {% if forloop.first %}{% capture that_year %}{{ '' }}{% endcapture %}{% endif %}
+
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% if this_year != that_year %}<div class="articles-list__title">{{ this_year }}</div>{% endif %}
+
+
+    <li class="articles-list__item"><a href="{{ post.url }}" class="articles-list__link">{{ post.title }}</a></li>
+    {% capture that_year %}{{ this_year }}{% endcapture %}
+  {% endfor %}
+</ul>
