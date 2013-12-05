@@ -8,39 +8,60 @@ tags: [javascript, jquery]
 
 
 
-Последнее время стараюсь не использовать jQuery без серьезной необходимости. Я часто занимаюсь разработкой небольших интерактивных элементов для книг, созданных в Adobe InDesign и iBooks Author.  Здесь вполне можно обойтись с помощью native javascript. 
+Последнее время стараюсь не использовать jQuery без серьезной необходимости. 
+Я часто занимаюсь разработкой небольших интерактивных элементов для книг,
+созданных в Adobe InDesign и iBooks Author.  Здесь вполне можно обойтись 
+с помощью native javascript. 
 
-Основные средства, которые я использую — это CSS и нативный JavaScript. [CSS3 Transition][]{: rel="nofollow"} и [CSS3 Animations][]{: rel="nofollow"} решают практически все задачи связанные с анимацией. [HTML5 Audio][]{: rel="nofollow"} идеально подходит для звука.
+Основные средства, которые я использую — это CSS и нативный JavaScript. 
+[CSS3 Transition][]{: rel="nofollow"} и [CSS3 Animations][]
+решают практически все задачи связанные с анимацией. [HTML5 Audio][] 
+идеально подходит для звука.
 
-32KB jQuery за бортом моей шлюпки. Я не напишу свой код более компактно с jQuery. Я вполне обойдусь без [sizzle][]{: rel="nofollow"}. Вряд ли есть какой-то смысл использовать jQuery, если код проекта в сумме занимает меньше места, чем код jQuery. 
+32KB jQuery за бортом моей шлюпки. Я не напишу свой код более компактно с jQuery.
+Я вполне обойдусь без [sizzle][]{: rel="nofollow"}. Вряд ли есть какой-то смысл
+использовать jQuery, если код проекта в сумме занимает меньше места, чем код
+jQuery. 
 
 Я написал для себя 3 функции, которых мне достаточно для небольших проектов:
-<pre><code class="javascript">function $( id ) {
-	return document.getElementById( id )
-}</code></pre>
 
-<pre><code class="javascript">function addClass(el, className) {
-	el.setAttribute( "class",  el.getAttribute( "class" ) + " " + className )
-}</code></pre>
+{:.language-js}
+    function $( id ) {
+      return document.getElementById( id )
+    }
 
-<pre><code class="javascript">function removeClass( el, className ) {
-	var classes = el.getAttribute( "class" )
-	classes = classes.replace( className, "" )
-	classes = classes.replace(/^\s\s*/, '').replace(/\s\s*$/, '')
-	el.setAttribute( "class", classes )
-}</code></pre>
+    function addClass(el, className) {
+      el.setAttribute( "class",  el.getAttribute( "class" ) + " " + className )
+    }
+
+    function removeClass( el, className ) {
+      var classes = el.getAttribute( "class" )
+      classes = classes.replace( className, "" )
+      classes = classes.replace(/^\s\s*/, '').replace(/\s\s*$/, '')
+      el.setAttribute( "class", classes )
+    }
  
-Первая функция получает DOM-элемент по его ID. Для JS я использую ID, для CSS я использую классы. Как минимум потому, что ID [имеет вес, который в 255 раз больше, чем вес класса][id and classes]{: rel="nofollow"}, и его использование для стилей может нарушить тонкий баланс силы. Пример:
-<pre><code class="javascript">var el = $('js-id');</code></pre>
+Первая функция получает DOM-элемент по его ID. Для JS я использую ID, для CSS
+я использую классы. Как минимум потому, что ID
+[имеет вес, который в 255 раз больше, чем вес класса][id and classes], и 
+его использование для стилей может нарушить тонкий баланс силы. Пример:
 
+{:.language-js}
+    var el = $('js-id');
 
 Вторая функция добавляет элементу класс. 
-<pre><code class="javascript">addClass( el, 'my-class' )</code></pre>
+{:.language-js}
+    addClass( el, 'my-class' )
 
 Третья функция удаляет класс у элемента. 
-<pre><code class="javascript">removeClass( el, 'my-class' )</code></pre>
 
-С помощью этих трех функций я вполне обхожусь без jQuery в большинстве виджетов, которые мне приходилось программировать, что положительно сказывается на предсказуемости и скорости работы. Так, что использование jQuery порой является совершенно не нужным. 
+{:.language-js}
+    removeClass( el, 'my-class' )
+
+С помощью этих трех функций я вполне обхожусь без jQuery в большинстве виджетов,
+которые мне приходилось программировать, что положительно сказывается
+на предсказуемости и скорости работы. Так, что использование jQuery порой
+является совершенно не нужным.
 
 
 [CSS3 Transition]: http://www.w3.org/TR/css3-transitions/

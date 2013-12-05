@@ -1,9 +1,8 @@
 ---
+
 layout: post
 title: "Установка Grunt.js"
-description: "Установка Grunt.js в Mac OS X"
-keywords: "JavaScript, Gruntjs, MAC OS X, JS"
-tags: [javascript, nodejs]
+
 ---
 
 1. Удалить предыдущую версию  

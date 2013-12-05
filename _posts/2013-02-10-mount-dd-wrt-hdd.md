@@ -1,9 +1,8 @@
 ---
+
 layout: post
 title: "Как к Mac OS X подключить HDD от DD-WRT"
-description: "Как в Mac OS X смонтировать жесткий диск с файловой системой Ext3"
-keywords: "dd-wrt"
-tags: [homeserver, dd-wrt]
+
 ---
 
 
@@ -71,7 +70,6 @@ Mac&nbsp;OS&nbsp;X&nbsp;Lion, ни в Mountain&nbsp;Lion. OSXFuse — это б�
 [homeserver]:      /2013/01/05/homeserver_intro/
 [transmission]:    /2013/01/28/debian-squeeze-transmission/
 [vpn]:             /2013/01/16/ddwrt-vpn/
-
 [OSXFuse]:         http://osxfuse.github.com/
 [OSXFuse_dl]:      https://github.com/osxfuse/osxfuse/downloads
 [Fuse-ext2]:       http://alperakcan.org/?open=projects&amp;project=fuse-ext2

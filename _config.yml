@@ -6,11 +6,12 @@ exclude: ['Gemfile', 'Gemfile.lock']
 # production_url : http://anton-shuvalov.info
 # baseurl: http://anton-shuvalov.info # ???
 permalink: /:year/:month/:day/:title
+ga_id: UA-26825614-2
 
 author:
   name: Антон Шувалов
   email: anton_shuvalov@me.com
-  github: http://github.com/shuvalov-anton
-  twitter: http://twitter.com/shuvalov_anton
-  facebook: http://facebook.com/a8h333
-  soundcloud: http://soundcloud.com/a8h333
+  github: https://github.com/shuvalov-anton
+  twitter: https://twitter.com/shuvalov_anton
+  facebook: https://www.facebook.com/a8h333
+  soundcloud: https://soundcloud.com/asheee/
