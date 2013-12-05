@@ -7,7 +7,6 @@ tags: [wtf]
 ---
 
 
-<img src="https://lh6.googleusercontent.com/-NtT5gMJiTr0/AAAAAAAAAAI/AAAAAAAAAVY/wkOpD1cWdyk/photo.jpg" alt="" class="img-center" />
 Очень часто в Google Analytics среднее время проведенное пользователем на сайте равно нулю. Это, по меньшей мере, странно — неужели пользователь перешел по ссылке и тут же ее закрыл?
 
 ## Решение

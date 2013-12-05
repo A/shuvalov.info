@@ -10,6 +10,7 @@ tags: [debian, homeserver]
 &#x20;<img src="http://31808.selcdn.ru/it-prm/pics/Debian_logo.png" class="img-center" /> <br />
 
 В планах зреет переход на [AWS Free Usage Tier][]{: rel="nofollow"}. Сейчас мои сайты хостятся на [selectel.ru][]{: rel="nofollow"} и эксперементирую я там же.  
+
 После [перехода на Jekyll][] необходимость в таком облачном сервере отпала. Точнее, необходимость разложилась на хостинг для статичных сайтов, плюс сервер для эксперементов. Первую необходимость как раз решает [AWS Free Usage Tier][]{: rel="nofollow"}, а для второй я решил использовать старый PC, который уже пару месяцев пылился в углу. А точнее:
 
 *	**CPU**: AMD Phenom II X2 555 BE ( 2 cores 3.2GHz )

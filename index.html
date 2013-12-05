@@ -18,7 +18,7 @@ extlink: ''
       {% endif %}
     {% endif %}
     <li class="articles-list__item">
-      <a href="{% if post.extlink %}{{ post.extlink }}{% else %}{{ post.url }}{% endif %}" class="articles-list__link">{{ post.title }}</a>
+      <a class="articles-list__link" {% if post.extlink %} href="{{ post.extlink }}" target="_blank" {% else %} href="{{ post.url }}"{% endif %}>{{ post.title }}</a>
       {% if post.subtitle %}<span class='articles-list__inline-subtitle'>{{ post.subtitle}}</span>{% endif %}
     </li>
   {% endfor %}
