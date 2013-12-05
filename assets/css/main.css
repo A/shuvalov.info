@@ -19,20 +19,26 @@ a:hover{color:#2996cc}
 .about:after{clear:both}
 .avatar{width:64px;height:64px;position:absolute;left:-112px;top:-10px}
 .content{margin:48px 0 96px;line-height:30px;}
-.content > h2{font-size:28px;margin-bottom:24px}
+.content > h2{font-size:28px;margin:24px 0}
 .content > h3{font-size:24px;margin-bottom:16px}
 .content > h4{font-size:20px;font-weight:bold;margin-bottom:16px}
 .content > p,.content > ul,.content > pre{padding-bottom:24px}
-.content > pre{font-family:Consolas;font-size:16px;line-height:24px}
+.content img {max-width: 100%;}
+/*.content code{font-family: Consolas, Monaco, 'Andale Mono', monospace; font-size: 19px;}*/
+.content a{ color:#2996cc;}
+.content > pre{font-family:Consolas;font-size:16px;line-height:24px;word-wrap: break-word;}
+.content > ul{position:relative;}
+.content > ul >li::before{content:'—';display:inline-block;position:absolute;left:-32px;width:32px;color:#d6d4cc;text-shadow:0 1px 0 #fff}
 .content-header{padding-bottom:24px}
 .content-header__title{font-size:32px}
-.content-header__subtitle{font-size:14px;color:#d6d4cc;text-shadow:0 1px 0 #faf9f7}
+.content-header__subtitle{font-size:14px;color:#99968a;text-shadow:0 1px 0 #FFF}
 .content-header__link{text-decoration:none;}
 .content-header__link:hover{color:#2996cc;text-decoration:underline}
 .articles-list{line-height:34px}
-.articles-list__title{position:absolute;left:-112px;display:block;width:64px;text-align:center;color:#99968a}
+.articles-list__title{position:absolute;left:-112px;display:block;width:64px;text-align:center;color:#99968a;}
 .articles-list__list{position:relative}
+.articles-list__inline-subtitle{color: #99968a;font-size: 14px;}
 .articles-list__item{position:relative;}
 .articles-list__item::before{content:'—';display:inline-block;position:absolute;left:-32px;width:32px;color:#d6d4cc;text-shadow:0 1px 0 #fff}
-.articles-list__link{text-decoration:none;}
-.articles-list__link:hover{color:#2996cc;text-decoration:underline}
+.articles-list__link{text-decoration:none; color:inherit !important;}
+.articles-list__link:hover{color:#2996cc !important;text-decoration:underline}

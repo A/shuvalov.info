@@ -1,17 +1,25 @@
 ---
-layout: default
-title: Your New Jekyll Site
+layout: post
+title: Мои статьи
+subtitle: ''
+link: ''
 ---
 
 <ul class="articles-list__list">
   {% for post in site.posts %}
-    {% if forloop.first %}{% capture that_year %}{{ '' }}{% endcapture %}{% endif %}
-
+    {% capture that_year %}{{ this_year || '' }}{% endcapture %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-    {% if this_year != that_year %}<div class="articles-list__title">{{ this_year }}</div>{% endif %}
-
-
-    <li class="articles-list__item"><a href="{{ post.url }}" class="articles-list__link">{{ post.title }}</a></li>
-    {% capture that_year %}{{ this_year }}{% endcapture %}
+    {% if this_year != that_year %}
+      {% if !forloop.first %}
+        <div class="articles-list__title">{{ this_year }}</div>
+      {% else %}
+        </ul><ul class="articles-list__list">
+          <div class="articles-list__title">{{ this_year }}</div>
+      {% endif %}
+    {% endif %}
+    <li class="articles-list__item">
+      <a href="{% if post.extlink %}{{ post.extlink }}{% else %}{{ post.url }}{% endif %}" class="articles-list__link">{{ post.title }}</a>
+      {% if post.subtitle %}<span class='articles-list__inline-subtitle'>{{ post.subtitle}}</span>{% endif %}
+    </li>
   {% endfor %}
 </ul>
