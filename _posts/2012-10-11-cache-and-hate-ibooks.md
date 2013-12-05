@@ -5,7 +5,6 @@ description: "Как устроен механизм кэширования ме
 keywords: "apple, ibooks, author, кэш, cache" 
 tags: [Apple, ibooks, wtf]
 ---
-{% include JB/setup %}
 
 <img class="img-center" src="http://31808.selcdn.ru/it-prm/pics/hero_ibooks_author.png" alt="iBooks Author">
 

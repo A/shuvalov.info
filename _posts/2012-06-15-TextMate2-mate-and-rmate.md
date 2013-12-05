@@ -5,9 +5,6 @@ description: ""
 category: 
 tags: [textmate]
 ---
-{% include JB/setup %}
-
-<img src="http://31808.selcdn.ru/it-prm/pics/TextMate2.png" width="183px" class="img-center" /> 
  
 ## Введение
 Я полностью согласен с авторами [“The Pragmatic Programmer”](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X){: rel="nofollow" } [Andrew Hunt](http://andy.pragprog.com/){: rel="nofollow" } и [David Thomas](http://pragdave.pragprog.com/){: rel="nofollow" } в том, что иметь один-единственный редактор текста для всего - это прекрасно. Таким редактором для меня является [textmate 2](http://blog.macromates.com/2011/textmate-2-0-alpha/ "TextMate Blog &raquo; TextMate 2.0 Alpha"){: rel="nofollow" }. Я стараюсь использовать его везде, где это возможно. В основном я работаю с JS, HTML, CSS и Markdown для статей и заметок. Бывает пишу PHP-код и shell-скрипты. Изредка судьба, ухмыляясь, заставляет меня писать на pascal. С помощью различных дополнений, область применения Textmate можно расширять практически бесконечно.

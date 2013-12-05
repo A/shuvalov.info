@@ -5,7 +5,6 @@ description: "Инструкция по настройке textmate для пр�
 keywords: "textmate, textmate2, man, мануал, инструкция"
 tags: [textmate]
 ---
-{% include JB/setup %}
 
 ![](http://31808.selcdn.ru/it-prm/pics/man.jpg)
 

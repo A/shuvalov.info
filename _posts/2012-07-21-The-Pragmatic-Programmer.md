@@ -5,7 +5,6 @@ description: "Небольшой отзыв по книге «Программи
 keywords: "программист, прагматик, книга, отзыв" 
 tags: [books]
 ---
-{% include JB/setup %}
 
 
 <img src="http://31808.selcdn.ru/it-prm/pics/tpp.jpg" class="img-center" width="275px" />

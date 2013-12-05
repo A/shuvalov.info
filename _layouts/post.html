@@ -1,5 +1,45 @@
----
-layout: default
----
-{% include JB/setup %}
-{% include themes/twitter/post.html %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="avatar"><img src="/assets/i/avatar.png"></div>
+        <h1 class="header__title header__title--subdued"><a href="/" class="header__link">Ношу шлем, тяжело дышу</a></h1>
+      </div>
+      <div class="about">
+        <p>Меня зовут {{site.author.name}}. Я ведущий JS-разработчик и team lead 
+           в <a href="http://books.enaza.ru">Enaza Books</a>. Кроме программирования я 
+           <a href="{{ site.author.soundcloud }}">пишу музыку</a> и иногда занимаюсь дизайном 
+           интерфейсов. Я есть в <a href="{{ site.author.twitter }}">Twitter</a>, 
+           <a href="{{ site.author.facebook }}">Facebook</a> и 
+           на <a href="{{ site.author.github }}">GitHub</a>. Вы можете написать
+           мне <a href="mailto:{{ site.author.email }}">email</a>.
+        </p>
+      </div>
+      <div class="hr"></div>
+      <div class="content">
+        <div class="content-header">
+          <h2 class="content-header__title">{{ page.title }}</h2>
+          {% if page.subtitle %}
+            <h5 class="content-header__subtitle">{{ page.subtitle }}</h5>
+          {% endif %}
+        </div>
+        {{ content }}
+      </div>
+    </div>
+    <script src="/assets/js/prism.min.js"></script>
+    <script src="/assets/js/ga.js"></script>
+    <script src="/assets/js/ol-li.js"></script>
+  </body>
+</html>
+
+
+

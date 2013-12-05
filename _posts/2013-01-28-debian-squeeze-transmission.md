@@ -1,26 +1,22 @@
 ---
+
 layout: post
-title: "Transmission-daemon"
-description: "установка и настройка transmission-daemon на debian squeeze"
-keywords: "transmission, torrents, debian"
-tags: [homeserver]
+title: "Установка transmission"
+
 ---
-{% include JB/setup %}
 
-![](http://31808.selcdn.ru/it-prm/pics/transmission.png){: class="img-center" width="270"} 
-<br>
 
-## Установка transmission
-
-Установка `transmission-daemon`&nbsp;— штука достаточно простая. Для начала я обновлил пакеты.
+Установка `transmission-daemon`&nbsp;— штука достаточно простая. Для начала 
+я обновлил пакеты.
 
 	sudo aptitude update
-	
+
 Затем я проверил, доступен ли `transmission-daemon`
 	
 	aptitude search transmission-daemon
 
-В случае, если демон недоступен, его нужно добавить. В файл `/etc/apt/sources.list` нужно дописать подходящий репозиторий. К примеру
+В случае, если демон недоступен, его нужно добавить. В файл 
+`/etc/apt/sources.list` нужно дописать подходящий репозиторий. К примеру
 
 	deb http://ftp.de.debian.org/debian squeeze main
 
@@ -32,11 +28,13 @@ tags: [homeserver]
 
 	sudo aptitude install transmission-daemon
 	
-Скорее всего в процессе установки понадобится подтвердить установку зависимостей. 
+Скорее всего в процессе установки понадобится подтвердить установку
+зависимостей. 
 
 ## Настройка transmission
 
-Прежде чем править файл с настройками нужно остановить демон — при перезагрузке файл настроек затирается на предыдущий.
+Прежде чем править файл с настройками нужно остановить демон — при перезагрузке
+файл настроек затирается на предыдущий.
 
 	/etc/init.d/transmission-daemon stop
 
@@ -63,6 +61,11 @@ tags: [homeserver]
 
 ## Transmission Remote GUI
 
-Для того, что бы реже вспоминать о сервере с торрент-клиентом я сделал так: директория в которую качаются торренты доступна через `samba`, а для подключения к transmission я использую [Transmission Remote GUI][]{: rel="nofollow"}. Его легко можно назначить дефолтным приложением для открытия torrent-файлов, тогда скачивание торрентов не будет сильно отличаться от utorrent'а.
-	
+Для того, что бы реже вспоминать о сервере с торрент-клиентом я сделал так:
+директория в которую качаются торренты доступна через `samba`, а для подключения
+к transmission я использую [Transmission Remote GUI][]. Его
+легко можно назначить дефолтным приложением для открытия torrent-файлов, тогда
+скачивание торрентов не будет сильно отличаться от utorrent'а.
+
+
 [Transmission Remote GUI]: http://code.google.com/p/transmisson-remote-gui/

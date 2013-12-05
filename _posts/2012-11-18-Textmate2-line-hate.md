@@ -5,7 +5,6 @@ description: "Инструкция о том, как уменьшить инте
 keywords: "textmate, textmate2, интерлиньяж, line-height" 
 tags: [textmate, wtf]
 ---
-{% include JB/setup %}
 
 <img src="http://31808.selcdn.ru/it-prm/pics/textmate2LH.jpg" class="img-center" /> 
 

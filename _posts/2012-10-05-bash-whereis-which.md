@@ -5,7 +5,6 @@ description: "Отличие похожих приложений bash — which 
 keywords: "bash, which, whereis" 
 tags: [bash]
 ---
-{% include JB/setup %}
 
 
 <img class="img-center" src="http://31808.selcdn.ru/it-prm/pics/bash.png" alt="Чем отличается which от whereis">

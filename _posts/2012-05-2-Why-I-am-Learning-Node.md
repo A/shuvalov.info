@@ -1,11 +1,7 @@
 ---
 layout: post
 title: "Почему я учу NODE.JS"
-description: "История о том, как PERL-разработчик пришел к изучению NODEJS"
-keywords: "nodejs, node, javascript" 
-tags: [перевод, javascript, nodejs]
 ---
-{% include JB/setup %}
 
 <img src="http://31808.selcdn.ru/it-prm/pics/jsninja.jpg.scaled696.png" width="271px" class="img-center"  />
 <p>Как многие (если не все), знают, я пишу на python. Пишу каждый день, и мне это нравится. Ради веселья и  опыта я начал писать на django, и перенес на него множество строк нативного питона.</p>

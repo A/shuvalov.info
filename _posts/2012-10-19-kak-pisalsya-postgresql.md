@@ -5,7 +5,6 @@ description: "История создания одной из самых поп�
 keywords: "postgres, postgresql, история, архитектура" 
 tags: [ design, PostgreSQL]
 ---
-{% include JB/setup %}
 
 
 <img class="img-center" src="http://31808.selcdn.ru/it-prm/pics/postgresql.png"  />

@@ -5,7 +5,6 @@ description: "Инструкция о том, как объединенить д
 keywords: "itunes, apple, медиатека, объеденить" 
 tags: [iTunes, Apple]
 ---
-{% include JB/setup %}
 
 <img class="img-center" src="http://31808.selcdn.ru/it-prm/pics/itunes.jpg" alt="iTunes">
 

@@ -5,7 +5,7 @@ description: "Что делать с ошибкой REXML could not parse this X
 keywords: "jekyll, REXML, ошибка" 
 tags: [jekyll, wtf]
 ---
-{% include JB/setup %}
+
 
 ![](http://31808.selcdn.ru/it-prm/pics/jekyll.png)
 <br><br>

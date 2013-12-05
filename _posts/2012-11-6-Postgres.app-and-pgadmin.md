@@ -5,7 +5,7 @@ description: ""
 category: 
 tags: [wtf, PostgreSQL]
 ---
-{% include JB/setup %}
+
 
 Пару дней назад установил [Postgres.app][]{: rel="nofollow"} и [pgadmin v1.8.4][]{: rel="nofollow"}. Но при попытке подключения из pgadmin  к БД получал ошибку 
 
