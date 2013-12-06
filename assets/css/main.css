@@ -138,6 +138,13 @@ clear:both;
   text-shadow:0 1px 0 #FFF;
 }
 
+.content__date {
+  color:#99968a;
+  font-style: italic;
+  font-size: 14px;
+  text-align: right;
+}
+
 .articles-list {
   line-height:34px;
 }

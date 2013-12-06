@@ -33,6 +33,9 @@
           {% endif %}
         </div>
         {{ content }}
+        {% if page.date %}
+          <div class="content__date">{{ page.date | date: "%-d.%m.%Y" }}</div>
+        {% endif %}
       </div>
     </div>
     <script src="/assets/js/prism.min.js"></script>
