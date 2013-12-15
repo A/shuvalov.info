@@ -165,7 +165,7 @@ clear:both;
 
 .articles-list__link {
   text-decoration:none;
-  color:inherit!important;
+  color:inherit !important;
 }
 
 .articles-list__link:hover {
@@ -200,7 +200,7 @@ a:hover,.content a {
   position:absolute;
   left:-32px;
   width:32px;
-  color:#d6d4cc;
+  color: #99968a;
   text-shadow:0 1px 0 #fff;
 }
 
@@ -216,6 +216,6 @@ a:hover,.content a {
 .content > ol .number {
   position: absolute;
   left: 0;
-  color: #d6d4cc;
+  color: #99968a;
   font-style: italic;
 }
