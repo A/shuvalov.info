@@ -37,8 +37,15 @@ a
   box-shadow 0 1px 0 color__white
 
 .wrapper
-  width 640px
   margin 0 auto
+
+@media (min-width: 320px)
+  .wrapper
+    width 280px
+
+@media (min-width: 640px)
+  .wrapper
+    width 640px
 
 .header 
   position relative
@@ -74,10 +81,13 @@ a
 .content
   margin 48px 0 96px
   line-height 30px
+  
+  a
+    color color__blue
 
   & > h2
     font-size 28px
-    margin-bottom 24px
+    margin 24px 0
   & > h3
     font-size 24px
     margin-bottom 16px
@@ -94,6 +104,41 @@ a
     font-family Consolas
     font-size 16px
     line-height: 24px
+    word-wrap break-word
+
+  & img
+    max-width 100%
+
+  & strong
+    font-weight bold
+  
+  & em
+    font-style italic
+
+  & > ul
+    position: relative
+
+    & li
+      position relative
+      &::before
+        content '—'
+        display inline-block
+        position absolute
+        left -32px
+        width: 32px
+        color color__subdued
+        text-shadow 0 1px 0 color__white
+
+
+  & > ol
+    position: relative
+    margin-left: -32px
+    & li
+      padding-left 32px
+    & .number
+      absolute left 0
+      color color__subdued
+      font-style italic
 
 
 .content-header
@@ -126,20 +171,14 @@ a
 .articles-list__list
   position relative
 
+.articles-list__inline-subtitle
+  color color__subdued
+  font-size 14px
 
 .articles-list__item
-  position relative
-  &::before
-    content '—'
-    display inline-block
-    position absolute
-    left -32px
-    width: 32px
-    color color__moarsubdued
-    text-shadow 0 1px 0 color__white
-
-.articles-list__link
-  text-decoration none
-  &:hover
-    color color__blue
-    text-decoration underline
+  .articles-list__link
+    text-decoration none
+    color inherit
+    &:hover
+      color color__blue
+      text-decoration underline
