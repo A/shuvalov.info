@@ -90,9 +90,9 @@ a img {
   border: none;
 }
 body {
-  background: url("/assets/i/noise_2.png") #f0efe8;
   font-family: Georgia, Serif;
   font-size: 20px;
+  background: url("/assets/i/noise_2.png") #f0efe8;
   text-shadow: 0 1px 0 #fff;
   color: #261f00;
 }
@@ -251,6 +251,7 @@ a:hover {
 }
 .articles-list {
   line-height: 34px;
+  position: relative;
 }
 .articles-list__title {
   position: absolute;
@@ -259,9 +260,6 @@ a:hover {
   width: 64px;
   text-align: center;
   color: #99968a;
-}
-.articles-list__list {
-  position: relative;
 }
 .articles-list__inline-subtitle {
   color: #99968a;
