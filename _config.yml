@@ -9,7 +9,6 @@ permalink: /:year/:month/:day/:title
 ga_id: UA-26825614-2
 
 author:
-  name: Антон Шувалов
   email: anton_shuvalov@me.com
   github: https://github.com/shuvalov-anton
   twitter: https://twitter.com/shuvalov_anton
