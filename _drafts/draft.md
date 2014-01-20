@@ -11,16 +11,14 @@ translation:
 Вот небольшой фрагмент кода, который очень грубо реализует логику работы 
 оператора new в JavaScript.
 
-{% highlight javascript %}
-function newOperator(Constr, args) {
-  var thisValue = Object.create(Constr.prototype); // (1)
-  var result = Constr.apply(thisValue, args);
-  if (typeof result === 'object' && result !== null) {
-    return result; // (2)
-  }
-  return thisValue;
-}
-{% endhighlight %}
+    function newOperator(Constr, args) {
+      var thisValue = Object.create(Constr.prototype); // (1)
+      var result = Constr.apply(thisValue, args);
+      if (typeof result === 'object' &amp;&amp; result !== null) {
+        return result; // (2)
+      }
+      return thisValue;
+    }
 
 
 1.  Прототип нового объекта, порождаемого конструктором `Constr`, — это `Constr.prototype`.

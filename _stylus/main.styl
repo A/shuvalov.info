@@ -2,33 +2,50 @@
 @import 'nib'
 
 
-// Variables.
-noise = url('/assets/i/noise_2.png')
-color__white = #FFF
-color__dark = #261F00
-color__blue = #2996CC
-color__subdued = #99968A
-color__moarsubdued = #D6D4CC
+// # Variables.
+
+// Colors
+color__white                 = #FFF
+color__dark                  = #261F00
+color__blue                  = #2996CC
+color__subdued               = #99968A
+color__moarsubdued           = #D6D4CC
+
+// Fonts
+
+font__base = Georgia, 'Times New Roman', serif
+font__size = 18px
+
+// Images
+noise                        = url('/assets/i/noise_2.png')
+
+// Effects
+shadow__tiny                 = 0 1px 1px rgba(0,0,0,.15)
+shadow__pressed_effect       = 0 1px 0 rgba(255,255,255, .5)
+
 
 global-reset()
 
+fragment (color)
+  background-color color
+  box-shadow shadow__tiny
+  padding 4px 4px 2px
+  // outline solid #F2DB80 1px // TODO: color+5black
+
+
+*
+  box-sizing: border-box
+
+html
+  font-family font__base
+  font-size font__size
+
 
 body
-  font-family Georgia, Serif
-  font-size 20px
   background noise #F0EFE8
-  text-shadow 0 1px 0 #FFF
+  text-shadow shadow__pressed_effect
   color color__dark
-
-a
-  color inherit
-  &:hover
-    color color__blue
-
-.hr
-  size 100% 1px
-  background-color color__subdued
-  box-shadow 0 1px 0 color__white
+  line-height 1.4
 
 .wrapper
   margin 0 auto
@@ -37,32 +54,28 @@ a
   .wrapper
     width 280px
 
-@media (min-width: 640px)
+@media (min-width: 720px)
   .wrapper
-    width 640px
+    width 720px
 
-.header 
-  position relative
-  margin-top 48px
-
-.header__title
-    font-size 40px
-    text-indent -3px
-
-.header__title--subdued
-  color color__subdued
-
-.header__link
+a
+  color color__blue
   text-decoration none
   &:hover
     color color__blue
     text-decoration underline
 
+.header 
+  position relative
+  margin-top 3rem
+  color color__subdued
+  a 
+    color color__subdued
+    &:hover
+      color color__blue
+
 .about 
-  margin 16px 0 36px
-  padding-top 6px
-  line-height 20px
-  font-size 14px
+  font-size .8rem
   color color__subdued
   clearfix()
 
@@ -72,89 +85,98 @@ a
   left -112px
   top -10px
 
-.content
-  margin 48px 0 96px
-  line-height 30px
-  
-  a
-    color color__blue
+.highlight
+  margin-bottom 1rem
 
-  & > h2
-    font-size 28px
-    margin 24px 0
-  & > h3
-    font-size 24px
-    margin-bottom 16px
-  & > h4
-    font-size 20px
-    font-weight bold
-    margin-bottom 16px
+h1,h2,h3,h4,p,ul,ol,pre
+  padding-bottom 1rem
 
-  & > p
-  & > ul
-  & > ol
-  & > pre
-    padding-bottom: 24px
-  & > pre
-    font-family Consolas
-    font-size 16px
-    line-height: 24px
-    word-wrap break-word
+h1,h2,h3,h4
+  marginr-top 1rem
 
-  & img
-    max-width 100%
+li
+  padding-bottom .5rem
+  position relative
 
-  & strong
-    font-weight bold
-  
-  & em
+h1
+  font-size: 2rem
+h2
+  font-size 1.6rem
+h3
+  font-size 1.4rem
+h4
+  font-size 1rem
+  font-weight bold
+
+strong
+  font-weight bold
+
+em
+  font-style italic
+
+.content img
+  max-width 100%
+  box-shadow shadow__tiny
+
+ul
+  position: relative
+  li
+    &::before
+      content '-'
+      display inline-block
+      position absolute
+      left -1em
+      width: 1em
+      color color__subdued
+
+ol
+  position: relative
+  margin-left: -32px
+  & li
+    padding-left 32px
+  & .number
+    absolute left 0
+    color color__subdued
     font-style italic
 
-  & > ul
-    position: relative
+code
+  background-color #FFF
+  box-shadow shadow__tiny
+  font-size .8rem
+  line-height 1
 
-    & li
-      position relative
-      &::before
-        content '—'
-        display inline-block
-        position absolute
-        left -32px
-        width: 32px
-        color color__subdued
-        text-shadow 0 1px 0 color__white
+pre
+  padding 1rem 1rem
+  overflow auto
+  background-color #fff
+  box-shadow shadow__tiny
 
+code
+  font-family Consolas, Monaco, 'Andale Mono', monospace
+  padding 4px 4px 2px
 
-  & > ol
-    position: relative
-    margin-left: -32px
-    & li
-      padding-left 32px
-    & .number
-      absolute left 0
-      color color__subdued
-      font-style italic
+pre > code
+  padding 0
+  background-color transparent
+  box-shadow none
 
+.content
+  margin 1rem 0 6rem
+  line-height 1.5
 
-.content-header
-  padding-bottom: 24px
-.content-header__title
-  font-size 32px
-.content-header__subtitle
-  font-size 14px
-  color color__moarsubdued
-  text-shadow: 0 1px 0 #FAF9F7
-.content-header__link
-  text-decoration none
-  &:hover
-    color color__blue
-    text-decoration underline
+.translation
+  font-size .8em
+  font-style italic
+  margin-top: -1.5em
+  padding-bottom: 2em
+
 .content__date
-  font-size small
+  font-size .8rem
+  font-style italic
+  color color__subdued
   text-align right
 
 .articles-list
-  line-height 34px
   position relative
 
 .articles-list__title
@@ -165,9 +187,13 @@ a
   text-align center
   color color__subdued
 
-.articles-list__inline-subtitle
-  color color__subdued
-  font-size 14px
+.articles-list__subtitle
+  font-style italic
+  background-color #FFE788
+  box-shadow shadow__tiny
+  font-size .8rem
+  padding 4px 4px 2px
+  outline solid #F2DB80 1px 
 
 .articles-list__item
   .articles-list__link
@@ -176,6 +202,3 @@ a
     &:hover
       color color__blue
       text-decoration underline
-
-.translation
-  font-size small

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="shortcut icon" href="/assets/i/favicon.png">
   </head>
@@ -12,7 +12,7 @@
     <div class="wrapper">
       <div class="header">
         <div class="avatar"><img src="/assets/i/avatar.png"></div>
-        <h1 class="header__title header__title--subdued"><a href="/" class="header__link">Ношу шлем, тяжело дышу</a></h1>
+        <h1><a href="/">Ношу шлем, тяжело дышу</a></h1>
       </div>
       <div class="about">
         <p>Меня зовут Антон Шувалов. Я ведущий JS-разработчик и team lead
@@ -25,20 +25,14 @@
            мне <a href="mailto:{{ site.author.email }}">email</a>.
         </p>
       </div>
-      <div class="hr"></div>
       <div class="content">
-        <div class="content-header">
-          <h2 class="content-header__title">{{ page.title }}</h2>
-          {% if page.subtitle %}
-            <h5 class="content-header__subtitle">{{ page.subtitle }}</h5>
-          {% endif %}
-        </div>
-        {{ content }}
+        <h1 class="title">{{ page.title }}</h1>
         {% if page.translation %}
           <div class="translation">
-            Перевод <a href="{{ page.translation.link }}">{{ page.translation.author }} — {{ page.translation.title }}</a>
+            Перевод  <a href="{{ page.translation.link }}">{{ page.translation.author }} — {{ page.translation.title }}</a>
           </div>
         {% endif %}
+        {{ content }}
         {% if page.date %}
           <div class="content__date">{{ page.date | date: "%-d.%m.%Y" }}</div>
         {% endif %}

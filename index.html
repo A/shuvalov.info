@@ -5,7 +5,7 @@ subtitle: ''
 extlink: ''
 ---
 
-<ul class="articles-list__list">
+<ul class="articles-list">
   {% for post in site.posts %}
     {% capture that_year %}{{ this_year || '' }}{% endcapture %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
@@ -19,7 +19,7 @@ extlink: ''
     {% endif %}
     <li class="articles-list__item">
       <a class="articles-list__link" {% if post.extlink %} href="{{ post.extlink }}" target="_blank" {% else %} href="{{ post.url }}"{% endif %}>{{ post.title }}</a>
-      {% if post.subtitle %}<span class='articles-list__inline-subtitle'>{{ post.subtitle}}</span>{% endif %}
+      {% if post.subtitle %}<span class='articles-list__subtitle'>{{ post.subtitle}}</span>{% endif %}
     </li>
   {% endfor %}
 </ul>
