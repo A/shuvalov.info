@@ -36,75 +36,68 @@ title: "Сравнение скорости выполнения функций 
 хабра, и теперь всегда использую для того, чтобы проверить, какое из решений
 быстрее. Я нахожу это занятие очень забавным.
 
-{:.language-js}
-    /** 
-     * from: habrahabr.ru/ somewhere in comments
-     * Полезная штука для того, чтобы оценить какой оператор или конструкция быстрее.
-     */
-    function count(f, q){
-        console.profile()
-        while(q--){
-            f();
-        }
-        console.profileEnd()
+{% highlight javascript %}
+/** 
+ * from: habrahabr.ru/ somewhere in comments
+ * Полезная штука для того, чтобы оценить какой оператор или конструкция быстрее.
+ */
+function count(f, q){
+    console.profile()
+    while(q--){
+        f();
     }
-    function f1( x ){
-        return typeof x == 'undefined';
-    }
-    function f2( x ){
-        return typeof x === 'undefined';
-    }
+    console.profileEnd()
+}
+function f1( x ){
+    return typeof x == 'undefined';
+}
+function f2( x ){
+    return typeof x === 'undefined';
+}
 
-    count(f1, 10000000000);
-    count(f2, 10000000000);
-
+count(f1, 10000000000);
+count(f2, 10000000000);
+{% endhighlight %}
 
 ## Нууу!!1 Что круче??!!111один
 
 В результате, пытаясь минимально сгладить различия между двумя реализациями,
 у меня получился следующий код.
 
-{:.language-js}
-    function count(f, q){
-        console.profile()
-        while(q--){
-            f();
-        }
-        console.profileEnd()
+{% highlight javascript %}
+function count(f, q){
+    console.profile()
+    while(q--){
+        f();
     }
+    console.profileEnd()
+}
 
 
-    function f1( x ){
-
-        var data = [7, 5, 1];
-
-        for (var i = 0; i < data.length; i++) {
-          var r = data[i];
-          r[0]==1 ? 'read' : false;
-          r[1]==1 ? 'write' : false;
-          r[2]==1 ? 'admin' : false;
-        }
-
+function f1( x ){
+    var data = [7, 5, 1];
+    for (var i = 0; i < data.length; i++) {
+      var r = data[i];
+      r[0]==1 ? 'read' : false;
+      r[1]==1 ? 'write' : false;
+      r[2]==1 ? 'admin' : false;
     }
+}
 
 
-    function f2( x ){
-
-        var data = ['r', 'rw', 'rwa'];
-
-        for (var i = 0; i < data.length; i++) {
-          var r = data[i];
-
-          !! ~r.indexOf('r') ? 'read' : false;
-          !! ~r.indexOf('w') ? 'write' : false;
-          !! ~r.indexOf('a') ? 'admin' : false;
-        }
-
+function f2( x ){
+    var data = ['r', 'rw', 'rwa'];
+    for (var i = 0; i < data.length; i++) {
+      var r = data[i];
+      !! ~r.indexOf('r') ? 'read' : false;
+      !! ~r.indexOf('w') ? 'write' : false;
+      !! ~r.indexOf('a') ? 'admin' : false;
     }
+}
 
-    count(f1, 10000000);
-    count(f2, 10000000);
-
+count(f1, 10000000);
+count(f2, 10000000);
+{% endhighlight %}
 
 
 ## Отвечай!!!!1
@@ -121,3 +114,24 @@ title: "Сравнение скорости выполнения функций 
 Все эти псевдоинтеллектуальные исследования в одном браузере вряд ли имеют
 какой-то смысл, но делать «зарубки на лавках» как видишь, очень весело! Советую,
 взять на вооружение этот удобный сниппет для, так сказать, a/b тестирования.
+
+## На самом деле нет
+
+По правде сказать, я допустил ошибку в функции получения прав из числа.
+И вообще, написал ее очень коряво. Правильный вариант такой:
+
+{% highlight javascript %}
+function f1( x ){
+    var data = [7, 5, 1];
+    for (var i = 0; i < data.length; i++) {
+      var r = data[i];
+      r & 1 ? 'read' : false;
+      r & 2 ? 'write' : false;
+      r & 4 ? 'admin' : false;
+    }
+}
+{% endhighlight %}
+
+И тогда-то числа и начнут знатно нагибать строки. Примерно раз в 20. 
+
+Это вернуло мне веру в мир. 
