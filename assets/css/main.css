@@ -185,6 +185,7 @@ a:hover {
 }
 .content > p,
 .content > ul,
+.content > ol,
 .content > pre {
   padding-bottom: 24px;
 }
@@ -249,6 +250,10 @@ a:hover {
   color: #2996cc;
   text-decoration: underline;
 }
+.content__date {
+  font-size: small;
+  text-align: right;
+}
 .articles-list {
   line-height: 34px;
   position: relative;
@@ -272,4 +277,7 @@ a:hover {
 .articles-list__item .articles-list__link:hover {
   color: #2996cc;
   text-decoration: underline;
+}
+.translation {
+  font-size: small;
 }
