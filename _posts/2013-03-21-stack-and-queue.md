@@ -26,17 +26,17 @@ title: "Стеки и очереди в JS"
 
 ### Реализация
 
-{:.language-js}
-    var stack = [];        // []
-    stack.push( "first" ); // stack === ["first"]
-    stack.push( 10, 20 );  // stack === ["first", 10, 20]
-    var el = stack.pop();  // stack === ["first", 10] && el === 20
-    stack.push( 2 );       // stack === ["first", 10, 2]
-    el = stack.pop();      // stack === ["first", 10] && el === 2
-    el = stack.pop();      // stack === ["first"] el = 10
-    el = stack.pop();      // stack === [] && el === "first"
-    el = stack.pop();      // stack === [] && typeof el === "undefined"
-
+{% highlight javascript %}
+var stack = [];        // []
+stack.push( "first" ); // stack === ["first"]
+stack.push( 10, 20 );  // stack === ["first", 10, 20]
+var el = stack.pop();  // stack === ["first", 10] && el === 20
+stack.push( 2 );       // stack === ["first", 10, 2]
+el = stack.pop();      // stack === ["first", 10] && el === 2
+el = stack.pop();      // stack === ["first"] el = 10
+el = stack.pop();      // stack === [] && el === "first"
+el = stack.pop();      // stack === [] && typeof el === "undefined"
+{% endhighlight %}
 
 
 ## Очередь в JavaScript
@@ -51,16 +51,17 @@ title: "Стеки и очереди в JS"
 
 ### Реализация
 
-{:.language-js}
-    var queue = [];         // []
-    queue.push( "first" );  // queue === ["first"]
-    queue.push( 10, 20 );   // queue === ["first", 10, 20]
-    var el = queue.shift(); // queue === [10, 20] && el === "first"
-    queue.push( 2 );        // queue === [10, 20, 2]
-    el = queue.shift();     // queue === [20, 2] && el === 10
-    el = queue.shift();     // queue === [2] && el === 20
-    el = queue.shift();     // queue === [] && el === 2
-    el = queue.shift();     // queue === [] && typeof el === "undefined"
+{% highlight javascript %}
+var queue = [];         // []
+queue.push( "first" );  // queue === ["first"]
+queue.push( 10, 20 );   // queue === ["first", 10, 20]
+var el = queue.shift(); // queue === [10, 20] && el === "first"
+queue.push( 2 );        // queue === [10, 20, 2]
+el = queue.shift();     // queue === [20, 2] && el === 10
+el = queue.shift();     // queue === [2] && el === 20
+el = queue.shift();     // queue === [] && el === 2
+el = queue.shift();     // queue === [] && typeof el === "undefined"
+{% endhighlight %}
 
 Так же очередь можно организовать с помощью `unshift` и `pop`, получиться точно
 так же, только последний элемент окажется в начале, а первый в конце, что
