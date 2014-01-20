@@ -34,6 +34,11 @@
           {% endif %}
         </div>
         {{ content }}
+        {% if page.translation %}
+          <div class="translation">
+            Перевод <a href="{{ page.translation.link }}">{{ page.translation.author }} — {{ page.translation.title }}</a>
+          </div>
+        {% endif %}
         {% if page.date %}
           <div class="content__date">{{ page.date | date: "%-d.%m.%Y" }}</div>
         {% endif %}
