@@ -11,5 +11,6 @@ title: "Если в терминале не работают приложени�
 
 Один из способов сделать это — добавить следующую строку в файл `~/.profiles`:
 
-{:.highlight-bash}
-    export PATH="/usr/local/share/npm/bin/:$PATH"
+{% highlight bash %}
+export PATH="/usr/local/share/npm/bin/:$PATH"
+{% endhighlight %}

@@ -4,54 +4,50 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="shortcut icon" href="/assets/i/favicon.png">
   </head>
   <body>
     <div class="wrapper">
       <div class="header">
         <div class="avatar"><img src="/assets/i/avatar.png"></div>
-        <h1 class="header__title header__title--subdued"><a href="/" class="header__link">Ношу шлем, тяжело дышу</a></h1>
+        <h1><a href="/">Ношу шлем, тяжело дышу</a></h1>
       </div>
       <div class="about">
-        <p>Меня зовут {{site.author.name}}. Я ведущий JS-разработчик и team lead 
-           в <a href="http://books.enaza.ru">Enaza Books</a>. Кроме программирования я 
-           <a href="{{ site.author.soundcloud }}">пишу музыку</a> и иногда занимаюсь дизайном 
-           интерфейсов. Я есть в <a href="{{ site.author.twitter }}">Twitter</a>, 
-           <a href="{{ site.author.facebook }}">Facebook</a> и 
+        <p>Меня зовут Антон Шувалов. Я ведущий JS-разработчик и team lead
+           в <a href="http://books.enaza.ru">Enaza Books</a>.  Также я один из основателей
+           стартапа <a href="http://reading-list.ru">Reading List</a>. Кроме программирования я
+           <a href="{{ site.author.soundcloud }}">пишу музыку</a> и иногда занимаюсь дизайном
+           интерфейсов. Я есть в <a href="{{ site.author.twitter }}">Twitter</a>,
+           <a href="{{ site.author.facebook }}">Facebook</a> и
            на <a href="{{ site.author.github }}">GitHub</a>. Вы можете написать
            мне <a href="mailto:{{ site.author.email }}">email</a>.
         </p>
       </div>
-      <div class="hr"></div>
       <div class="content">
-        <div class="content-header">
-          <h2 class="content-header__title">{{ page.title }}</h2>
-          {% if page.subtitle %}
-            <h5 class="content-header__subtitle">{{ page.subtitle }}</h5>
-          {% endif %}
-        </div>
+        <h1 class="title">{{ page.title }}</h1>
+        {% if page.translation %}
+          <div class="translation">
+            Перевод  <a href="{{ page.translation.link }}">{{ page.translation.author }} — {{ page.translation.title }}</a>
+          </div>
+        {% endif %}
         {{ content }}
+        {% if page.date %}
+          <div class="content__date">{{ page.date | date: "%-d.%m.%Y" }}</div>
+        {% endif %}
       </div>
     </div>
     <script src="/assets/js/prism.min.js"></script>
-    <script>  
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', {{ ga_id }}]);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-      var trackingByInterval = (function trackingByInterval () {
-        var timerCallback = function timerCallback () {
-          _gaq.push(['_trackEvent', 'Reading', 'every 5 sec']);
-        }
-        setInterval(timerCallback, 5000);
-      })();
-    </script>
     <script src="/assets/js/ol-li.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-26825614-2', 'anton-shuvalov.info');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>
 
