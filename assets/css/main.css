@@ -113,6 +113,14 @@ body {
 .wrapper {
   margin: 0 auto;
 }
+.widget {
+  margin-top: 4rem;
+  width: 728px;
+  height: 90px;
+  background-color: #f4f4f4;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+}
 @media (min-width: 320px) {
   .wrapper {
     width: 280px;
@@ -120,7 +128,7 @@ body {
 }
 @media (min-width: 720px) {
   .wrapper {
-    width: 720px;
+    width: 728px;
   }
 }
 a {

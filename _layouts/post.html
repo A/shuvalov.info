@@ -36,6 +36,19 @@
         {% if page.date %}
           <div class="content__date">{{ page.date | date: "%-d.%m.%Y" }}</div>
         {% endif %}
+        {% if page.index != true %}
+          <div class="widget">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- footer -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="ca-pub-6516049090709228"
+                 data-ad-slot="7310514795"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        {% endif %}
       </div>
     </div>
     <script src="/assets/js/prism.min.js"></script>
