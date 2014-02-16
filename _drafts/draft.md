@@ -160,6 +160,9 @@ translation:
 без страха устроить второе пришествие вашему руководителю, например.
 
 
+![](https://raw2.github.com/shuvalov-anton/anton-shuvalov.info/gh-pages/assets/articles-assets/tests.jpg)
+
+
 ##### Кода
 
 В заключении я хотел бы сказать, что это мой личный опыт. Я не знаю, какие у вас
