@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Попробовал в TDD. Люто-бешенно доставляет"
+title: "Попробовал в TDD. Люто-бешено доставляет"
 translation: 
   author: Dr. Axel Rauschmayer
   title: "The new operator implemented in JavaScript"
