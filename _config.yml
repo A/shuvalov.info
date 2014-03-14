@@ -2,6 +2,7 @@ name: 'Ношу шлем, тяжело дышу'
 markdown: kramdown
 pygments: true
 exclude: ['Gemfile', 'Gemfile.lock', 'makefile']
+lsi: true
 
 production_url: http://anton-shuvalov.info
 # baseurl: http://anton-shuvalov.info # ???
