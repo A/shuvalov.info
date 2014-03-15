@@ -170,6 +170,9 @@ a:hover {
   left: -112px;
   top: -10px;
 }
+.likes-wrapper {
+  margin-bottom: 1rem;
+}
 .highlight {
   margin-bottom: 1rem;
 }
