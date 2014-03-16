@@ -244,6 +244,13 @@ ol .number {
   color: #99968a;
   font-style: italic;
 }
+.note {
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+}
 code {
   background-color: #fff;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
@@ -303,6 +310,10 @@ pre > code {
   font-size: 0.8rem;
   padding: 4px 4px 2px;
   outline: solid #f2db80 1px;
+}
+.articles-list__subtitle--green {
+  background-color: #bfeaff;
+  outline: solid #91d2f2 1px;
 }
 .articles-list__item .articles-list__link {
   text-decoration: none;

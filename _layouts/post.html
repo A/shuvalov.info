@@ -54,6 +54,7 @@
                 <li class="articles-list__item">
                   <a class="articles-list__link" {% if post.extlink %} href="{{ post.extlink }}" target="_blank" {% else %} href="{{ post.url }}"{% endif %}>{{ post.title }}</a>
                   {% if post.subtitle %}<span class='articles-list__subtitle'>{{ post.subtitle }}</span>{% endif %}
+                  {% if post.translation %}<span class='articles-list__subtitle articles-list__subtitle--green'>Перевод</span>{% endif %}
                 </li>
               {% endfor %}
             </ul>
