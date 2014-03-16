@@ -2,7 +2,8 @@
 
 layout: post  
 title: "Дизайнер, архитектор, разработчик"
-subtitle: habrahabr.ru
+labels: "habrahabr.ru"
+tags: ["разное"]
 extlink: http://habrahabr.ru/post/200746/
 
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Jekyll Bootstrap и Google Analytics"
 description: "Как заставить работать аналитику в jekyll-bootstrap"
 keywords: "jekyl, bootstrap, analytics, google, fix"
-tags: [jekyll]
+tags: "jekyll"
 ---
 
 

@@ -2,6 +2,7 @@
 
 layout: post
 title: "Стеки и очереди в JS"
+tags: ["javascript"]
 
 ---
 

@@ -2,7 +2,8 @@
 
 layout: post
 title: "Как работает event loop в Node.js"
-subtitle: 'frontender.info'
+labels: "frontender.info"
+tags: ["javascript"]
 extlink: 'http://frontender.info/understanding-the-node-js-event-loop/'
 
 ---

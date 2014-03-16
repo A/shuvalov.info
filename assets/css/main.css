@@ -245,14 +245,15 @@ ol .number {
   font-style: italic;
 }
 .note {
-  padding: 0.5rem 2rem;
+  color: #444;
+  padding: 0.5rem 2rem 1rem;
   margin-bottom: 1rem;
-  background-color: #fff;
+  background-color: #f4f4f4;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
   box-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
 code {
-  background-color: #fff;
+  background-color: #f4f4f4;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
   box-shadow: 0 1px 1px rgba(0,0,0,0.15);
   font-size: 0.8rem;
@@ -302,18 +303,14 @@ pre > code {
   text-align: center;
   color: #99968a;
 }
-.articles-list__subtitle {
+.articles-list__label {
+  color: #99968a;
   font-style: italic;
-  background-color: #ffe788;
-  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
   font-size: 0.8rem;
   padding: 4px 4px 2px;
-  outline: solid #f2db80 1px;
-}
-.articles-list__subtitle--green {
-  background-color: #bfeaff;
-  outline: solid #91d2f2 1px;
+  background-color: #f4f4f4;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
 .articles-list__item .articles-list__link {
   text-decoration: none;

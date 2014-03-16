@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "node-clusterize-cli — кластеризация NodeJS web-сервера"
-subtitle: "habrahabr.ru"
+labels: "habrahabr.ru"
+tags: ["javascript"]
 extlink: http://habrahabr.ru/post/208914/
 ---
 

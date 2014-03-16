@@ -3,7 +3,7 @@ layout: post
 title: "Как объеденить две медиатеки в iTunes"
 description: "Инструкция о том, как объединенить две медиатеки, не потеряв статистику прослушиваний"
 keywords: "itunes, apple, медиатека, объеденить" 
-tags: [iTunes, Apple]
+tags: [разное]
 ---
 
 <img class="img-center" src="http://31808.selcdn.ru/it-prm/pics/itunes.jpg" alt="iTunes">

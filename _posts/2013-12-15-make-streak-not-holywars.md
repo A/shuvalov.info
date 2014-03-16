@@ -2,6 +2,7 @@
 
 layout: post
 title: "Make Streak, Not Holywars"
+tags: ["разное"]
 
 ---
 

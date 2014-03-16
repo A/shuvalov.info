@@ -3,7 +3,7 @@ layout: post
 title: "Архитектура кода"
 description: "Мысли по поводу архитектуры"
 keywords: "История, программисты, архитектура" 
-tags: [design, wtf]
+tags: "разное"
 ---
 
 <img class="img-center" src="http://31808.selcdn.ru/it-prm/pics/blueprint-1.jpg" alt="Архитектура кода">

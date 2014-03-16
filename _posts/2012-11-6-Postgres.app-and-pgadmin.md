@@ -3,7 +3,7 @@ layout: post
 title: 'pgadmin column "datconfig" does not exist'
 description: ""
 category: 
-tags: [wtf, PostgreSQL]
+tags: "разное"
 ---
 
 

@@ -2,7 +2,8 @@
 
 layout: post  
 title: "Опыт работы с GruntJS"  
-subtitle: habrahabr.ru
+labels: "habrahabr.ru"
+tags: ["javascript"]
 extlink: http://habrahabr.ru/post/193092/
 
 ---

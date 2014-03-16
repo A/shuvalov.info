@@ -3,7 +3,7 @@ layout: post
 title: "Как правильно считать время в Google Analytics"
 description: "Статья о том, как получать в Google Analytics корректное значение среднего времени, проведенного пользователями на сайте"
 keywords: "google, analytics, javascript, avtime" 
-tags: [wtf]
+tags: "разное"
 ---
 
 

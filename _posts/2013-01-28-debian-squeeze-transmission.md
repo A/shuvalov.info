@@ -2,7 +2,7 @@
 
 layout: post
 title: "Установка transmission"
-
+tags: "разное"
 ---
 
 

@@ -2,6 +2,7 @@
 
 layout: post
 title: "Сравнение скорости выполнения функций в JavaScript"
+tags: ["javascript"]
 
 ---
 

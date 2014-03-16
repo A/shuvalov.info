@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Реализация оператора new в JavaScript"
+tags: ["javascript"]
 translation: 
   author: Dr. Axel Rauschmayer
   title: "The new operator implemented in JavaScript"

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Странные ссылки в iBooks"
+tags: "ibooks"
 ---
 
 <img class="img-center" src="http://31808.selcdn.ru/it-prm/pics/hero_ibooks_author.png" alt="iBooks Author"> 

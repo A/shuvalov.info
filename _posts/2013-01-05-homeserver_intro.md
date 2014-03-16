@@ -3,7 +3,7 @@ layout: post
 title: "Домашний сервер. Интро"
 description: "Цикл статей о том, как сделать домашний сервер"
 keywords: "дом, сервер, установка, сделать, DIY"
-tags: [debian, homeserver]
+tags: "разное"
 ---
 
 

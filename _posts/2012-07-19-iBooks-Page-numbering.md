@@ -3,7 +3,7 @@ layout: post
 title: "Нумерация страниц в iBooks Author"
 description: "Как исправить нумерацию страниц с римских чисел на арабские в Apple iBooks Author"
 keywords: "Apple, numbering, нумерация, страницы, ibooks, author" 
-tags: [Apple, ibooks, wtf]
+tags: [ibooks]
 ---
 
 ![pic][]

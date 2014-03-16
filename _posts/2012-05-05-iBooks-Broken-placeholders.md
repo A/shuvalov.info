@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Сломаные заполнители в iBooks"
+tags: "ibooks"
 ---
 
 

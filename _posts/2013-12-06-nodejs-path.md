@@ -2,6 +2,7 @@
 
 layout: post
 title: "Если в терминале не работают приложения node.js "
+tags: ["javascript"]
 
 ---
 

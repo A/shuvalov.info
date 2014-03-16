@@ -3,7 +3,7 @@ layout: post
 title: "Ссылка на глоссарий в iBooks Author"
 description: "Что делать если не получается добавить слово в глоссарий iBooks Author"
 keywords: "глоссарий, iBooks, Author, apple" 
-tags: [Apple, ibooks, wtf]
+tags: "ibooks"
 ---
 
 

@@ -18,6 +18,7 @@ font__size = 18px
 
 // Images
 noise                        = url('/assets/i/noise_2.png')
+extlinkBg                    = url('/assets/i/extlink.png')
 
 // Effects
 shadow__tiny                 = 0 1px 1px rgba(0,0,0,.15)
@@ -149,13 +150,14 @@ ol
     font-style italic
 
 .note
-  padding .5rem 2rem
+  color #444
+  padding .5rem 2rem 1rem
   margin-bottom: 1rem
-  background-color #FFF
+  background-color #f4f4f4
   box-shadow shadow__tiny
 
 code
-  background-color #FFF
+  background-color #f4f4f4
   box-shadow shadow__tiny
   font-size .8rem
   line-height 1
@@ -202,17 +204,21 @@ pre > code
   text-align center
   color color__subdued
 
-.articles-list__subtitle
+// .articles-list__subtitle
+//   font-style italic
+//   background-color #f4f4f4
+//   box-shadow shadow__tiny
+//   font-size .8rem
+//   padding 4px 4px 2px
+//   // outline solid #F2DB80 1px 
+
+.articles-list__label
+  color #99968a
   font-style italic
-  background-color #FFE788
-  box-shadow shadow__tiny
   font-size .8rem
   padding 4px 4px 2px
-  outline solid #F2DB80 1px 
-
-.articles-list__subtitle--green
-  background-color: #BFEAFF
-  outline solid #91D2F2 1px 
+  background-color #f4f4f4
+  box-shadow shadow__tiny
 
 .articles-list__item
   .articles-list__link

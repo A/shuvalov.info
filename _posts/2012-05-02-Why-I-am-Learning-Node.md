@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Почему я учу NODE.JS"
-translation: 
+translation:
   author: Randall Degges
   title: "Why I'm Learning Node"
   link: http://www.rdegges.com/why-im-learning-node/
-tags: node, js
+tags: ["javascript"]
 
 ---
 

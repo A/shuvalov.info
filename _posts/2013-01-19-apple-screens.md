@@ -2,7 +2,7 @@
 
 layout: post
 title: "MacBook и монитор"
-
+tags: "разное"
 ---
 
 

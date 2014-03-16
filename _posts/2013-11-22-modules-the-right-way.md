@@ -2,7 +2,8 @@
 
 layout: post
 title: "Правильные модули"
-subtitle: 'frontender.info'
+labels: "frontender.info"
+tags: ["javascript"]
 extlink: 'http://frontender.info/modules-the-right-way/'
 
 ---
