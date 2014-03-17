@@ -1,0 +1,9 @@
+<li class="articles-list__item">
+  <a class="articles-list__link" {% if post.extlink %} href="{{ post.extlink }}" target="_blank" {% else %} href="{{ post.url }}"{% endif %}>{{ post.title }}</a>
+  {% for label in post.labels %}
+    <span class='articles-list__label'>{{ label }}</span>
+  {% endfor %}
+  <div class="articles-list__description">
+    {{ post.description }}
+  </div>
+</li>

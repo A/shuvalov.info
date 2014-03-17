@@ -333,11 +333,16 @@ pre > code {
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
   box-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
-.articles-list__item .articles-list__link {
+.articles-list__link {
   text-decoration: none;
   color: inherit;
 }
-.articles-list__item .articles-list__link:hover {
+.articles-list__link:hover {
   color: #2996cc;
   text-decoration: underline;
+}
+.articles-list__description {
+  color: #99968a;
+  font-size: 0.8rem;
+  font-style: italic;
 }

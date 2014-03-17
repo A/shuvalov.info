@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Реализация оператора new в JavaScript"
-tags: ["javascript"]
+keywords: ["javascript new", "js new", "оператор new в js", "оператор new", "конструктор js"]
+description: "Очень маленькая статья о том, как работает оператор new в js"
 translation: 
   author: Dr. Axel Rauschmayer
   title: "The new operator implemented in JavaScript"
