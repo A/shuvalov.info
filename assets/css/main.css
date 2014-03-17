@@ -130,7 +130,19 @@ body {
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
   box-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
+.avatar {
+  background: url("/assets/i/avatar.png");
+  width: 66px;
+  height: 67px;
+}
 @media (min-width: 320px) {
+  .avatar {
+    position: static;
+    margin: 0 auto 2rem;
+  }
+  .header p {
+    text-align: center;
+  }
   .wrapper {
     width: 280px;
   }
@@ -142,6 +154,14 @@ body {
   }
 }
 @media (min-width: 720px) {
+  .avatar {
+    position: absolute;
+    left: -112px;
+    top: -10px;
+  }
+  .header p {
+    text-align: left;
+  }
   .wrapper {
     width: 728px;
   }
@@ -186,13 +206,6 @@ a:hover {
 }
 .about:after {
   clear: both;
-}
-.avatar {
-  width: 64px;
-  height: 64px;
-  position: absolute;
-  left: -112px;
-  top: -10px;
 }
 .likes-wrapper {
   margin-bottom: 2rem;

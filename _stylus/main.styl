@@ -17,6 +17,7 @@ font__base = Georgia, 'Times New Roman', serif
 font__size = 18px
 
 // Images
+avatar                       = url('/assets/i/avatar.png')
 noise                        = url('/assets/i/noise_2.png')
 extlinkBg                    = url('/assets/i/extlink.png')
 
@@ -64,18 +65,31 @@ body
   background-color #f4f4f4
   box-shadow shadow__tiny
 
+.avatar
+  background avatar
+  size 66px 67px
+
 
 @media (min-width: 320px)
+  .avatar
+    position static
+    margin 0 auto 2rem
+  .header p
+    text-align center
   .wrapper
     width 280px
-
   .widget
     display: none
-
   .widget-320
     display: block
 
 @media (min-width: 720px)
+  .avatar
+    position absolute
+    left -112px
+    top -10px
+  .header p
+    text-align left
   .wrapper
     width 728px
   .widget-320
@@ -106,11 +120,6 @@ a
   color color__subdued
   clearfix()
 
-.avatar
-  size 64px
-  position absolute
-  left -112px
-  top -10px
 
 .likes-wrapper
   margin-bottom 2rem;
