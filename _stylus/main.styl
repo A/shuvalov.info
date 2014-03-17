@@ -57,13 +57,31 @@ body
   background-color #f4f4f4
   box-shadow shadow__tiny
 
+.widget-320
+  display: none
+  size: 320px 50px
+  margin-left: -20px
+  background-color #f4f4f4
+  box-shadow shadow__tiny
+
+
 @media (min-width: 320px)
   .wrapper
     width 280px
 
+  .widget
+    display: none
+
+  .widget-320
+    display: block
+
 @media (min-width: 720px)
   .wrapper
     width 728px
+  .widget-320
+    display: none
+  .widget
+    display: block
 
 a
   color color__blue
@@ -203,14 +221,6 @@ pre > code
   width 64px
   text-align center
   color color__subdued
-
-// .articles-list__subtitle
-//   font-style italic
-//   background-color #f4f4f4
-//   box-shadow shadow__tiny
-//   font-size .8rem
-//   padding 4px 4px 2px
-//   // outline solid #F2DB80 1px 
 
 .articles-list__label
   color #99968a

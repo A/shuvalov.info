@@ -121,14 +121,35 @@ body {
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
   box-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
+.widget-320 {
+  display: none;
+  width: 320px;
+  height: 50px;
+  margin-left: -20px;
+  background-color: #f4f4f4;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+}
 @media (min-width: 320px) {
   .wrapper {
     width: 280px;
+  }
+  .widget {
+    display: none;
+  }
+  .widget-320 {
+    display: block;
   }
 }
 @media (min-width: 720px) {
   .wrapper {
     width: 728px;
+  }
+  .widget-320 {
+    display: none;
+  }
+  .widget {
+    display: block;
   }
 }
 a {
