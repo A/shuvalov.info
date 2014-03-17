@@ -171,6 +171,9 @@ a:hover {
 .header a:hover {
   color: #2996cc;
 }
+.header p {
+  font-size: 2rem;
+}
 .about {
   font-size: 0.8rem;
   color: #99968a;
@@ -217,9 +220,7 @@ li {
   padding-bottom: 0.5rem;
   position: relative;
 }
-h1 {
-  font-size: 2rem;
-}
+h1,
 h2 {
   font-size: 1.6rem;
 }
