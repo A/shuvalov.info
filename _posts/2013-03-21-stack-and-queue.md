@@ -51,7 +51,7 @@ el = stack.pop();      // stack === [] && typeof el === "undefined"
 
 <div style="text-align:right;font-style:italic;">Википедия</div>
 
-### Реализация
+### Работа со стеком и очередью в javascript
 
 {% highlight javascript %}
 var queue = [];         // []
@@ -65,6 +65,6 @@ el = queue.shift();     // queue === [] && el === 2
 el = queue.shift();     // queue === [] && typeof el === "undefined"
 {% endhighlight %}
 
-Так же очередь можно организовать с помощью `unshift` и `pop`, получиться точно
-так же, только последний элемент окажется в начале, а первый в конце, что
-немного не привычно.
+Так же очередь в javascript можно организовать с помощью `unshift` и `pop`,
+получиться точно так же, только последний элемент окажется в начале, а первый
+в конце, что немного не привычно.
