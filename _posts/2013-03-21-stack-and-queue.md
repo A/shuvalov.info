@@ -3,7 +3,7 @@
 layout: post
 title: "Стеки и очереди в JavaScript"
 description: "Несколько примеров реализации стеков и очередей в js"
-tags: ["javascript"]
+keywords: ["очередь в javascript", "стек в javascript", "javascript", "стек", "очередь"]
 
 ---
 
