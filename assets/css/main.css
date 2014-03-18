@@ -283,7 +283,7 @@ blockquote::after {
   content: "»";
   left: 100%;
   margin-left: 1rem;
-  bottom: -1rem;
+  bottom: -0.85rem;
 }
 ul {
   position: relative;
