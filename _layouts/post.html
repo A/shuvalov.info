@@ -21,13 +21,10 @@
         {% endif %}
         {% if page.index != true %}
           {% include likes.html %}
+          {% include ad-728x90.html %}
+          {% include ad-320x50.html %}
           {% include related-posts.html %}
-          <div class="widget">
-            {% include ad-728x90.html %}
-          </div>
-          <div class="widget-320">
-            {% include ad-320x50.html %}
-          </div>
+          {% include disqus.html %}
         {% endif %}
       </div>
     </div>

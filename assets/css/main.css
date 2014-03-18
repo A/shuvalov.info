@@ -114,7 +114,7 @@ body {
   margin: 0 auto;
 }
 .widget {
-  margin-top: 1rem;
+  margin: 1rem 0;
   width: 728px;
   height: 90px;
   background-color: #f4f4f4;
@@ -125,7 +125,7 @@ body {
   display: none;
   width: 320px;
   height: 50px;
-  margin-left: -20px;
+  margin: 1rem 0 1.5rem -1rem;
   background-color: #f4f4f4;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
   box-shadow: 0 1px 1px rgba(0,0,0,0.15);
@@ -152,6 +152,10 @@ body {
   .widget-320 {
     display: block;
   }
+  :before,
+  blockquote::after {
+    display: none;
+  }
 }
 @media (min-width: 720px) {
   .avatar {
@@ -169,6 +173,10 @@ body {
     display: none;
   }
   .widget {
+    display: block;
+  }
+  :before,
+  blockquote::after {
     display: block;
   }
 }
@@ -208,7 +216,7 @@ a:hover {
   clear: both;
 }
 .likes-wrapper {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .highlight {
   margin-bottom: 1rem;
@@ -255,15 +263,37 @@ em {
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
   box-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
+blockquote {
+  position: relative;
+  font-style: italic;
+}
+blockquote::before,
+blockquote::after {
+  font-size: 4rem;
+  color: #99968a;
+  position: absolute;
+}
+blockquote::before {
+  content: "«";
+  right: 100%;
+  margin-right: 1rem;
+  top: -2rem;
+}
+blockquote::after {
+  content: "»";
+  left: 100%;
+  margin-left: 1rem;
+  bottom: -1rem;
+}
 ul {
   position: relative;
 }
 ul li::before {
   content: '-';
-  display: inline-block;
+  display: block;
   position: absolute;
-  left: -1em;
-  width: 1em;
+  right: 100%;
+  margin-right: 1em;
   color: #99968a;
 }
 ol {
