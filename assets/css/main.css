@@ -156,6 +156,9 @@ body {
   blockquote::after {
     display: none;
   }
+  ul li::before {
+    margin-right: 0.5em;
+  }
 }
 @media (min-width: 720px) {
   .avatar {
@@ -178,6 +181,9 @@ body {
   :before,
   blockquote::after {
     display: block;
+  }
+  ul li::before {
+    margin-right: 1em;
   }
 }
 a {
@@ -234,8 +240,10 @@ pre {
 h1,
 h2,
 h3,
-h4 {
-  margin-top: 1.5rem;
+h4,
+.header p {
+  margin-top: 0.5rem;
+  line-height: 1 !important;
 }
 li {
   padding-bottom: 0.5rem;
@@ -293,7 +301,6 @@ ul li::before {
   display: block;
   position: absolute;
   right: 100%;
-  margin-right: 1em;
   color: #99968a;
 }
 ol {
@@ -343,7 +350,7 @@ pre > code {
 }
 .content {
   margin: 1rem 0 6rem;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 .translation {
   font-size: 0.8em;
@@ -370,7 +377,7 @@ pre > code {
   color: #99968a;
 }
 .articles-list__label {
-  color: #99968a;
+  color: #736750;
   font-style: italic;
   font-size: 0.8rem;
   padding: 4px 4px 2px;

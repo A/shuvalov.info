@@ -84,7 +84,11 @@ body
     display block
   blockquote::before
   blockquote::after
-    display none 
+    display none
+  ul li::before
+      margin-right .5em
+
+
 
 @media (min-width: 720px)
   .avatar
@@ -102,7 +106,8 @@ body
   blockquote::before
   blockquote::after
     display block
-
+  ul li::before
+      margin-right 1em
 a
   color color__blue
   text-decoration none
@@ -133,11 +138,13 @@ a
 .highlight
   margin-bottom 1rem
 
+
 h1,h2,h3,h4,p,ul,ol,pre
   padding-bottom 1rem
 
-h1,h2,h3,h4
-  margin-top 1.5rem
+h1,h2,h3,h4, .header p
+  margin-top .5rem
+  line-height 1 !important
 
 li
   padding-bottom .5rem
@@ -190,7 +197,7 @@ ul
       display block;
       position absolute;
       right 100%;
-      margin-right 1em;
+      // margin-right 1em;
       color color__subdued;
 
 ol
@@ -233,7 +240,7 @@ pre > code
 
 .content
   margin 1rem 0 6rem
-  line-height 1.5
+  line-height 1.4
 
 .translation
   font-size .8em
@@ -260,7 +267,7 @@ pre > code
   color color__subdued
 
 .articles-list__label
-  color color__subdued
+  color #736750
   font-style italic
   font-size .8rem
   padding 4px 4px 2px
