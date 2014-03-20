@@ -356,6 +356,7 @@ pre > code {
   font-style: italic;
   color: #99968a;
   text-align: right;
+  margin-bottom: 1rem;
 }
 .articles-list {
   position: relative;
