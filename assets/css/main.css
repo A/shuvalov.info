@@ -106,7 +106,7 @@ html {
 }
 body {
   background: url("/assets/i/noise_2.png") #f0efe8;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  text-shadow: 0 1px 0 rgba(250,250,250,0.5);
   color: #261f00;
   line-height: 1.4;
 }
@@ -131,17 +131,31 @@ body {
   box-shadow: 0 1px 1px rgba(0,0,0,0.25);
 }
 .avatar {
-  background: url("/assets/i/avatar.png");
-  width: 66px;
-  height: 67px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  overflow: hidden;
+  right: 100%;
+  margin: -1rem 1rem 0 0;
+  background: url("/assets/i/avatar.png") #f2f2f2;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+.rss-link {
+  margin-top: 7px;
+  float: right;
+  color: #2996cc !important;
+  text-decoration: underline;
 }
 @media (min-width: 320px) {
   .avatar {
-    position: static;
-    margin: 0 auto 2rem;
-  }
-  .header p {
-    text-align: center;
+    display: none;
   }
   .wrapper {
     width: 280px;
@@ -162,12 +176,7 @@ body {
 }
 @media (min-width: 720px) {
   .avatar {
-    position: absolute;
-    left: -112px;
-    top: -10px;
-  }
-  .header p {
-    text-align: left;
+    display: block;
   }
   .wrapper {
     width: 728px;
@@ -210,6 +219,7 @@ a:hover {
 }
 .about {
   font-size: 0.8rem;
+  font-style: italic;
   color: #99968a;
   zoom: 1;
 }
@@ -242,7 +252,7 @@ h2,
 h3,
 h4,
 .header p {
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 0 -2px;
   line-height: 1 !important;
 }
 li {
@@ -291,7 +301,7 @@ blockquote::after {
   content: "»";
   left: 100%;
   margin-left: 1rem;
-  bottom: -0.85rem;
+  bottom: -0.5rem;
 }
 ul {
   position: relative;
@@ -374,7 +384,7 @@ pre > code {
   display: block;
   width: 64px;
   text-align: center;
-  color: #99968a;
+  color: #261f00;
 }
 .articles-list__label {
   color: #736750;

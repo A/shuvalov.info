@@ -23,7 +23,7 @@ extlinkBg                    = url('/assets/i/extlink.png')
 
 // Effects
 shadow__tiny                 = 0 1px 1px rgba(0,0,0,.25)
-shadow__pressed_effect       = 0 1px 0 rgba(255,255,255, .5)
+shadow__pressed_effect       = 0 1px 0 rgba(250,250,250, .5)
 
 
 global-reset()
@@ -32,7 +32,6 @@ fragment (color)
   background-color color
   box-shadow shadow__tiny
   padding 4px 4px 2px
-  // outline solid #F2DB80 1px // TODO color+5black
 
 
 *
@@ -66,16 +65,26 @@ body
   box-shadow shadow__tiny
 
 .avatar
-  background avatar
-  size 66px 67px
+  display block
+  size 80px
+  position absolute
+  overflow hidden
+  right 100%
+  margin -1rem 1rem 0 0
+  background avatar #f2f2f2
+  background-size cover
+  border-radius 50%
+  box-shadow inset 0 1px 3px rgba(0,0,0,.5)
 
+.rss-link
+  margin-top 7px
+  float right
+  color #2996cc !important
+  text-decoration underline
 
 @media (min-width: 320px)
   .avatar
-    position static
-    margin 0 auto 2rem
-  .header p
-    text-align center
+    display none
   .wrapper
     width 280px
   .widget
@@ -92,11 +101,7 @@ body
 
 @media (min-width: 720px)
   .avatar
-    position absolute
-    left -112px
-    top -10px
-  .header p
-    text-align left
+    display block
   .wrapper
     width 728px
   .widget-320
@@ -128,6 +133,7 @@ a
 
 .about 
   font-size .8rem
+  font-style italic
   color color__subdued
   clearfix()
 
@@ -143,7 +149,7 @@ h1,h2,h3,h4,p,ul,ol,pre
   padding-bottom 1rem
 
 h1,h2,h3,h4, .header p
-  margin-top .5rem
+  margin .5rem 0 0 -2px
   line-height 1 !important
 
 li
@@ -186,7 +192,7 @@ blockquote
     content "»"
     left 100%
     margin-left 1rem
-    bottom -.85rem
+    bottom -.5rem
 
 
 ul
@@ -264,7 +270,7 @@ pre > code
   display block
   width 64px
   text-align center
-  color color__subdued
+  color color__dark
 
 .articles-list__label
   color #736750
