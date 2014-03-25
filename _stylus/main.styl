@@ -22,7 +22,7 @@ noise                        = url('/assets/i/noise_2.png')
 extlinkBg                    = url('/assets/i/extlink.png')
 
 // Effects
-shadow__tiny                 = 0 1px 1px rgba(0,0,0,.15)
+shadow__tiny                 = 0 1px 1px rgba(0,0,0,.25)
 shadow__pressed_effect       = 0 1px 0 rgba(255,255,255, .5)
 
 
@@ -287,3 +287,36 @@ pre > code
   color color__subdued
   font-size .8rem
   font-style italic
+
+.triptych
+  margin-top -10px // TODO: Переписать на схлопывания
+
+.triptych__left
+.triptych__right
+  size 280px 400px
+  overflow hidden
+  margin 10px 0
+.triptych__left
+  float left
+.triptych__right
+  float right
+
+.triptych__right-top
+.triptych__left-top
+  size 428px auto
+  overflow hidden
+  margin 10px 0 0
+.triptych__right-top
+  float right
+.triptych__left-top
+  float left
+
+.triptych__right-bottom
+.triptych__left-bottom
+  size 428px auto
+  overflow hidden
+  margin 20px 0 10px
+.triptych__right-bottom
+  float right
+.triptych__left-bottom
+  float left

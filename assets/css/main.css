@@ -91,8 +91,8 @@ a img {
 }
 fragment (color) {
   background-color: color;
-  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
   padding: 4px 4px 2px;
 }
 * {
@@ -118,8 +118,8 @@ body {
   width: 728px;
   height: 90px;
   background-color: #f4f4f4;
-  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
 }
 .widget-320 {
   display: none;
@@ -127,8 +127,8 @@ body {
   height: 50px;
   margin: 1rem 0 1.5rem -1rem;
   background-color: #f4f4f4;
-  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
 }
 .avatar {
   background: url("/assets/i/avatar.png");
@@ -268,8 +268,8 @@ em {
 }
 .content img {
   max-width: 100%;
-  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
 }
 blockquote {
   position: relative;
@@ -321,13 +321,13 @@ ol .number {
   padding: 0.5rem 2rem 1rem;
   margin-bottom: 1rem;
   background-color: #f4f4f4;
-  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
 }
 code {
   background-color: #f4f4f4;
-  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
   font-size: 0.8rem;
   line-height: 1;
 }
@@ -335,8 +335,8 @@ pre {
   padding: 1rem 1rem;
   overflow: auto;
   background-color: #fff;
-  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
 }
 code {
   font-family: Consolas, Monaco, 'Andale Mono', monospace;
@@ -382,8 +382,8 @@ pre > code {
   font-size: 0.8rem;
   padding: 4px 4px 2px;
   background-color: #f4f4f4;
-  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
 }
 .articles-list__link {
   text-decoration: none;
@@ -397,4 +397,46 @@ pre > code {
   color: #99968a;
   font-size: 0.8rem;
   font-style: italic;
+}
+.triptych {
+  margin-top: -10px;
+}
+.triptych__left,
+.triptych__right {
+  width: 280px;
+  height: 400px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.triptych__left {
+  float: left;
+}
+.triptych__right {
+  float: right;
+}
+.triptych__right-top,
+.triptych__left-top {
+  width: 428px;
+  height: auto;
+  overflow: hidden;
+  margin: 10px 0 0;
+}
+.triptych__right-top {
+  float: right;
+}
+.triptych__left-top {
+  float: left;
+}
+.triptych__right-bottom,
+.triptych__left-bottom {
+  width: 428px;
+  height: auto;
+  overflow: hidden;
+  margin: 20px 0 10px;
+}
+.triptych__right-bottom {
+  float: right;
+}
+.triptych__left-bottom {
+  float: left;
 }
