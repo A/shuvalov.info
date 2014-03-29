@@ -154,6 +154,12 @@ body {
   text-decoration: underline;
 }
 @media (min-width: 320px) {
+  .img-left,
+  .img-right {
+    display: block;
+    float: none;
+    margin: 0 auto 1rem;
+  }
   .avatar {
     display: none;
   }
@@ -175,6 +181,15 @@ body {
   }
 }
 @media (min-width: 720px) {
+  .img-left {
+    display: inline-block;
+    float: left;
+    margin: 0.2rem 1rem 1rem 0;
+  }
+  .img-right {
+    float: right;
+    margin: 0.2rem 0 1rem 1rem;
+  }
   .avatar {
     display: block;
   }
@@ -449,14 +464,6 @@ pre > code {
 }
 .triptych__left-bottom {
   float: left;
-}
-.img-left {
-  float: left;
-  margin: 0 1rem 1rem 0;
-}
-.img-right {
-  float: right;
-  margin: 0 0 1rem 1rem;
 }
 .clearfix {
   clear: both;

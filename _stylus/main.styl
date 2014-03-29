@@ -83,6 +83,11 @@ body
   text-decoration underline
 
 @media (min-width: 320px)
+  .img-left
+  .img-right
+    display block
+    float none
+    margin 0 auto 1rem
   .avatar
     display none
   .wrapper
@@ -98,8 +103,14 @@ body
       margin-right .5em
 
 
-
 @media (min-width: 720px)
+  .img-left
+    display inline-block
+    float left
+    margin .2rem 1rem 1rem 0
+  .img-right
+    float right
+    margin .2rem 0 1rem 1rem
   .avatar
     display block
   .wrapper
@@ -113,6 +124,7 @@ body
     display block
   ul li::before
       margin-right 1em
+
 a
   color color__blue
   text-decoration none
@@ -326,14 +338,6 @@ pre > code
   float right
 .triptych__left-bottom
   float left
-
-.img-left
-  float:left;
-  margin: 0 1rem 1rem 0;
-
-.img-right
-  float: right;
-  margin: 0 0 1rem 1rem;
 
 .clearfix
   clear: both;
