@@ -12,12 +12,14 @@ index: true
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% if this_year != that_year %}
       {% if !forloop.first %}
-        <div class="articles-list__title">{{ this_year }}</div>
+        <div class="articles-list__title" data-scroll-reveal="enter ease 0">{{ this_year }}</div>
       {% else %}
         </ul><ul class="articles-list__list">
           <div class="articles-list__title">{{ this_year }}</div>
       {% endif %}
     {% endif %}
-    {% include article-snippet.html %}
+    <div data-scroll-reveal="enter ease 0">
+      {% include article-snippet.html %}
+    </div>
   {% endfor %}
 </ul>
