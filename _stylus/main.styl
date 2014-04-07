@@ -13,8 +13,10 @@ color__moarsubdued           = #D6D4CC
 
 // Fonts
 
-font__base = Georgia, 'Times New Roman', serif
-font__size = 18px
+font__title = Georgia, "Times New Roman", serif
+font__base = "Neacademia Text Regular", Georgia, 'Times New Roman', serif
+font__italic = "Neacademia Display Italic", Georgia, 'Times New Roman', serif
+font__size = 20px
 
 // Images
 avatar                       = url('/assets/i/avatar.png')
@@ -43,10 +45,10 @@ html
 
 
 body
-  background noise #FFFFFC
+  background #FFFFFC
   text-shadow shadow__pressed_effect
   color color__dark
-  line-height 1.4
+  line-height 1.6
 
 .wrapper
   margin 0 auto
@@ -140,11 +142,12 @@ a
     color color__subdued
     &:hover
       color color__blue
-  p
+  p a
     font-size 2rem
 
 .about 
   font-size .8rem
+  font-family font__italic
   font-style italic
   color color__subdued
   clearfix()
@@ -161,6 +164,7 @@ h1,h2,h3,h4,p,ul,ol,pre
   padding-bottom 1rem
 
 h1,h2,h3,h4, .header p
+  font-family font__title
   margin .5rem 0 0 -2px
   line-height 1 !important
 
@@ -180,7 +184,9 @@ h4
 strong
   font-weight bold
 
+i
 em
+  font-family font__italic
   font-style italic
 
 .content img
@@ -189,9 +195,12 @@ em
 
 blockquote
   position relative
+  font-family font__italic
   font-style italic
   &::before
   &::after
+    font-family 'Georgia', serif
+    font-style normal
     font-size 4rem
     color color__subdued
     position absolute
@@ -199,12 +208,12 @@ blockquote
     content "«"
     right 100%
     margin-right 1rem
-    top -2rem
+    top -2.3rem
   &::after
     content "»"
     left 100%
     margin-left 1rem
-    bottom -.5rem
+    bottom -.6rem
 
 
 ul
@@ -215,7 +224,6 @@ ul
       display block;
       position absolute;
       right 100%;
-      // margin-right 1em;
       color color__subdued;
 
 ol
@@ -226,6 +234,7 @@ ol
   & .number
     absolute left 0
     color color__subdued
+    font-family font__italic
     font-style italic
 
 .note
@@ -258,10 +267,11 @@ pre > code
 
 .content
   margin 1rem 0 6rem
-  line-height 1.4
+  line-height 1.5
 
 .translation
   font-size .8em
+  font-family font__italic
   font-style italic
   margin-top -1.5em
   padding-bottom 2em
@@ -286,13 +296,12 @@ pre > code
 
 .articles-list__label
   color #736750
+  font-family font__italic
   font-style italic
   font-size .8rem
   padding 4px 4px 2px
   background-color #fff
   box-shadow shadow__tiny
-
-// .articles-list__item
 
 .articles-list__link
   text-decoration none
@@ -303,7 +312,8 @@ pre > code
 
 .articles-list__description
   color color__subdued
-  font-size .8rem
+  font-size .9rem
+  font-family font__italic
   font-style italic
 
 .triptych

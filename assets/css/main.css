@@ -101,14 +101,14 @@ fragment (color) {
   box-sizing: border-box;
 }
 html {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 18px;
+  font-family: "Neacademia Text Regular", Georgia, 'Times New Roman', serif;
+  font-size: 20px;
 }
 body {
-  background: url("/assets/i/noise_2.png") #fffffc;
+  background: #fffffc;
   text-shadow: 0 1px 0 rgba(250,250,250,0.5);
   color: #261f00;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 .wrapper {
   margin: 0 auto;
@@ -229,11 +229,12 @@ a:hover {
 .header a:hover {
   color: #2996cc;
 }
-.header p {
+.header p a {
   font-size: 2rem;
 }
 .about {
   font-size: 0.8rem;
+  font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
   font-style: italic;
   color: #99968a;
   zoom: 1;
@@ -267,6 +268,7 @@ h2,
 h3,
 h4,
 .header p {
+  font-family: Georgia, "Times New Roman", serif;
   margin: 0.5rem 0 0 -2px;
   line-height: 1 !important;
 }
@@ -288,7 +290,9 @@ h4 {
 strong {
   font-weight: bold;
 }
+i,
 em {
+  font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
   font-style: italic;
 }
 .content img {
@@ -298,10 +302,13 @@ em {
 }
 blockquote {
   position: relative;
+  font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
   font-style: italic;
 }
 blockquote::before,
 blockquote::after {
+  font-family: 'Georgia', serif;
+  font-style: normal;
   font-size: 4rem;
   color: #99968a;
   position: absolute;
@@ -310,13 +317,13 @@ blockquote::before {
   content: "«";
   right: 100%;
   margin-right: 1rem;
-  top: -2rem;
+  top: -2.3rem;
 }
 blockquote::after {
   content: "»";
   left: 100%;
   margin-left: 1rem;
-  bottom: -0.5rem;
+  bottom: -0.6rem;
 }
 ul {
   position: relative;
@@ -339,6 +346,7 @@ ol .number {
   position: absolute;
   left: 0;
   color: #99968a;
+  font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
   font-style: italic;
 }
 .note {
@@ -375,10 +383,11 @@ pre > code {
 }
 .content {
   margin: 1rem 0 6rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .translation {
   font-size: 0.8em;
+  font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
   font-style: italic;
   margin-top: -1.5em;
   padding-bottom: 2em;
@@ -403,6 +412,7 @@ pre > code {
 }
 .articles-list__label {
   color: #736750;
+  font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
   font-style: italic;
   font-size: 0.8rem;
   padding: 4px 4px 2px;
@@ -420,7 +430,8 @@ pre > code {
 }
 .articles-list__description {
   color: #99968a;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
   font-style: italic;
 }
 .triptych {
