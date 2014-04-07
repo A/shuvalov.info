@@ -3,6 +3,9 @@ markdown: kramdown
 pygments: true
 exclude: ['Gemfile', 'Gemfile.lock', 'makefile']
 future: false
+google_adsense: false
+google_analytics: true
+disqus: true
 # lsi: true
 
 production_url: http://anton-shuvalov.info

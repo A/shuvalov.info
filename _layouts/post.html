@@ -4,7 +4,7 @@
   <body>
     <div class="wrapper">
       {% include header.html %}
-      <div class="content">
+      <div class="content" id="content">
         <h1 class="title">{{ page.title }}</h1>
         {% if page.translation %}
           <div class="translation">
@@ -19,14 +19,21 @@
           <div class="post-meta" data-scroll-reveal="enter ease 0">
             {% include likes.html %}
             {% include related-posts.html %}
-            {% include disqus.html %}
-            <!-- include ad-728x90.html -->
-            <!-- include ad-320x50.html -->
+            {% if site.disqus %}
+              {% include disqus.html %}
+            {% endif %}
+            {% if site.google_adsense %}
+              {% include ad-728x90.html %}
+              {% include ad-320x50.html %}
+            {% endif %}
           </div>
         {% endif %}
       </div>
     </div>
     {% include scripts.html %}
+    {% if site.google_analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
   </body>
 </html>
 
