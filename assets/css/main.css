@@ -172,8 +172,7 @@ body {
   .widget-320 {
     display: block;
   }
-  :before,
-  blockquote::after {
+  blockquote:after {
     display: none;
   }
   ul li::before {
@@ -181,6 +180,53 @@ body {
   }
 }
 @media (min-width: 720px) {
+  .img-left {
+    display: inline-block;
+    float: left;
+    margin: 0.2rem 1rem 1rem 0;
+  }
+  .img-right {
+    float: right;
+    margin: 0.2rem 0 1rem 1rem;
+  }
+  .avatar {
+    display: none;
+  }
+  .wrapper {
+    width: 700px;
+  }
+  .widget-320 {
+    display: none;
+  }
+  .widget {
+    display: block;
+  }
+  blockquote:before,
+  blockquote:after {
+    display: block;
+    font-size: 2rem;
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    color: #99968a;
+    position: absolute;
+  }
+  blockquote:before {
+    margin-right: 0.4rem;
+    content: "«";
+    right: 100%;
+    top: -0.95rem;
+  }
+  blockquote:after {
+    content: "»";
+    left: 100%;
+    margin-left: 0.4rem;
+    bottom: 0.5rem;
+  }
+  ul li:before {
+    margin-right: 0.5rem;
+  }
+}
+@media (min-width: 1024px) {
   .img-left {
     display: inline-block;
     float: left;
@@ -202,11 +248,28 @@ body {
   .widget {
     display: block;
   }
-  :before,
-  blockquote::after {
+  blockquote:after {
     display: block;
+    font-family: 'Georgia', serif;
+    font-size: 4rem;
+    font-style: normal;
+    color: #99968a;
+    position: absolute;
   }
-  ul li::before {
+  blockquote:before {
+    font-size: 4rem;
+    content: "«";
+    right: 100%;
+    top: -2.1rem;
+    margin-right: 1rem;
+  }
+  blockquote:after {
+    content: "»";
+    left: 100%;
+    bottom: -0.6rem;
+    margin-left: 1rem;
+  }
+  ul li:before {
     margin-right: 1em;
   }
 }
@@ -304,26 +367,6 @@ blockquote {
   font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
   font-style: italic;
 }
-blockquote::before,
-blockquote::after {
-  font-family: 'Georgia', serif;
-  font-style: normal;
-  font-size: 4rem;
-  color: #99968a;
-  position: absolute;
-}
-blockquote::before {
-  content: "«";
-  right: 100%;
-  margin-right: 1rem;
-  top: -2.3rem;
-}
-blockquote::after {
-  content: "»";
-  left: 100%;
-  margin-left: 1rem;
-  bottom: -0.6rem;
-}
 ul {
   position: relative;
 }
@@ -332,7 +375,7 @@ ul li::before {
   display: block;
   position: absolute;
   right: 100%;
-  color: #99968a;
+  color: #261f00;
 }
 ol {
   position: relative;
@@ -344,7 +387,7 @@ ol li {
 ol .number {
   position: absolute;
   left: 0;
-  color: #99968a;
+  color: #261f00;
   font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
   font-style: italic;
 }

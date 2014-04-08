@@ -98,14 +98,53 @@ body
     display none
   .widget-320
     display block
-  blockquote::before
-  blockquote::after
+
+  blockquote:before
+  blockquote:after
     display none
   ul li::before
       margin-right .5em
 
 
 @media (min-width: 720px)
+  .img-left
+    display inline-block
+    float left
+    margin .2rem 1rem 1rem 0
+  .img-right
+    float right
+    margin .2rem 0 1rem 1rem
+  .avatar
+    display none
+  .wrapper
+    width 700px
+  .widget-320
+    display none
+  .widget
+    display block
+
+  blockquote:before,
+  blockquote:after
+    display block
+    font-size 2rem
+    font-family 'Georgia', serif
+    font-style normal
+    color color__subdued
+    position absolute
+  blockquote:before
+    margin-right .4rem
+    content "«"
+    right 100%
+    top -.95rem
+  blockquote:after
+    content "»"
+    left 100%
+    margin-left .4rem
+    bottom .5rem
+  ul li:before
+      margin-right .5rem
+
+@media (min-width: 1024px)
   .img-left
     display inline-block
     float left
@@ -121,11 +160,29 @@ body
     display none
   .widget
     display block
-  blockquote::before
-  blockquote::after
+
+  blockquote:before
+  blockquote:after
     display block
-  ul li::before
-      margin-right 1em
+    font-family 'Georgia', serif
+    font-size 4rem
+    font-style normal
+    color color__subdued
+    position absolute
+  blockquote:before
+    font-size 4rem
+    content "«"
+    right 100%
+    top -2.1rem
+    margin-right 1rem
+  blockquote:after
+    content "»"
+    left 100%
+    bottom -.6rem
+    margin-left 1rem
+  ul li:before
+    margin-right 1em
+
 
 a
   color color__blue
@@ -196,24 +253,6 @@ blockquote
   position relative
   font-family font__italic
   font-style italic
-  &::before
-  &::after
-    font-family 'Georgia', serif
-    font-style normal
-    font-size 4rem
-    color color__subdued
-    position absolute
-  &::before
-    content "«"
-    right 100%
-    margin-right 1rem
-    top -2.3rem
-  &::after
-    content "»"
-    left 100%
-    margin-left 1rem
-    bottom -.6rem
-
 
 ul
   position relative
@@ -223,7 +262,7 @@ ul
       display block;
       position absolute;
       right 100%;
-      color color__subdued;
+      color color__dark;
 
 ol
   position relative
@@ -232,7 +271,7 @@ ol
     padding-left 32px
   & .number
     absolute left 0
-    color color__subdued
+    color color__dark;
     font-family font__italic
     font-style italic
 
