@@ -19,9 +19,9 @@ keywords: ["Ссылки", "front-end", "js", "javascript", "design", "other"]
    проигрывателей, я уйду в отставку с поста председателя компании»_.
 7. [«59 секунд»][9] — Рахим перевел 10 любопытных одноминутных роликов
    для Лайфхакера.
-8. По закону Этвуда любое приложение, которое может быть написано на JavaScript,
+8. По [закону Этвуда][10] любое приложение, которое может быть написано на JavaScript,
    в конце концов, будет написано на JavaScript. Собственно, вот.
-   [Glyphr Studio — бесплатный, редактор шрифтов написаный на JS][10].
+   [Glyphr Studio — бесплатный, редактор шрифтов написаный на JS][11].
 
 
 [1]: http://frontender.info/partial-application-in-javascript-using-bind/
@@ -33,4 +33,5 @@ keywords: ["Ссылки", "front-end", "js", "javascript", "design", "other"]
 [7]: http://www.uxfox.ru/goodui2/
 [8]: http://www.minimallyminimal.com/blog/sony-walkman-tps-l2
 [9]: http://freetonik.com/blog/all/59sec/
-[10]: http://glyphrstudio.com
+[10]: http://blog.codinghorror.com/the-principle-of-least-power/
+[11]: http://glyphrstudio.com
