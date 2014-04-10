@@ -330,7 +330,7 @@ h2,
 h3,
 h4,
 .header p {
-  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
   margin: 0.5rem 0 0 -2px;
   line-height: 1 !important;
 }
