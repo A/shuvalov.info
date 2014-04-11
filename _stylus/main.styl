@@ -13,7 +13,7 @@ color__moarsubdued           = #D6D4CC
 
 // Fonts
 
-font__title = Georgia, "Times New Roman", serif
+font__title = "Neacademia Text Regular", Georgia, 'Times New Roman', serif
 font__base = "Neacademia Text Regular", Georgia, 'Times New Roman', serif
 font__italic = "Neacademia Display Italic", Georgia, 'Times New Roman', serif
 font__size = 20px
@@ -103,7 +103,8 @@ body
   blockquote:after
     display none
   ul li::before
-      margin-right .5em
+  ol .number
+    margin-right .5em
 
 
 @media (min-width: 720px)
@@ -142,7 +143,8 @@ body
     margin-left .4rem
     bottom .5rem
   ul li:before
-      margin-right .5rem
+  ol .number
+    margin-right .5rem
 
 @media (min-width: 1024px)
   .img-left
@@ -181,8 +183,16 @@ body
     bottom -.6rem
     margin-left 1rem
   ul li:before
+  ol .number
     margin-right 1em
 
+
+ol
+  position relative
+  & .number
+    absolute right 100%
+    font-family font__italic
+    font-style italic
 
 a
   color color__blue
@@ -221,7 +231,7 @@ h1,h2,h3,h4,p,ul,ol,pre
 
 h1,h2,h3,h4, .header p
   font-weight 700
-  // font-family font__title
+  font-family font__title
   margin .5rem 0 0 -2px
   line-height 1 !important
 
@@ -264,17 +274,6 @@ ul
       position absolute;
       right 100%;
       color color__dark;
-
-ol
-  position relative
-  margin-left -32px
-  & li
-    padding-left 32px
-  & .number
-    absolute left 0
-    color color__dark;
-    font-family font__italic
-    font-style italic
 
 .note
   color #444

@@ -175,7 +175,8 @@ body {
   blockquote:after {
     display: none;
   }
-  ul li::before {
+  ::before,
+  ol .number {
     margin-right: 0.5em;
   }
 }
@@ -222,7 +223,8 @@ body {
     margin-left: 0.4rem;
     bottom: 0.5rem;
   }
-  ul li:before {
+  :before,
+  ol .number {
     margin-right: 0.5rem;
   }
 }
@@ -269,9 +271,19 @@ body {
     bottom: -0.6rem;
     margin-left: 1rem;
   }
-  ul li:before {
+  :before,
+  ol .number {
     margin-right: 1em;
   }
+}
+ol {
+  position: relative;
+}
+ol .number {
+  position: absolute;
+  right: 100%;
+  font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
+  font-style: italic;
 }
 a {
   color: #2996cc;
@@ -331,6 +343,7 @@ h3,
 h4,
 .header p {
   font-weight: 700;
+  font-family: "Neacademia Text Regular", Georgia, 'Times New Roman', serif;
   margin: 0.5rem 0 0 -2px;
   line-height: 1 !important;
 }
@@ -376,20 +389,6 @@ ul li::before {
   position: absolute;
   right: 100%;
   color: #261f00;
-}
-ol {
-  position: relative;
-  margin-left: -32px;
-}
-ol li {
-  padding-left: 32px;
-}
-ol .number {
-  position: absolute;
-  left: 0;
-  color: #261f00;
-  font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
-  font-style: italic;
 }
 .note {
   color: #444;
