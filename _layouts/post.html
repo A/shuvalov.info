@@ -18,7 +18,7 @@
         {% if page.index != true %}
           <div class="post-meta" data-scroll-reveal="enter ease 0">
             {% include likes.html %}
-            {% include related-posts.html %}
+            <nofollow>{% include related-posts.html %}<nofollow>
             {% if site.disqus %}
               {% include disqus.html %}
             {% endif %}

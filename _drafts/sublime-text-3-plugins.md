@@ -30,8 +30,14 @@ keywords: ["Sublime Text", "Plugins", "Саблайм", "Настройка Subl
 9.  [sublime-node-require][10] — удобная утилита для написания
     `require()`-конструкций, которая предлагает список возможных вариантов
     с нечетким поиском и автоматически заполняет пути.
-10. Ну и куча всяких библиотек-сниппетов: [stylus][], [mocha][], [jade][],
-    [html5][], [less][]...
+10. [WordHighlight][12] — храбрый страж тавтологии.
+11. [SideBarEnhancements][13] — возможность работы с ФС из сайд-бара: копировать,
+    создавать файлы и папки и тд.
+12. [TodoReview][14] — я часто пишу todo-комментарии: `/* TODO: бла-бла-бла */`,
+    а этот плагин помогает находить все такие заметки в проекте. Ну и исправлять
+    свой технический долг.
+13. Ну и куча всяких библиотек-сниппетов: [stylus][], [mocha][], [jade][],
+    [html5][], [less][], [handlebars][], [ect][]...
 
 
 
@@ -47,3 +53,5 @@ keywords: ["Sublime Text", "Plugins", "Саблайм", "Настройка Subl
 [9]: https://github.com/SublimeText/WordCount
 [10]: https://github.com/jfromaniello/sublime-node-require
 [11]: https://github.com/SublimeText/SideBarGit
+[12]: https://github.com/SublimeText/WordHighlight
+[13]: https://github.com/titoBouzout/SideBarEnhancements
