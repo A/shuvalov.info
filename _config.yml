@@ -7,6 +7,8 @@ google_adsense: false
 google_analytics: true
 disqus: true
 rss: http://feeds.feedburner.com/anton-shuvalov/FJHar
+paginate: 20
+paginate_path: archive/:num
 # lsi: true
 
 production_url: http://anton-shuvalov.info

@@ -100,6 +100,13 @@ body
   ol .number
     margin-right .5em
 
+  .pagination__previous-arrow
+    margin-right .5em
+  .pagination__next-arrow
+    margin-left .5em
+
+  .hide-on-iphone
+    display none
 
 @media (min-width: 720px)
   .img-left
@@ -117,6 +124,10 @@ body
     display none
   .widget
     display block
+  .pagination__previous-arrow
+    margin-right .5rem
+  .pagination__next-arrow
+    margin-left .5rem
 
   blockquote:before,
   blockquote:after
@@ -140,6 +151,9 @@ body
   ol .number
     margin-right .5rem
 
+  .hide-on-iphone
+    display inline
+
 @media (min-width: 1024px)
   .img-left
     display inline-block
@@ -156,6 +170,11 @@ body
     display none
   .widget
     display block
+
+  .pagination__previous-arrow
+    margin-right 1rem
+  .pagination__next-arrow
+    margin-left 1rem
 
   blockquote:before
   blockquote:after
@@ -179,6 +198,9 @@ body
   ul li:before
   ol .number
     margin-right 1em
+  
+  .hide-on-iphone
+    display inline
 
 
 ol
@@ -224,7 +246,7 @@ h1,h2,h3,h4,p,ul,ol,pre
   padding-bottom 1rem
 
 h1,h2,h3,h4, .header p
-  font-weight 700
+  font-weight bold
   font-family font__title
   margin .5rem 0 0 -2px
   line-height 1 !important
@@ -382,3 +404,41 @@ pre > code
 
 .clearfix
   clear: both;
+
+
+
+.pagination
+  margin 2rem 0 0
+  position relative
+  clearfix()
+
+.pagination__previous-arrow
+.pagination__next-arrow
+  position absolute
+  font-size 1rem
+
+.pagination__previous-arrow
+  right 100%
+
+.pagination__next-arrow
+  left 100%
+
+.pagination__previous-page
+.pagination__next-page
+  position absolute
+  font-family font__italic
+  font-style italic
+  
+.pagination__previous-page
+  left 0
+
+.pagination__next-page
+  right 0
+  text-align right
+
+.pagination__counter
+  font-family font__italic
+  font-style italic
+  color color__subdued
+  margin 0 auto
+  text-align center

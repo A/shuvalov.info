@@ -7,7 +7,7 @@ index: true
 ---
 
 <ul class="articles-list">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     {% capture that_year %}{{ this_year || '' }}{% endcapture %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% if this_year != that_year %}
@@ -22,4 +22,5 @@ index: true
       {% include article-snippet.html %}
     </div>
   {% endfor %}
+  {% include pagination.html %}
 </ul>

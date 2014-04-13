@@ -1,0 +1,19 @@
+<div class="pagination" data-scroll-reveal="enter ease 0">
+  {% if paginator.previous_page %}
+    <div class="pagination__previous-page">
+      <small>
+        <span class="pagination__previous-arrow">&larr;</span>
+        <a rel="prev"  href={% if paginator.previous_page != 1 %}"/archive/{{ paginator.previous_page }}"{% else %}"/"{% endif %}>в грядущее</a>
+      </small>
+    </div>
+  {% endif %}
+  {% if paginator.next_page %}
+    <div class="pagination__next-page">
+      <small>
+        <span class="pagination__next-arrow">&rarr;</span>
+        <a rel="next" href="/archive/{{ paginator.next_page }}">в былое</a>
+      </small>
+    </div>
+  {% endif %}
+  <div class="pagination__counter">{{ paginator.page }} <span class='hide-on-iphone'>страница</span> из {{ paginator.total_pages }}</div>
+</div>
