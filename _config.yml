@@ -3,7 +3,7 @@ markdown: kramdown
 pygments: true
 exclude: ['Gemfile', 'Gemfile.lock', 'makefile']
 future: false
-google_adsense: false
+google_adsense: true
 google_analytics: true
 disqus: true
 rss: http://feeds.feedburner.com/anton-shuvalov/FJHar
