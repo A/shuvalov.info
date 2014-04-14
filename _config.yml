@@ -2,7 +2,7 @@ name: 'Ношу шлем, тяжело дышу'
 markdown: kramdown
 pygments: true
 exclude: ['Gemfile', 'Gemfile.lock', 'makefile']
-future: false
+future: true
 google_adsense: true
 google_analytics: true
 disqus: true
