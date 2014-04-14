@@ -584,3 +584,12 @@ pre > code {
   margin: 0 auto;
   text-align: center;
 }
+ul.books-list .books-list__item::before {
+  display: none !important;
+}
+.books-list__item {
+  display: block;
+  float: left;
+  width: 182px;
+  height: 273px;
+}
