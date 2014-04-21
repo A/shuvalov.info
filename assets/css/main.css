@@ -593,3 +593,9 @@ ul.books-list .books-list__item::before {
   width: 182px;
   height: 273px;
 }
+.photo-author {
+  margin-top: -1rem;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #99968a;
+}
