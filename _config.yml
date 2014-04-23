@@ -11,7 +11,7 @@ paginate: 20
 paginate_path: archive/:num
 # lsi: true
 
-production_url: http://anton-shuvalov.info
+production_url: http://shuvalov.info
 # baseurl: http://anton-shuvalov.info # ???
 permalink: /:year/:month/:day/:title
 ga_id: UA-26825614-2
