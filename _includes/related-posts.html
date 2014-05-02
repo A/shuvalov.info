@@ -29,32 +29,3 @@
     {% endfor %}
   </ul>
 </div>
-
-
-
-
-
-
-
-
-
-
-{% comment %}
-    {% for page_keyword in page.keywords %}
-      {% for post in site.posts %}
-        {% if post.keywords contains page_keyword %}
-          win
-          <pre>
-            {% capture post[0].rel_index %}asd{%endcapture%}
-            {{ post[0].rel_index }}
-          </pre>
-        {% else %}
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
-    
-    {% for post in site.posts %}
-      {{ post.rel_index }}
-    {% endfor %}
-{% endcomment %}
-
