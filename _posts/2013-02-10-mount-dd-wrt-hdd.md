@@ -3,6 +3,7 @@
 layout: post
 title: "Как к Mac OS X подключить HDD от DD-WRT"
 tags: ["разное"]
+keywords: ["dd-wrt", "mac", "os x"]
 ---
 
 
