@@ -1,8 +1,60 @@
+{% assign rel_posts = '' %}
+{% for post in site.posts %}
+  {% assign rel_counter = '' %}
+  {% for page_keyword in page.keywords %}
+    {% assign postkeywords = post.keywords | downcase %}
+    {% assign page_keyword = page_keyword | downcase %}
+    {% if postkeywords contains page_keyword %}
+      {% capture rel_counter %}{{ rel_counter | append:'.' }}{% endcapture %}
+    {% endif %}
+  {% endfor %}
+  {% capture rel_posts %}{{ rel_posts | append: rel_counter.size | append: '::' | append: post.url | append:"<br>" }}{% endcapture %}
+{% endfor %}
+{% assign rel_posts = rel_posts | split: '<br>' | sort  %}
+
 <div class="read-more">
   <h4>Похожие статьи:</h4>
-    <ul class="articles-list">
-    {% for post in site.related_posts limit:3 %}
-      {% include article-snippet.html %}
+  <ul class="articles-list">
+    {% for _post in rel_posts reversed %}
+      {% if forloop.index < 5 %}
+        {% assign __post = _post | split: '::' %}
+        {% for post in site.posts %}
+          {% if post.url != page.url %}
+            {% if post.url == __post[1] %}
+              {% include article-snippet.html %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
+
+
+
+
+
+
+
+
+
+
+{% comment %}
+    {% for page_keyword in page.keywords %}
+      {% for post in site.posts %}
+        {% if post.keywords contains page_keyword %}
+          win
+          <pre>
+            {% capture post[0].rel_index %}asd{%endcapture%}
+            {{ post[0].rel_index }}
+          </pre>
+        {% else %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    
+    {% for post in site.posts %}
+      {{ post.rel_index }}
+    {% endfor %}
+{% endcomment %}
+

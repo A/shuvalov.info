@@ -3,7 +3,7 @@
 layout: post
 title: "«Sony. Сделано в Японии», Акио Морита"
 description: "Впечатления о книге"
-keywords: ["Sony"]
+keywords: ["Sony", "Акио Морита"]
 
 ---
 
