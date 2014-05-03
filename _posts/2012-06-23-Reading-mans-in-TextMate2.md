@@ -2,8 +2,7 @@
 layout: post
 title: "Просмотр man-страниц в textmate"
 description: "Инструкция по настройке textmate для просмотра man-страниц"
-keywords: "textmate, textmate2, man, мануал, инструкция"
-tags: [textmate]
+keywords: ["textmate", "textmate2", "man", "мануал", "инструкция"]
 ---
 
 ![](http://31808.selcdn.ru/it-prm/pics/man.jpg)

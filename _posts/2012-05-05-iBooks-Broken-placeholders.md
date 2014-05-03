@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Сломаные заполнители в iBooks"
-tags: "ibooks"
+keywords: ["ibooks", "author", "placeholders", "apple"]
 ---
 
 

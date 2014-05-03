@@ -2,8 +2,7 @@
 layout: post
 title: "Кэш и ненависть в iBooks"
 description: "Как устроен механизм кэширования медиафайлов в iBooks Author"
-keywords: "apple, ibooks, author, кэш, cache" 
-tags: [ibooks]
+keywords: ["apple", "ibooks", "author", "cache"]
 ---
 
 <img class="img-center" src="http://31808.selcdn.ru/it-prm/pics/hero_ibooks_author.png" alt="iBooks Author">

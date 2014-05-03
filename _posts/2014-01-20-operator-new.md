@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Реализация оператора new в JavaScript"
-keywords: ["javascript new", "js new", "оператор new в js", "оператор new", "конструктор js"]
+keywords: ["javascript", "js", "operator new", "оператор new в js", "оператор new", "конструктор js", "ООП", "наследование"]
 description: "Очень маленькая статья о том, как работает оператор new в js"
 translation: 
   author: Dr. Axel Rauschmayer

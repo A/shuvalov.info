@@ -5,7 +5,7 @@ translation:
   author: Randall Degges
   title: "Why I'm Learning Node"
   link: http://www.rdegges.com/why-im-learning-node/
-tags: ["javascript"]
+keywords: ["node", "javascript", "js", "перевод"]
 
 ---
 

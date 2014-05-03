@@ -2,8 +2,7 @@
 layout: post
 title: "mate и rmate в TextMate&nbsp;2"
 description: ""
-category: 
-tags: [textmate]
+keywords: ["textmate", "textmate2", "mate", "rmate"]
 ---
  
 ## Введение

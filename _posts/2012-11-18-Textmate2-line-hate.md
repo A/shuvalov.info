@@ -2,8 +2,7 @@
 layout: post
 title: "Интерлиньяж в TextMate2"
 description: "Инструкция о том, как уменьшить интерлиньяж в популярном текстовом редакторе textmate 2"
-keywords: "textmate, textmate2, интерлиньяж, line-height" 
-tags: "textmate"
+keywords: ["textmate", "textmate2", "интерлиньяж", "line-height"]
 ---
 
 <img src="http://31808.selcdn.ru/it-prm/pics/textmate2LH.jpg" class="img-center" /> 

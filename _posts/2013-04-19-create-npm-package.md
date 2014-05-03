@@ -3,7 +3,7 @@
 layout: post
 title: "Как создать npm пакеты"
 labels: "habrahabr.ru"
-tags: ["javascript"]
+keywords: ["javascript", "npm", "habrahbar.ru"]
 extlink: http://habrahabr.ru/post/177465/
 
 ---

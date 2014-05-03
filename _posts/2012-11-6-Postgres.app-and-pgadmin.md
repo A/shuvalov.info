@@ -2,8 +2,7 @@
 layout: post
 title: 'pgadmin column "datconfig" does not exist'
 description: ""
-category: 
-tags: "разное"
+keywords: ["Postgres", "PostgresSQL", "pgadmin", "datconfig", "pgadmin column datconfig does not exist'"]
 ---
 
 

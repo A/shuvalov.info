@@ -2,8 +2,7 @@
 layout: post
 title: "Установка rmate для TextMate2"
 description: "Инструкция по установке и использованию скрипта rmate для TextMate"
-keywords: "textmate, textmate2, rmate, инструкция, установка" 
-tags: [textmate]
+keywords: ["textmate", "textmate2", "rmate", "инструкция", "установка"]
 ---
  
 Решил попробовать в деле одно из нововведений второй версии textmate - rmate. Для того, что бы заставить эту штуку работать нам понадобится: 

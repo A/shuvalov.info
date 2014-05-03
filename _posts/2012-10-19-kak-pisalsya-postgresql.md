@@ -2,8 +2,7 @@
 layout: post
 title: "Как писался PostgreSQL"
 description: "История создания одной из самых популярных баз данных"
-keywords: "postgres, postgresql, история, архитектура" 
-tags: "разное"
+keywords: ["postgres", "postgresql", "история", "архитектура"] 
 ---
 
 

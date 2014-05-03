@@ -3,7 +3,7 @@
 layout: post
 title: "Заметки по книге «Getting Real», 37Signals"
 description: "Продолжаю разбирать старые заметки из прочитанных книг."
-keywords: [""]
+keywords: ["37Signals", "Getting Real", "книги", "заметки", "управление проектами"]
 
 ---
 

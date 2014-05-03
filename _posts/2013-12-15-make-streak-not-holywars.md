@@ -3,7 +3,7 @@
 layout: post
 title: "Make Streak, Not Holywars"
 description: "Манифест ежедневных коммитов"
-keywords: ["github", "npm", "javascript", "node",]
+keywords: ["github", "npm", "javascript", "node"]
 
 ---
 

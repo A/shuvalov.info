@@ -2,8 +2,7 @@
 layout: post
 title: "Jekyll REXML could not parse this XML/HTML"
 description: "Что делать с ошибкой REXML could not parse this XML/HTML в Jekyll?"
-keywords: "jekyll, REXML, ошибка" 
-tags: "jekyll"
+keywords: ["jekyll", "REXML", "ошибка"]
 ---
 
 

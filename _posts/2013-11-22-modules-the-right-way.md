@@ -3,7 +3,7 @@
 layout: post
 title: "Правильные модули"
 labels: "frontender.info"
-tags: ["javascript"]
+keywords: ["javascript", "node", "npm", "перевод", "frontender.info"]
 extlink: 'http://frontender.info/modules-the-right-way/'
 
 ---

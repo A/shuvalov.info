@@ -3,7 +3,7 @@ layout: post
 title: "node-clusterize-cli — кластеризация NodeJS web-сервера"
 labels: "habrahabr.ru"
 description: "О моей маленькой консольной утилите, позволяющей без изменений кода приложения, запусткать демонический кластер"
-tags: ["javascript"]
+keywords: ["github", "npm", "javascript", "js", "node", "node-clusterize-cli", "cli"]
 extlink: http://habrahabr.ru/post/208914/
 ---
 

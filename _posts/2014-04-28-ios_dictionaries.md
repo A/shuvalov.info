@@ -3,7 +3,7 @@
 layout: post
 title: "Установка словарей на iOS без JailBreak"
 description: "Любопытнейший секрет Полишинеля"
-keywords: ["iOS словари", "iPhone", "iPad", "dictionary", "словари"]
+keywords: ["iOS","iOS словари", "iPhone", "iPad", "dictionary", "словари"]
 
 ---
 

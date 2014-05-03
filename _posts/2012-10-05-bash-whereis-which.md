@@ -2,8 +2,7 @@
 layout: post
 title: "BASH. Чем отличается which от whereis"
 description: "Отличие похожих приложений bash — which и whereis"
-keywords: "bash, which, whereis" 
-tags: ["разное"]
+keywords: ["bash", "which", "whereis", "terminal"]
 ---
 
 
