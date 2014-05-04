@@ -1,2 +1,3 @@
 google_analytics: false
+disable_related: true
 disqus: false
