@@ -166,10 +166,11 @@ body {
   .widget-320 {
     display: block;
   }
+  blockquote:before,
   blockquote:after {
     display: none;
   }
-  ::before,
+  ul li::before,
   ol .number {
     margin-right: 0.5em;
   }
@@ -232,7 +233,7 @@ body {
     margin-left: 0.4rem;
     bottom: 0.5rem;
   }
-  :before,
+  ul li:before,
   ol .number {
     margin-right: 0.5rem;
   }
@@ -268,6 +269,7 @@ body {
   .pagination__next-arrow {
     margin-left: 1rem;
   }
+  blockquote:before,
   blockquote:after {
     display: block;
     font-family: 'Georgia', serif;
@@ -289,7 +291,7 @@ body {
     bottom: -0.6rem;
     margin-left: 1rem;
   }
-  :before,
+  ul li:before,
   ol .number {
     margin-right: 1em;
   }
@@ -481,6 +483,11 @@ pre > code {
   background-color: #fff;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.25);
   box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  background: -webkit-linear-gradient(top, #f3f3f3, #fff);
+  background: -moz-linear-gradient(top, #f3f3f3, #fff);
+  background: -o-linear-gradient(top, #f3f3f3, #fff);
+  background: -ms-linear-gradient(top, #f3f3f3, #fff);
+  background: linear-gradient(to bottom, #f3f3f3, #fff);
 }
 .articles-list__link {
   text-decoration: none;
@@ -604,7 +611,4 @@ ul.books-list .books-list__item::before {
   box-shadow: 0 1px 1px rgba(0,0,0,0.25);
   text-shadow: none;
   margin-bottom: 1rem;
-}
-body #player .td.player.shrink .playlist {
-  max-height: none !important;
 }
