@@ -64,9 +64,12 @@ StrongLoop получает несправедливое преимуществ�
 доставляя неудобства тем людям, которые занимались развитием проекта — 
 мейнтейнерам и его коммьюнити.
 
+_От переводчика: [вот ответ TJ о сложившейся ситуации][7]_
+
 [1]: https://github.com/strongloop/express/issues/2264#issuecomment-50567002
 [2]: http://strongloop.com/strongblog/tj-holowaychuk-sponsorship-of-express/
 [3]: https://github.com/strongloop/express/issues/2264#issuecomment-50474787
 [4]: http://strongloop.com/strongblog/tj-holowaychuk-sponsorship-of-express/
 [5]: https://twitter.com/tjholowaychuk/status/494294255448236032
 [6]: https://github.com/expressjs
+[7]: /2014/08/31/strongLoop-and-express/
