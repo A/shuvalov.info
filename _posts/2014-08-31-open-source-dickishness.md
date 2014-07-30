@@ -13,6 +13,9 @@ translation:
 
 ![](/assets/articles-assets/expressjs.jpg)
 
+{:.photo-author}
+_фото: [jdhancock](https://www.flickr.com/photos/jdhancock/)_
+
 Вчера, на удивление комьюнити ExpressJS, создатель фреймворка и мейнтейнер
 фреймворка TJ Holowaychuk [продал][1] проект [компании StrongLoop][2],
 коммерческому NodeJS-стартапу. Передача проекта [шокировала активных мейнтейнеров
