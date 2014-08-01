@@ -2,7 +2,7 @@
 
 layout: post
 title: "Как yield изменит Node.js"
-description: "Рефлексии на тему модульности в клиентских MV*-фреймворках"
+description: "Будущее за генераторами"
 keywords: ["JavaScript", "JS", "ES6", "generators", "генераторы"]
 translation:
   author: "Alex Maccaw"
