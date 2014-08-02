@@ -620,12 +620,13 @@ ul.books-list .books-list__item::before {
 .footer-banner {
   overflow: hidden;
   background-image: url("/assets/i/noise_2.png");
-  background-color: #f2f2e6;
+  background-color: #d6d4cc;
   -webkit-box-shadow: inset 0 -10px 30px rgba(0,0,0,0.15);
   box-shadow: inset 0 -10px 30px rgba(0,0,0,0.15);
 }
 .top-banner ins,
 .footer-banner ins {
+  background-color: #fff;
   margin-top: 0.2rem;
 }
 .footer-banner {
