@@ -633,3 +633,12 @@ ul.books-list .books-list__item::before {
   -webkit-box-shadow: inset 0 10px 30px rgba(0,0,0,0.15);
   box-shadow: inset 0 10px 30px rgba(0,0,0,0.15);
 }
+.title {
+  margin: 0 0 0.2rem -2px;
+}
+.group_title {
+  color: #99968a;
+  font-style: italic;
+  font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
+  padding-bottom: 0;
+}

@@ -1,3 +1,4 @@
 google_analytics: false
 disable_related: true
 disqus: false
+production_url: http://0.0.0.0:4000

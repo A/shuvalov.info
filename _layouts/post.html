@@ -6,10 +6,11 @@
     <div class="wrapper">
       {% include header.html %}
       <div class="content" id="content">
+        {% if page.group %}<span class="group_title">{{ page.group }}:</span>{% endif %}
         <h1 class="title">{{ page.title }}</h1>
         {% if page.translation %}
           <div class="translation">
-            Перевод  <a href="{{ page.translation.link }}">{{ page.translation.author }} — {{ page.translation.title }}</a>
+            Перевод: <a href="{{ page.translation.link }}">{{ page.translation.author }} — {{ page.translation.title }}</a>
           </div>
         {% endif %}
         {{ content }}
