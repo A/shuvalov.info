@@ -16,7 +16,7 @@
   <h4>Похожие статьи:</h4>
   <ul class="articles-list">
     {% for _post in rel_posts reversed %}
-      {% if forloop.index < 5 %}
+      {% if forloop.index < 10 %}
         {% assign __post = _post | split: '::' %}
         {% for post in site.posts %}
           {% if post.url != page.url %}
