@@ -427,6 +427,11 @@ code {
   box-shadow: 0 1px 1px rgba(0,0,0,0.25);
   font-size: 0.8rem;
   line-height: 1;
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #f5f5f5 5%, #fff 20%);
+  background: -moz-linear-gradient(top, #f0f0f0 0%, #f5f5f5 5%, #fff 20%);
+  background: -o-linear-gradient(top, #f0f0f0 0%, #f5f5f5 5%, #fff 20%);
+  background: -ms-linear-gradient(top, #f0f0f0 0%, #f5f5f5 5%, #fff 20%);
+  background: linear-gradient(to bottom, #f0f0f0 0%, #f5f5f5 5%, #fff 20%);
 }
 pre {
   padding: 1rem 1rem;
@@ -441,7 +446,7 @@ code {
 }
 pre > code {
   padding: 0;
-  background-color: transparent;
+  background: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -483,11 +488,11 @@ pre > code {
   background-color: #fff;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.25);
   box-shadow: 0 1px 1px rgba(0,0,0,0.25);
-  background: -webkit-linear-gradient(top, #f3f3f3, #fff);
-  background: -moz-linear-gradient(top, #f3f3f3, #fff);
-  background: -o-linear-gradient(top, #f3f3f3, #fff);
-  background: -ms-linear-gradient(top, #f3f3f3, #fff);
-  background: linear-gradient(to bottom, #f3f3f3, #fff);
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #f5f5f5 5%, #fff 20%);
+  background: -moz-linear-gradient(top, #f0f0f0 0%, #f5f5f5 5%, #fff 20%);
+  background: -o-linear-gradient(top, #f0f0f0 0%, #f5f5f5 5%, #fff 20%);
+  background: -ms-linear-gradient(top, #f0f0f0 0%, #f5f5f5 5%, #fff 20%);
+  background: linear-gradient(to bottom, #f0f0f0 0%, #f5f5f5 5%, #fff 20%);
 }
 .articles-list__link {
   text-decoration: none;
@@ -641,4 +646,7 @@ ul.books-list .books-list__item::before {
   font-style: italic;
   font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
   padding-bottom: 0;
+}
+ul.specials li::before {
+  display: none;
 }
