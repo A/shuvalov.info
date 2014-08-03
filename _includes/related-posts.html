@@ -21,7 +21,9 @@
         {% for post in site.posts %}
           {% if post.url != page.url %}
             {% if post.url == __post[1] %}
-              {% include article-snippet.html %}
+              {% if post.invisible == nil %}
+                {% include article-snippet.html %}
+              {% endif %}
             {% endif %}
           {% endif %}
         {% endfor %}
