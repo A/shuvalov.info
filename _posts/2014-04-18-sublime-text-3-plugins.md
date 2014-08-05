@@ -49,7 +49,7 @@ export EDITOR='subl -w' # а так git commit будет открывать sub
 
 ## Тема
 
-Практически во всех редакторах, с которыми я работаю, я использую тему 
+Практически во всех редакторах, с которыми я работаю, я использую тему
 [Birds of Paradise][3]. _Sublime_ не стал исключением, благо он умеет
 импортировать темы из TextMate.
 
@@ -93,7 +93,7 @@ export EDITOR='subl -w' # а так git commit будет открывать sub
 [CSScomb][5] — утилита для сортировки CSS-правил в селекторах не по алфавиту,
 но по здравому смыслу, объединяя правила в логические группы. Последние полгода
 я пишу на stylus, поэтому черной завистью завидую тем, кто может пользоваться
-CSScomb и [жду, жду, жду, жду…][18] 
+CSScomb и [жду, жду, жду, жду…][18]
 
 ## Git
 
@@ -148,7 +148,7 @@ CSScomb и [жду, жду, жду, жду…][18]
 - [sublime-node-require][10] — удобная утилита для написания
   `require()`-конструкций в NodeJS. Предлагает список из всех установленных
   в проекте модулей, автоматически подставляя правильные пути к ним.
-- Ну и куча всяких библиотек сниппетов и подсветок: _stylus, mocha, jade, html5, less, 
+- Ну и куча всяких библиотек сниппетов и подсветок: _stylus, mocha, jade, html5, less,
   handlebars, ect…_ Ссылки давать не буду, потому что они элементарно находятся
   поиском.
 
@@ -180,3 +180,4 @@ _фото: [jdhancock](https://www.flickr.com/photos/jdhancock/)_
 [18]: https://github.com/csscomb/csscomb.js/issues/159
 [19]: https://github.com/SublimeLinter/SublimeLinter-jscs
 [20]: https://github.com/SublimeLinter/SublimeLinter-csslint
+[21]: https://github.com/jonathandelgado/SublimeTodoReview
