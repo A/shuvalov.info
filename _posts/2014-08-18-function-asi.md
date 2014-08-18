@@ -2,7 +2,7 @@
 
 layout: post
 title: "ASI и мистические знаки перед IIFE в JavaScript"
-description: "Будущее за генераторами"
+description: "Сжигаем ведьм, например."
 keywords: ["JavaScript", "JS", "ASI", "function"]
 
 ---
