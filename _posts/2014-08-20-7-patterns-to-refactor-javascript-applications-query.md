@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Паттерн «объект запросов»"
+title: "Паттерн «объект-запрос»"
 group: "7 паттернов для рефакторинга JavaScript-приложений"
 description: "7 паттернов для рефакторинга JavaScript-приложений"
 keywords: ["JavaScript", "JS", "Node", "рефакторинг", "паттерны", "patterns", "crushlovely"]
