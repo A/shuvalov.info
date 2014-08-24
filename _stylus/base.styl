@@ -1,0 +1,33 @@
+global-reset()
+
+*
+  box-sizing border-box
+
+html
+  font-family font__base
+  font-size font__size
+
+
+body
+  background #FFFFFC
+  text-shadow shadow__pressed_effect
+  color color__dark
+  line-height 1.6
+
+.wrapper
+  margin 0 auto
+  width: 100%
+  max-width: 728px
+  padding: 0 1rem
+
+.content
+  margin 1rem 0 6rem
+  line-height 1.5
+
+.clearfix
+  clear both
+
+@media (min-width: 720px)
+  .hide-on-iphone
+    display inline
+

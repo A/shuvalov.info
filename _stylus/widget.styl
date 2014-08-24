@@ -1,0 +1,41 @@
+.top-banner
+.footer-banner
+  overflow: hidden
+  background-image noise
+  background-color color__moarsubdued
+  box-shadow inset 0 -10px 30px rgba(0,0,0,0.15)
+  ins
+    background-color color__white
+    margin-top .2rem
+.footer-banner
+  box-shadow inset 0 10px 30px rgba(0,0,0,0.15)
+
+.widget
+  margin 1rem auto
+  width 728px
+  & > ins
+    box-shadow shadow__tiny
+
+.widget-320
+  display none
+  width 320px
+  margin 1rem auto 1.5rem
+  & > ins
+    box-shadow shadow__tiny
+
+@media (min-width: 320px)
+  .widget
+    display none
+  .widget-320
+    display block
+@media (min-width: 720px)
+  .widget-320
+    display none
+  .widget
+    display block
+@media (min-width: 1024px)
+  .widget-320
+    display none
+  .widget
+    display block
+

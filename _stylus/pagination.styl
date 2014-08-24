@@ -1,0 +1,52 @@
+.pagination
+  margin 2rem 0 0
+  position relative
+  clearfix()
+
+.pagination__previous-arrow
+.pagination__next-arrow
+  position absolute
+  font-size 1rem
+
+.pagination__previous-arrow
+  right 100%
+
+.pagination__next-arrow
+  left 100%
+
+.pagination__previous-page
+.pagination__next-page
+  position absolute
+  font-family font__italic
+  font-style italic
+
+.pagination__previous-page
+  left 0
+
+.pagination__next-page
+  right 0
+  text-align right
+
+.pagination__counter
+  font-family font__italic
+  font-style italic
+  color color__subdued
+  margin 0 auto
+  text-align center
+
+@media (min-width: 320px)
+  .pagination__previous-arrow
+    margin-right .5em
+  .pagination__next-arrow
+    margin-left .5em
+@media (min-width: 720px)
+  .pagination__previous-arrow
+    margin-right .5rem
+  .pagination__next-arrow
+    margin-left .5rem
+@media (min-width: 1024px)
+  .pagination__previous-arrow
+    margin-right 1rem
+  .pagination__next-arrow
+    margin-left 1rem
+

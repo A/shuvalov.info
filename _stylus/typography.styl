@@ -1,0 +1,147 @@
+
+.content img
+  max-width 100%
+  box-shadow shadow__tiny
+
+.center-img
+  img
+    display block
+    margin 0 auto
+
+blockquote
+  position relative
+  font-family font__italic
+  font-style italic
+
+ul
+  position relative
+  li
+    &::before
+      content '-';
+      display block;
+      position absolute;
+      right 100%;
+      color color__dark;
+h1,h2,h3,h4,p,ul,ol,pre
+  padding-bottom 1rem
+
+h1,h2,h3,h4, .header p
+  font-weight bold
+  font-family font__title
+  margin .5rem 0 0 -2px
+  line-height 1 !important
+
+li
+  padding-bottom .8rem
+  position relative
+
+h1
+h2
+  font-size 1.6rem
+h3
+  font-size 1.4rem
+h4
+  font-size 1rem
+  font-weight bold
+
+strong
+  font-weight bold
+
+i
+em
+  font-family font__italic
+  font-style italic
+
+ol
+  position relative
+  & .number
+    absolute right 100%
+    font-family font__italic
+    font-style italic
+
+a
+  color color__blue
+  text-decoration none
+  &:hover
+    color color__blue
+    text-decoration underline
+
+@media (min-width: 320px)
+  .img-left
+  .img-right
+    display block
+    float none
+    margin 0 auto 1rem
+  blockquote:before
+  blockquote:after
+    display none
+  ul li::before
+  ol .number
+    margin-right .5em
+  .hide-on-iphone
+    display none
+
+@media (min-width: 720px)
+  .img-left
+    display inline-block
+    float left
+    margin .2rem 1rem 1rem 0
+  .img-right
+    float right
+    margin .2rem 0 1rem 1rem
+  blockquote:before,
+  blockquote:after
+    display block
+    font-size 2rem
+    font-family 'Georgia', serif
+    font-style normal
+    color color__subdued
+    position absolute
+  blockquote:before
+    margin-right .4rem
+    content "«"
+    right 100%
+    top -.95rem
+  blockquote:after
+    content "»"
+    left 100%
+    margin-left .4rem
+    bottom .5rem
+  ul li:before
+  ol .number
+    margin-right .5rem
+
+@media (min-width: 1024px)
+  .img-left
+    display inline-block
+    float left
+    margin .2rem 1rem 1rem 0
+  .img-right
+    float right
+    margin .2rem 0 1rem 1rem
+  blockquote:before
+  blockquote:after
+    display block
+    font-family 'Georgia', serif
+    font-size 4rem
+    font-style normal
+    color color__subdued
+    position absolute
+  blockquote:before
+    font-size 4rem
+    content "«"
+    right 100%
+    top -2.1rem
+    margin-right 1rem
+  blockquote:after
+    content "»"
+    left 100%
+    bottom -.6rem
+    margin-left 1rem
+  ul li:before
+  ol .number
+    margin-right 1em
+
+ul.specials
+  & li::before
+    display none
