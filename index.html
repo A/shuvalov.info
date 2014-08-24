@@ -6,6 +6,8 @@ extlink: ''
 index: true
 ---
 
+{% include features.html %}
+
 <ul class="articles-list">
   {% for post in paginator.posts %}
     {% capture that_year %}{{ this_year || '' }}{% endcapture %}

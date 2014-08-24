@@ -9,7 +9,6 @@ translation:
   author: Michael Phillips
   title: "7 patterns to refactor JavaScript applications: Value Objects"
   link: http://journal.crushlovely.com/post/88286828068/7-patterns-to-refactor-javascript-applications-value
-
 ---
 
 ![{{post.title}}](/assets/articles-assets/footer/l/l-1.jpg)

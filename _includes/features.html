@@ -1,0 +1,5 @@
+{% assign features = site.posts | where:'feature', true %}
+
+{% for feature in features %}
+  {% include feature-snippet.html %}
+{% endfor %}

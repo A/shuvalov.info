@@ -166,6 +166,9 @@ body {
   .widget-320 {
     display: block;
   }
+  .feature-post {
+    display: none;
+  }
   blockquote:before,
   blockquote:after {
     display: none;
@@ -211,6 +214,9 @@ body {
   }
   .pagination__next-arrow {
     margin-left: 0.5rem;
+  }
+  .feature-post {
+    display: block;
   }
   blockquote:before,
   blockquote:after {
@@ -649,4 +655,21 @@ ul.books-list .books-list__item::before {
 }
 ul.specials li::before {
   display: none;
+}
+.feature-post {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.feature-image,
+.feature-image img {
+  display: block;
+}
+.feature__description {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.75);
+  padding: 0.5rem 1rem;
+  color: #fff !important;
+  text-shadow: none;
+  width: 100%;
 }

@@ -1,0 +1,14 @@
+<div class='feature-post'>
+  <a class="feature-image" href="{{ feature.url }}"><img src="{{ feature.cover }}" alt="{{ feature.title }}"></a>
+  <div class='feature__description'>
+    <a class="articles-list__link" href="{{ feature.url }}">
+      {{ feature.title }}
+    </a>
+    {% for label in feature.labels %}
+      <a href="{{ feature.url }}" class='articles-list__label'>{{ label }}</a>
+    {% endfor %}
+    <div class="articles-list__description">
+      {{ feature.description }}
+    </div>
+  </div>
+</div>

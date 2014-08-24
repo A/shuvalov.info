@@ -8,7 +8,6 @@ translation:
   author: "Alex Maccaw"
   title: "How yield will transform Node.js"
   link: "http://blog.alexmaccaw.com/how-yield-will-transform-node"
-
 ---
 
 !['Как yield изменит Node.js'](/assets/articles-assets/nodejs_logo_green.jpg)

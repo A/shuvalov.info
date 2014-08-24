@@ -92,6 +92,8 @@ body
     display none
   .widget-320
     display block
+  .feature-post
+    display: none
 
   blockquote:before
   blockquote:after
@@ -128,6 +130,8 @@ body
     margin-right .5rem
   .pagination__next-arrow
     margin-left .5rem
+  .feature-post
+    display: block
 
   blockquote:before,
   blockquote:after
@@ -496,3 +500,18 @@ ul.books-list
 ul.specials
   & li::before
     display none
+
+.feature-post
+  position: relative
+  margin-bottom: 2rem
+.feature-image
+.feature-image img
+  display: block
+.feature__description
+  position: absolute
+  bottom: 0
+  background-color: rgba(0,0,0,.75)
+  padding: .5rem 1rem
+  color: white !important
+  text-shadow: none
+  width: 100%

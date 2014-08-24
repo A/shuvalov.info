@@ -1,6 +1,6 @@
 <li class="articles-list__item">
   {% if post.image %}
-    <div class="post-image"><img src="{{ post. image}}" alt="{{ post.title }}"></div>
+    <div class="post-image"><img src="{{ post.image}}" alt="{{ post.title }}"></div>
   {% endif %}
   <a class="articles-list__link" {% if post.extlink %} href="{{ post.extlink }}" target="_blank" {% else %} href="{{ post.url }}"{% endif %}>
     {{ post.title }}
