@@ -1,17 +1,29 @@
 .feature-post
   position: relative
   margin-bottom: 2rem
+
+.feature-post__super
+  .feature-image
+    height: 360px
+
 .feature-image
-.feature-image img
+  height: 240px
+  overflow: hidden
   display: block
+
+
+.feature-image img
+  height: 360px
+  display: block
+
 .feature__description
   position: absolute
   bottom: 0
-  background-color: rgba(0,0,0,.75)
+  background-color: rgba(0,0,0,.60)
   padding: .5rem 1rem
-  color: white !important
   text-shadow: none
   width: 100%
+  color: color__moarsubdued
 
 @media (min-width: 320px)
   .feature-post

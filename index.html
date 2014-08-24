@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Мои статьи
 subtitle: ''
 extlink: ''
 index: true
 ---
 
-{% include features.html %}
+{% if paginator.page == 1 %}{% include features.html %}{% endif %}
+
+<h3 class="title" >Мои статьи</h3>
 
 <ul class="articles-list">
   {% for post in paginator.posts %}

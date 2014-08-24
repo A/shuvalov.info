@@ -256,18 +256,26 @@ body {
   position: relative;
   margin-bottom: 2rem;
 }
-.feature-image,
+.feature-post__super .feature-image {
+  height: 360px;
+}
+.feature-image {
+  height: 240px;
+  overflow: hidden;
+  display: block;
+}
 .feature-image img {
+  height: 360px;
   display: block;
 }
 .feature__description {
   position: absolute;
   bottom: 0;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0.6);
   padding: 0.5rem 1rem;
-  color: #fff !important;
   text-shadow: none;
   width: 100%;
+  color: #d6d4cc;
 }
 @media (min-width: 320px) {
   .feature-post {
