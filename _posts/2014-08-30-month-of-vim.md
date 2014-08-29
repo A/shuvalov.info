@@ -7,6 +7,7 @@ keywords: ["screencast", "vim", "редактор кода", "настройка
 feature: true
 cover: /assets/articles-assets/features/vim.jpg
 ---
+![page.title](/assets/articles-assets/features/vim.jpg)
 
 Решил попробовать 2 новых штуки: сначала, месяц назад я решил, что как минимум
 месяц буду работать в Vim, а позднее я подумал, что было бы здорово попробовать
