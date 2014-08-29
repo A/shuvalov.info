@@ -447,7 +447,8 @@ ol {
   position: relative;
 }
 ol .number {
-  absolute: right 100%;
+  position: absolute;
+  right: 100%;
   font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;
   font-style: italic;
 }
