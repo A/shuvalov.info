@@ -257,6 +257,9 @@ body {
   margin-bottom: 2rem;
   box-shadow: 0 1px 1px rgba(0,0,0,0.25);
 }
+.feature-post__small .feature-image {
+  height: 160px;
+}
 .feature-post__super .feature-image {
   height: 360px;
 }
