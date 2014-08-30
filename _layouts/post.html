@@ -27,10 +27,8 @@
               {% include disqus.html %}
             {% endif %}
           </div>
-          {% if page.feature != true or page.show_features == true %}
-            {% assign feature_small = true %}
-            {% include features.html %} 
-          {% endif %}
+          {% assign feature_small = true %}
+          {% include features.html %} 
         {% endif %}
       </div>
     </div>
