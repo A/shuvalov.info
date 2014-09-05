@@ -4,7 +4,7 @@ layout: post
 title: "Скринкаст: месяц в редакторе Vim"
 description: "Первая неделя была тяжелой, а потом я уже не хотел возвращаться"
 keywords: ["screencast", "vim", "редактор кода", "настройка vim", ""]
-feature: true
+feature: false
 cover: /assets/articles-assets/features/vim.jpg
 
 ---

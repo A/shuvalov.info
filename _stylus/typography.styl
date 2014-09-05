@@ -27,10 +27,34 @@ h1,h2,h3,h4,p,ul,ol,pre
   padding-bottom 1rem
 
 h1,h2,h3,h4, .header p
+  position relative
   font-weight bold
   font-family font__title
   margin .5rem 0 0 -2px
   line-height 1 !important
+
+
+.header-link
+  position absolute
+  right 100%
+  margin-right 1rem
+  opacity .50
+  color: color__moarsubdued
+  z-index 1
+  &:hover
+    text-decoration none
+    opacity 1
+    &:after
+      background-color: color__blue
+  &:after
+    position absolute
+    bottom 5px
+    height 1px
+    width 100%
+    content: ''
+    display block
+    background-color: color__moarsubdued
+
 
 li
   padding-bottom .5rem
