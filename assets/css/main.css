@@ -414,7 +414,7 @@ h1,
 h2,
 h3,
 h4,
-.header p {
+.header a {
   position: relative;
   font-weight: bold;
   font-family: "Neacademia Text Regular", Georgia, 'Times New Roman', serif;
