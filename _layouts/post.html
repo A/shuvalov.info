@@ -16,11 +16,11 @@
           </div>
         {% endif %}
         {{ content }}
-        {% if page.index != true %}
-          {% include mid-banner.html %}
-        {% endif %}
         {% if page.date %}
           <div class="content__date">{{ page.date | date: "%-d.%m.%Y" }}</div>
+        {% endif %}
+        {% if page.index != true %}
+          {% include mid-banner.html %}
         {% endif %}
         {% if page.index != true %}
           <div class="post-meta" data-scroll-reveal="enter ease 0">
