@@ -16,7 +16,9 @@
           </div>
         {% endif %}
         {{ content }}
-        {% include mid-banner.html %}
+        {% if page.index != true %}
+          {% include mid-banner.html %}
+        {% endif %}
         {% if page.date %}
           <div class="content__date">{{ page.date | date: "%-d.%m.%Y" }}</div>
         {% endif %}
