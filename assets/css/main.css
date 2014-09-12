@@ -136,6 +136,12 @@ body {
 .footer-banner {
   box-shadow: inset 0 10px 30px rgba(0,0,0,0.15);
 }
+.mid-banner {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  max-width: 688px;
+  min-width: 320px;
+}
 .widget {
   margin: 1rem auto;
   width: 728px;
