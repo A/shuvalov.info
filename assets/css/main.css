@@ -139,6 +139,9 @@ body {
 .mid-banner {
   margin: 0 0 1rem -20px;
 }
+.mid-banner .widget {
+  margin: 0;
+}
 .widget {
   margin: 1rem auto;
   width: 728px;
