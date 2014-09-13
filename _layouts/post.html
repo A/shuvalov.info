@@ -23,11 +23,11 @@
           <div class="post-meta" data-scroll-reveal="enter ease 0">
             {% include likes.html %}
             {% include mid-banner.html %}
-            {% if site.disable_related != true %}
-              {% include related-posts.html %}
-            {% endif %}
             {% if site.disqus %}
               {% include disqus.html %}
+            {% endif %}
+            {% if site.disable_related != true %}
+              {% include related-posts.html %}
             {% endif %}
           </div>
           {% assign feature_small = true %}
