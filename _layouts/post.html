@@ -2,7 +2,7 @@
 <html lang="ru">
   {% include head.html %}
   <body>
-    <!-- include top-banner.html -->
+    {% include top-banner.html %}
     <div class="wrapper">
       {% include header.html %}
       <div class="content" id="content">
@@ -20,11 +20,9 @@
           <div class="content__date">{{ page.date | date: "%-d.%m.%Y" }}</div>
         {% endif %}
         {% if page.index != true %}
-          {% include mid-banner.html %}
-        {% endif %}
-        {% if page.index != true %}
           <div class="post-meta" data-scroll-reveal="enter ease 0">
             {% include likes.html %}
+            {% include mid-banner.html %}
             {% if site.disable_related != true %}
               {% include related-posts.html %}
             {% endif %}
