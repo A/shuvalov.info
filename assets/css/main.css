@@ -258,6 +258,9 @@ body {
   font-size: 0.9rem;
   font-family: "Neacademia Text Regular", Georgia, 'Times New Roman', serif;
 }
+.fotorama {
+  margin-bottom: 1rem;
+}
 .feature-post {
   position: relative;
   margin-bottom: 2rem;
