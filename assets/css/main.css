@@ -291,12 +291,12 @@ body {
   color: #d6d4cc;
 }
 @media (min-width: 320px) {
-  .feature-post {
+  .fotorama {
     display: none;
   }
 }
 @media (min-width: 720px) {
-  .feature-post {
+  .fotorama {
     display: block;
   }
 }
@@ -308,6 +308,7 @@ body {
 .pagination__next-arrow {
   position: absolute;
   font-size: 1rem;
+  color: #99968a;
 }
 .pagination__previous-arrow {
   right: 100%;
@@ -495,6 +496,10 @@ a:hover {
   text-decoration: underline;
 }
 @media (min-width: 320px) {
+  .header-link,
+  .articles-list__title {
+    display: none;
+  }
   .img-left,
   .img-right {
     display: block;
@@ -514,6 +519,10 @@ a:hover {
   }
 }
 @media (min-width: 720px) {
+  .header-link,
+  .articles-list__title {
+    display: none;
+  }
   .img-left {
     display: inline-block;
     float: left;
@@ -550,6 +559,10 @@ a:hover {
   }
 }
 @media (min-width: 1024px) {
+  .header-link,
+  .articles-list__title {
+    display: block;
+  }
   .img-left {
     display: inline-block;
     float: left;

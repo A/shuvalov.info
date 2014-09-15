@@ -1,6 +1,6 @@
 {% assign features = site.posts | where:'feature', true %}
 
-<div class="fotorama" data-width="688" data-height="240" data-autoplay="3000">
+<div class="fotorama" data-width="100%" data-ratio="688/240" data-autoplay="3000">
   {% for feature in features %}
     {% include feature-snippet.html %}
   {% endfor %}
