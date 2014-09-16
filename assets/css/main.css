@@ -660,15 +660,31 @@ ul.specials li::before {
   .avatar {
     display: none;
   }
+  .book-cover {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
 }
 @media (min-width: 720px) {
   .avatar {
     display: none;
   }
+  .book-cover {
+    width: 280px;
+    float: right;
+    margin-left: 1rem;
+  }
 }
 @media (min-width: 1024px) {
   .avatar {
     display: block;
+  }
+  .book-cover {
+    width: 280px;
+    float: right;
+    margin-left: 1rem;
   }
 }
 .header {
