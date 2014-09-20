@@ -623,6 +623,23 @@ ul.specials li::before {
   background-color: #fff;
   box-shadow: 0 1px 1px rgba(0,0,0,0.25);
 }
+.youtube {
+  width: 100%;
+  height: 400px;
+}
+.hidden {
+  background-color: #99968a;
+  color: transparent;
+  text-shadow: none;
+}
+.hidden:hover {
+  color: inherit;
+  background-color: transparent;
+}
+.twitter-tweet,
+.youtube {
+  margin-bottom: 2rem !important;
+}
 .translation {
   font-size: 0.8em;
   font-family: "Neacademia Display Italic", Georgia, 'Times New Roman', serif;

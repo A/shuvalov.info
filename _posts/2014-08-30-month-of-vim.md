@@ -31,7 +31,7 @@ cover: /assets/articles-assets/features/vim.jpg
 
 ## Месяц в Vim
 
-<iframe width="688" height="500" src="//www.youtube.com/embed/AOZ3Mi1213U" frameborder="0" allowfullscreen></iframe>
+<iframe class='youtube' src="//www.youtube.com/embed/AOZ3Mi1213U" frameborder="0" allowfullscreen></iframe>
 
 
 Для тех кто решил использовать vim — [вот мой `.vimrc`-файл][5]. Надеюсь, вы
