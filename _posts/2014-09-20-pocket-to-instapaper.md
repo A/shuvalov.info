@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Из Instapaper в Pocket"
+title: "Из Pocket в Instapaper"
 description: "Немного о том, как я до этого докатился"
 keywords: ["Дизайн", "Design", "Книги", "Книга", "заметки"]
 feature: false
