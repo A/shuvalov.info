@@ -21,7 +21,7 @@
           <div class="content__date">{{ page.date | date: "%-d.%m.%Y" }}</div>
         {% endif %}
         {% if page.index != true %}
-          <div class="post-meta" data-scroll-reveal="enter ease 0">
+          <div class="post-meta">
             {% include likes.html %}
             {% if site.disqus %}
               {% include disqus.html %}

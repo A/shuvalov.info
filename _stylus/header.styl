@@ -16,7 +16,19 @@
   clear: both
 
 .likes-wrapper
-  margin-bottom 1rem;
+  margin-bottom 1rem
+
+@media (min-width: 1024px)
+  .likes-wrapper
+    padding-top: 1rem
+    margin-left: 1rem
+    width: 180px
+    position: absolute
+    top: 0
+    left: 100%
+  .sticky-fixed
+    position: fixed
+    top: 1rem
 
 .rss-link
   margin 8px 0 0 1rem

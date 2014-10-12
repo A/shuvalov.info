@@ -35,6 +35,35 @@ $(function() {
     }, 300, function () {
       window.location.hash = $el.attr('href');
     });
-    
+
   });
+});
+
+
+$.fn.sticky = function ($wrapper) {
+  // TODO: Cache container positions and recache them after window.resize
+  $wrapper = $wrapper || $(window);
+  this
+    .each(function () {
+      var $container = $(this);
+      var $el = $container.find('.js-sticky').first();
+      var update = function () {
+        window.verbose && console.time('scroll handler');
+        var isFixed = $el.hasClass('sticky-fixed');
+        var scrolled = $wrapper.scrollTop();
+        var offset = $container.offset();
+        isFixed
+          ? scrolled < offset.top
+            && $el.removeClass('sticky-fixed')
+          : scrolled > offset.top
+            && $el.addClass('sticky-fixed');
+        window.verbose && console.timeEnd('scroll handler');
+      };
+      $wrapper.on('scroll', update);
+      update();
+    });
+};
+
+$(function () {
+  $('.js-sticky-likes').sticky();
 });
