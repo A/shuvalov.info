@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "«An introducing to programming in Go», Caleb Doxsey"
+title: "«An introduction to programming in Go», Caleb Doxsey"
 description: "Прочитал. Попробовал. Понравилось."
 keywords: ["Programming", "Golang", "Книги", "Книга", "заметки"]
 feature: false
@@ -11,7 +11,7 @@ cover: /assets/articles-assets/features/cook.jpg
 ![{{page.title}}]({{site.production_url}}/assets/articles-assets/go-book.png)
 
 Недавно я отправился в славное путешествие в Пермь. Как раз перед самой поездкой
-я наткнулся на бесплатную книгу о Go [«An introducing to programming in Go»][0]
+я наткнулся на бесплатную книгу о Go [«An introduction to programming in Go»][0]
 от Caleb Doxsey.
 
 Книга небольшая — я прочитал ее в дороге часа за 4-5. Большая часть совсем для начинающих:
