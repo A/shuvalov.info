@@ -78,7 +78,7 @@ func printer(c <-chan string)
 ![{{ page.description }}]({{ site.production_url }}/assets/articles-assets/go.jpg)
 
 {:.photo-author}
-_фото: [Sean MacEntee](https://www.flickr.com/photos/smemon/)_
+_фото: [Martin Fisch](https://www.flickr.com/photos/marfis75/)_
 
 _Подписывайтесь на [РСС](http://feeds.feedburner.com/anton-shuvalov/FJHar)_.
 
