@@ -1,36 +1,10 @@
 ---
-apple-mobile-web-app-capable: yes
-color:Accent color: '\#ffca66'
-color:Sidebar color: '\#121212'
-color:Text color: '\#777777'
-description: '7 Patterns To Refactor JavaScript Applications: Decorators'
-if:Light Quotes: 0
-if:Show Archive: 1
-if:Show RSS: 1
-if:Show Sidebar Arrow: 1
-select:Avatar: circled
-title: |
-    Crush & Lovely — 7 Patterns To Refactor JavaScript Applications:
-    Decorators
-tumblr-theme: 37734
-twitter:app:id:googleplay: 'com.tumblr'
-twitter:app:id:iphone: 305343404
-twitter:app:name:googleplay: Tumblr
-twitter:app:name:ipad: Tumblr
-twitter:app:name:iphone: Tumblr
-twitter:app:url:googleplay: 'tumblr://x-callback-url/blog?blogName=magnum-theme&referrer=twitter-cards'
-twitter:app:url:ipad: 'tumblr://x-callback-url/blog?blogName=magnum-theme&referrer=twitter-cards'
-twitter:app:url:iphone: 'tumblr://x-callback-url/blog?blogName=magnum-theme&referrer=twitter-cards'
-twitter:card: summary
-twitter:creator: benjaminnathan
-twitter:description: |
-    7 Patterns To Refactor JavaScript Applications: Decorators By Michael
-    Phillips, Engineer On October 17, 2012, Bryan Helmkamp, founder of Code
-    Climate, wrote a blog post outlining 7 patterns to...
-twitter:site: tumblr
-twitter:title: 'Crush & Lovely'
-viewport: 'width=device-width, initial-scale=1, user-scalable=no'
-...
+
+layout: post
+title: "Декораторы"
+
+---
+
 
 [![](http://static.tumblr.com/yrs3ksq/V1vmww5qi/logo.png)](http://crushlovely.com)
 

@@ -1,9 +1,9 @@
 ---
-author: '&yet'
+
 description: '&yet blog'
-title: 'Introducing Ampersand.js | Blog'
-viewport: 'width=device-width, initial-scale=1'
-...
+title: 'Introducing Ampersand.js'
+
+---
 
 [](http://andyet.com)
 

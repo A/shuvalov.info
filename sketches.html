@@ -1,0 +1,17 @@
+---
+layout: post
+subtitle: ''
+extlink: ''
+index: true
+---
+
+<h3 class="title" >Черновики</h3>
+
+<ul class="articles-list">
+  <ul class="articles-list__list">
+  {% for post in site.sketches %}
+    <div data-scroll-reveal="enter ease 0">
+      {% include article-snippet.html %}
+    </div>
+  {% endfor %}
+</ul>

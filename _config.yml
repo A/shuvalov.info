@@ -23,3 +23,7 @@ author:
   facebook: https://www.facebook.com/a8h333
   gplus: https://plus.google.com/u/0/106326627323747767129?rel=author
   soundcloud: https://soundcloud.com/asheee/sets/bsc
+
+collections:
+  sketches:
+    output: true
