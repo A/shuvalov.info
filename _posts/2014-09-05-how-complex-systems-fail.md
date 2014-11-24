@@ -1,10 +1,12 @@
 ---
+
 layout: post
 title: "«Как рушатся комплексные системы», Ричард И. Кук"
 description: "О фундаментальных проблемах больших запутанных систем"
 keywords: ["Дизайн", "Design", "Книги", "Книга", "заметки"]
 feature: true
 cover: /assets/articles-assets/features/cook.jpg
+
 ---
 
 ## О статье
