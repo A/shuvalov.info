@@ -39,7 +39,7 @@ William Shakespeare
 
 Я путал отложенные статьи и закладки. Первые полезны _прямо сейчас_.
 Вторые же _могут стать полезными_. Я сохраняю их на всякий случай
-в [pinboard.in][5]. Не читая.
+в [pinboard.in][5]. **Не читая**.
 
 
 [1]: https://dev.opera.com/articles/perfect-javascript-framework/
