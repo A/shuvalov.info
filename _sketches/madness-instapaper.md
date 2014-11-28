@@ -1,13 +1,16 @@
 ---
 
 layout: post
-title: "Хватит откладывать ссылки на потом"
-description: ""
+title: "Instapaper и Pocket"
+description: "К чёртовой матери ссылки!"
 keywords: [""]
 
 ---
 
-> Though this be madness, yet there is method in't.
+_Though this be madness, yet there is method in't._
+
+{:.photo-author}
+William Shakespeare
 
 Недавно я решил прибраться в Instapaper. Я был честен и беспощаден:
 я удалял каждую ссылку вызывающую хотя бы толику сомнений. Я выпилил всё.
