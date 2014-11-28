@@ -7,6 +7,7 @@ keywords: [""]
 
 ---
 
+{:style="text-align:right;"}
 _Though this be madness, yet there is method in't._
 
 {:.photo-author}
