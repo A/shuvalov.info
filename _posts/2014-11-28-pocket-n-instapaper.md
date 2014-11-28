@@ -1,6 +1,6 @@
 ---
 
-layout: sketch
+layout: post
 title: "Instapaper и Pocket"
 description: "К чёртовой матери ссылки!"
 keywords: ["pocket", "instapaper", "links"]
