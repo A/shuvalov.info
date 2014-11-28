@@ -4,7 +4,9 @@
   <body>
     <!-- include top-banner.html -->
     <div class="wrapper">
-      {% include header.html %}
+      <div class="header">
+        <p><a href="/">Есть многое в природе, друг Горацио…</a></p>
+      </div>
       <div class="content" id="content">
         {% if page.group %}<span class="group_title">{{ page.group }}:</span>{% endif %}
         {% if page.title %}
