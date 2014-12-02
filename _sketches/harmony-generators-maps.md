@@ -76,7 +76,9 @@ gulp.task('js', ['js:vendor', 'js:app']);
 // set NODE_PATH
 process.env.NODE_PATH = paths.engines
   .map(function(engine) { return path.resolve(engine.path); })
-  .filter(function(i) { return i; }).join(path.delimiter);
+  .filter(function(i) { return i; })
+  .join(path.delimiter)
+;
 // reinit require's paths
 require('module').Module._initPaths(); // FUCK THIS SHIT! ☜(⌒▽⌒)☞
 
