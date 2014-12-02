@@ -7,13 +7,18 @@ keywords: [""]
 
 ---
 
-{:style="box-shadow:none;background:none;"}
+<style>
+#content img {
+  box-shadow: none;
+  background-color: none;
+}
+</style>
+
 ![{{ page.description }}]({{ site.production_url }}/assets/articles-assets/harmony-generators/after_math.png)
 
 {:.photo-author}
 Генераторы героинового наркомана
 
-{:style="box-shadow:none;background:none;"}
 ![{{ page.description }}]({{ site.production_url }}/assets/articles-assets/harmony-generators/before_meth.png)
 
 {:.photo-author}
