@@ -7,6 +7,6 @@ keywords: [""]
 
 ---
 
-![{{ page.description }}]({{ site.production_url }}/assets/articles-assets/harmony-generators/before_math.png)
+![{{ page.description }}]({{ site.production_url }}/assets/articles-assets/harmony-generators/before_meth.png)
 
-![{{ page.description }}]({{ site.production_url }}/assets/articles-assets/harmony-generators/after_meth.png)
+![{{ page.description }}]({{ site.production_url }}/assets/articles-assets/harmony-generators/after_math.png)
