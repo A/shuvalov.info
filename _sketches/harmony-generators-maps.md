@@ -1,6 +1,6 @@
 ---
 
-layout: post
+layout: sketch
 title: "SourceMap'ы для ES6-генераторов"
 description: "Harmony Generators героинового наркомана и Harmony Generators нормального человека"
 keywords: [""]
