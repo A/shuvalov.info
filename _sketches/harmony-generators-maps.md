@@ -84,6 +84,9 @@ gulp.task('js:vendor', function() {
 });
 ```
 
+[1]: https://github.com/tj/co
+[2]: https://github.com/koajs/koa
+
 ![{{ page.description }}]({{ site.production_url }}/assets/articles-assets/harmony-generators/before_meth.png)
 
 {:.photo-author}
