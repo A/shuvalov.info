@@ -10,7 +10,7 @@ keywords: [""]
 <style>
 #content img {
   box-shadow: none;
-  background-color: none;
+  background-color: transparent;
 #content .photo-author {
   margin-top: -3rem;
 }
