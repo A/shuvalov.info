@@ -48,13 +48,23 @@ var browserify = require('browserify');
 var es6ify     = require('es6ify');
 var fs         = require('fs');
 
+
 gulp.task('default', ['js', 'css', 'watch']);
 gulp.task('js', ['js:vendor', 'js:app']);
+
+
+// set NODE_PATH
+process.env.NODE_PATH = paths.engines
+  .map(function(engine) { return path.resolve(engine.path); })
+  .filter(function(i) { return i; }).join(path.delimiter);
+// reinit require's paths
+require('module').Module._initPaths(); // FUCK THIS SHIT! ☜(⌒▽⌒)☞
+
 
 // compile application.js
 gulp.task('js:app', function() {
   var engines = paths.engines.map(function(engine) {
-    return require.resolve(engine);
+    return require.resolve(engine.indexFile);
   });
   var b = browserify({ debug: true })
     .add(es6ify.runtime)
@@ -67,6 +77,7 @@ gulp.task('js:app', function() {
     .add(engines)
     .bundle()
     .on('error', function (err) { console.error(err.message); })
+    // TODO: gulp way, please
     .pipe(fs.createWriteStream(path.resolve('./public/javascripts/application.js')))
   ;
 });
@@ -79,6 +90,7 @@ gulp.task('js:vendor', function() {
     .require('underscore')
     .bundle()
     .on('error', function (err) { console.error(err.message); })
+    // TODO: gulp way, please
     .pipe(fs.createWriteStream(path.resolve('./public/javascripts/vendor.js')))
   ;
 });
