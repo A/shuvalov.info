@@ -36,7 +36,7 @@ keywords: [""]
 
 Вот код, который сейчас собирает js: 
 
-```js
+{% highlight js %}
 'use strict';
 
 // Dependencies
@@ -94,7 +94,7 @@ gulp.task('js:vendor', function() {
     .pipe(fs.createWriteStream(path.resolve('./public/javascripts/vendor.js')))
   ;
 });
-```
+{% endhighlight %}
 
 [1]: https://github.com/tj/co
 [2]: https://github.com/koajs/koa
