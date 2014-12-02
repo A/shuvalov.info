@@ -64,9 +64,9 @@ var path        = require('path');
 var gulp        = require('gulp');
 var jadeify     = require('jadeify');
 var paths       = require('./gulp-rails');
-var browserify = require('browserify');
-var es6ify     = require('es6ify');
-var fs         = require('fs');
+var browserify  = require('browserify');
+var es6ify      = require('es6ify');
+var fs          = require('fs');
 
 
 gulp.task('default', ['js', 'css', 'watch']);
