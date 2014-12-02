@@ -46,6 +46,11 @@ require('module').Module._initPaths();
 
 Интересно, зачем Joyent добавили `_` в название `_initPaths`… Да и документации на него почему-то нет… В общем, поосторожнее с этой штукой, если решитесь её использовать… 
 
+![{{ page.description }}]({{ site.production_url }}/assets/articles-assets/harmony-generators/before_meth.png)
+
+{:.photo-author}
+Генераторы нормального человека
+
 ### Код
 
 Вот код, который сейчас собирает js: 
@@ -113,8 +118,3 @@ gulp.task('js:vendor', function() {
 [1]: https://github.com/tj/co
 [2]: https://github.com/koajs/koa
 [3]: https://github.com/thlorenz/es6ify/issues/68#issuecomment-65082814
-
-![{{ page.description }}]({{ site.production_url }}/assets/articles-assets/harmony-generators/before_meth.png)
-
-{:.photo-author}
-Генераторы нормального человека
