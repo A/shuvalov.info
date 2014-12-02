@@ -11,9 +11,9 @@ keywords: [""]
 #content img {
   box-shadow: none;
   background-color: transparent;
+}
 #content .photo-author {
   margin-top: -3rem;
-}
 }
 </style>
 
