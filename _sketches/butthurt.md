@@ -1,7 +1,7 @@
 ---
 title: Белый шум
 layout: post
-subtitle: Баттхёрта нить начинается здесь
+description: Баттхёрта нить начинается здесь
 extlink: ''
 ---
 
