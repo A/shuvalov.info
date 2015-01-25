@@ -20,12 +20,11 @@ title : Atom Feed
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     {% if post.extlink %}
       <link href="{{ post.extlink }}"/>
-       <content type="html">{{ post.content | xml_escape }}</content>
     {% else %}
       <id>{{ site.production_url }}{{ post.id }}</id>
       <link href="{{ site.production_url }}{{ post.url }}"/>
-      <content type="html">{{ post.content | xml_escape }}</content>
     {% endif %}
+      <content type="html" xml:base="{{ site.production_url }}/">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
 </feed>
