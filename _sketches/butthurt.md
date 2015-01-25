@@ -6,6 +6,7 @@ description: Баттхёрта нить начинается здесь
 
 ---
 
+{:style="background:none;box-shadow:none"}
 ![Никакого баттхёрта](/assets/articles-assets/lena/darth.png)
 
 {:.photo-author}
@@ -67,7 +68,7 @@ _рисунок: [Лена Шувалова](http://vk.com/lenabg)_
 Не какие-то ошмётки пережёванной кем-то информации, а что-то большее.
 
 PS. Я ни в коем случае не предлагаю отказаться от интернета, фидли, хабра или чего-то еще.
-Просто так сложилось у меня. Ну, как говорится: «ОЙ ВСЁ!!11».
+Просто так сложилось у меня. Ну, как говорится: «ОЙ ВСЁ!».
 
 [1]: http://www.amazon.com/Async-JavaScript-Responsive-Pragmatic-Express/dp/1937785270
 [2]: https://www.gnu.org/software/bash/manual/bashref.html
