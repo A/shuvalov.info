@@ -6,7 +6,14 @@ description: Баттхёрта нить начинается здесь
 
 ---
 
-{:style="background:none;box-shadow:none"}
+<style>
+  .no-covered img {
+    background: none;
+    box-shadow: none;
+  }
+</style>
+
+{:.no-covered}
 ![Никакого баттхёрта](/assets/articles-assets/lena/darth.png)
 
 {:.photo-author}
