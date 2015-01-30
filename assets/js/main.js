@@ -19,7 +19,7 @@ $(function() {
     .find('h1, h2, h3, h4, h5, h6')
     .each(function(i, el) {
       if (!$.trim(el.innerText)) { return; }
-      var id = el.id || '#content';
+      var id = el.id || 'content';
       var sharps = repeat('#', el.nodeName[1]);
       var ancor = $('<a />')
         .addClass('header-link')
