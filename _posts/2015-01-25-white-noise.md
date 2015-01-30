@@ -14,7 +14,7 @@ description: Баттхёрта нить начинается здесь
 </style>
 
 {:.no-covered}
-![Никакого баттхёрта](/assets/articles-assets/lena/darth.png)
+![Никакого баттхёрта](http://shuvalov.info/assets/articles-assets/lena/darth.png)
 
 {:.photo-author}
 _рисунок: [Лена Шувалова](http://vk.com/lenabg)_
