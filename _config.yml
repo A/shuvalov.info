@@ -1,6 +1,5 @@
 name: 'Ношу шлем, тяжело дышу'
 markdown: kramdown
-pygments: true
 exclude: ['Gemfile', 'Gemfile.lock', 'makefile']
 future: true
 google_adsense: true

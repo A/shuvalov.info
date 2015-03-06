@@ -5,7 +5,9 @@
     <!-- include top-banner.html -->
     <div class="wrapper">
       {% include header.html %}
-      {% include mid-banner.html %}
+      {% if page.disable_mid_banner != true %}
+        {% include mid-banner.html %}
+      {% endif %}
       <div class="content" id="content">
         {% if page.group %}<span class="group_title">{{ page.group }}:</span>{% endif %}
         {% if page.title %}
@@ -30,7 +32,9 @@
               {% include related-posts.html %}
             {% endif %}
           </div>
-          {% include features.html %}
+          {% if page.disable_features != true %}
+            {% include features.html %}
+          {% endif %}
         {% endif %}
       </div>
     </div>
