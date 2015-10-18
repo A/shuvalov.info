@@ -40,7 +40,7 @@ cover: /assets/articles-assets/features/null.jpg
 
 Инструментируем модуль:
 
-{% highlight shell %}
+{% highlight bash %}
 cd my-project
 jscoverage index.js index-cov.js
 {% endhighlight %}
@@ -70,7 +70,7 @@ MYPROJECT_COV=1 ./node_modules/.bin/mocha -R html-cov > coverage.html
 Если в проекте много JS-файлов, которые скрываются за index.js, то обычно все эти штуки убираются в `lib/`,
 который инструментируется в `lib-cov/`:
 
-{% highlight shell %}
+{% highlight bash %}
 cd my-project
 jscoverage lib lib-cov
 {% endhighlight %}
